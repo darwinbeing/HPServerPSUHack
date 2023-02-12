@@ -1,3 +1,3 @@
 # HPServerPSUHack
 
-HP HSTNS-PL30 1200Watt Hot Plug Power Supply for ml350 dl380 dl388 G8
+HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programming.

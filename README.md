@@ -17,6 +17,8 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image5]: ./resources/connector.png "Connector"
 [image6]: ./resources/cable.png "Cable"
 [image7]: ./resources/debug.png "Debug"
+[image8]: ./resources/vout_fb_sch.png "+12V Feedback Schematic"
+[image9]: ./resources/vout_fb_pcb.png "+12V Feedback PCB"
 
 
 ### Pinout
@@ -38,3 +40,8 @@ Pin5 - PGEC
 
 * [DSPIC33FJ16GS502](firmware/Rev10/DSPIC33FJ16GS502.hex)
 * [DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
+
+### Increase Output Voltage
+Connector a parallel resistor "R" together with original resistor(220ohms, "221") to increase up to 14.09V,Its value is 1k5
+![alt text][image8]
+![alt text][image9]

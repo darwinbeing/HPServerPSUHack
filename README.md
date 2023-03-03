@@ -36,7 +36,7 @@ Pin5 - PGEC
 * [Molex Connector - 218112-0504](https://www.mouser.com/ProductDetail/538-218112-0504)
 * [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)
 
-### Firmware
+### Rev10 Firmware
 
 * [DSPIC33FJ16GS502](firmware/Rev10/DSPIC33FJ16GS502.hex)
 * [DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)

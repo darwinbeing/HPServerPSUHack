@@ -25,11 +25,11 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 
 ![alt text][image7]
 
-Pin1 - Vcc(3.3V)  
-Pin2 - GND  
+Pin1 - PGEC  
+Pin2 - PGED  
 Pin3 - <span style="text-decoration:overline">MCLR</span>  
-Pin4 - PGED  
-Pin5 - PGEC  
+Pin4 - GND  
+Pin5 - Vcc(3.3V)  
 
 ![alt text][image5]
 

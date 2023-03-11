@@ -1,0 +1,16 @@
+PicKit 3 Pinout
+Pin Number Pin Name
+Description
+
+1 MCLR/Vpp
+Connected to Master clear external reset pin of PIC to reset the MCU before programming
+2 VDD (Target)
+Target voltage of PIC, 5V or 3.3V
+3 Ground
+Ground pin of the system
+4 PGD/ICSPDAT
+Program Data(PDG) is connected to the In Circuit Serial Programming (ICSP) data pin
+5 PGC/ICSPCLK
+Program Clock (PGC) is connected to In Circuit Serial Programming (ICSP) clock pin
+6 No connection
+This pin is reserved for future use

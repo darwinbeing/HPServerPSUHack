@@ -23,9 +23,13 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image11]: ./resources/PL30.png "HP HSTNS-PL30"
 [image12]: ./resources/VR.png "10K VR(53CAD-D28-B15L)"
 
+### Enable PSU
+Add a 330ohms resistor between Pin 33 and 36 to enable PSU.  
+33: ENABLE#  
+36: PRESENT  
 
 
-### Pinout
+### In-Circuit Serial Programming and Debugging Pinout
 
 ![alt text][image7]
 
@@ -43,7 +47,6 @@ Pin5 - Vcc(3.3V)
 
 ### Rev10 Firmware
 
-* [Original DSPIC33FJ16GS502](firmware/Rev10/DSPIC33FJ16GS502.hex)
 * [Original DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
 
 ### Tweak Output Voltage

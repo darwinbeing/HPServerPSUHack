@@ -54,6 +54,7 @@ Connector a parallel resistor "R" together with original resistor(220ohms, "221"
 
 ### Tweak Over Voltage Protection
 ![alt text][image10]
+Assuming the default OVP is 14V.  
 There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33F64GS606).
 The attached file is the firmware that I have modified with an OVP set to 15V.
 

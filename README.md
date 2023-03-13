@@ -22,11 +22,16 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image10]: ./resources/OVP.png "Over Voltage Protection"
 [image11]: ./resources/PL30.png "HP HSTNS-PL30"
 [image12]: ./resources/VR.png "10K VR(53CAD-D28-B15L)"
+[image13]: ./resources/T3_compensator.png "Type III Compensator"
+[image14]: ./resources/present.png "Enable PSU"
+[image15]: ./resources/tweak_output.png "Tweak Output Voltage"
+
 
 ### Enable PSU
 Add a 330ohms resistor between Pin 33 and 36 to enable PSU.  
 33: ENABLE#  
 36: PRESENT  
+![alt text][image14]
 
 
 ### In-Circuit Serial Programming and Debugging Pinout
@@ -50,15 +55,53 @@ Pin5 - Vcc(3.3V)
 * [Original DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
 
 ### Tweak Output Voltage
+* Type III Compensator Using Op-Amp  
+
+Find the Type III Compensator Using Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf) in the HP PL30 power supply from the PCB
+![alt text][image13]
+
 Connector a parallel resistor "R" together with original resistor(220ohms, "221") to increase up to 14.09V,Its value is 1k5
 ![alt text][image8]
 ![alt text][image9]
-![alt text][image12]
+![alt text][image15]
 
 ### Tweak Over Voltage Protection
 ![alt text][image10]
 Assuming the default OVP is 14V.  
 There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33FJ64GS606).
+
+### Patch Firmware
+
+--- firmware/Rev10/DSPIC33FJ64GS606.hex	2023-03-12 14:10:17.000000000 -0700
++++ firmware/Rev10/Patch/DSPIC33FJ64GS606.hex	2023-03-10 19:01:22.000000000 -0800
+@@ -1640,7 +1640,7 @@
+ :106660000098A30005003A0067006000E20F5000A8
+ :1066700002003200D749A80075FF0700000006009D
+ :10668000F0708000E30F500012003A0011508000BB
+-:1066900000372000808F50000E003600412180001E
++:10669000203B2000808F50000E00360041218000FA
+ :1066A000303EB000808F50000A003600D6A9A80006
+ :1066B0008A28A8008C48A800015080000050800063
+ :1066C000C208DD004400DE0080804000A144880054
+@@ -4585,7 +4585,7 @@
+ :101E60000098A30005003A0067006000E20F5000F0
+ :101E700002003200D749A80075FF070000000600E5
+ :101E8000F0708000E30F500012003A001150800003
+-:101E900000372000808F50000E0036004121800066
++:101E9000203B2000808F50000E0036004121800042
+ :101EA000303EB000808F50000A003600D6A9A8004E
+ :101EB0008A28A8008C48A8000150800000508000AB
+ :101EC000C208DD004400DE0080804000A14488009C
+ 
+Convert Intel Hex to dsPIC33F assembly code  
+rom:003348 00 37 20 00     mov.w      #0x370,W0  
+--->  
+rom:003348 20 3b 20 00     mov.w      #0x3b2,W0  
+
+rom:008f48 00 37 20 00     mov.w      #0x370,W0  
+--->  
+rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0  
+
 The attached file is the firmware that I have modified with an OVP set to 15V.
 
 * [DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)

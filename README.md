@@ -50,9 +50,6 @@ Pin5 - Vcc(3.3V)
 * [Molex Connector - 218112-0504](https://www.mouser.com/ProductDetail/538-218112-0504)
 * [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)
 
-### Rev10 Firmware
-
-* [Original DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
 
 ### Tweak Output Voltage
 * Type III Compensator Using Op-Amp  
@@ -69,6 +66,9 @@ Connector a parallel resistor "R" together with original resistor(220ohms, "221"
 ![alt text][image10]
 Assuming the default OVP is 14V.  
 There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33FJ64GS606).
+
+### Rev10 Firmware
+[Original DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
 
 ### Patch Firmware
 ```

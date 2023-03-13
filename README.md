@@ -71,9 +71,9 @@ Assuming the default OVP is 14V.
 There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33FJ64GS606).
 
 ### Patch Firmware
-
+```
 --- firmware/Rev10/DSPIC33FJ64GS606.hex	2023-03-12 14:10:17.000000000 -0700
-+++ firmware/Rev10/Patch/DSPIC33FJ64GS606.hex	2023-03-10 19:01:22.000000000 -0800
++++ firmware/Rev10/Patch/DSPIC33FJ64GS606.hex 2023-03-10 19:01:22.000000000 -0800
 @@ -1640,7 +1640,7 @@
  :106660000098A30005003A0067006000E20F5000A8
  :1066700002003200D749A80075FF0700000006009D
@@ -101,7 +101,7 @@ rom:003348 20 3b 20 00     mov.w      #0x3b2,W0
 rom:008f48 00 37 20 00     mov.w      #0x370,W0  
 --->  
 rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0  
-
+```
 The attached file is the firmware that I have modified with an OVP set to 15V.
 
 * [DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)

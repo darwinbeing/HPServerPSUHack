@@ -25,6 +25,8 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image13]: ./resources/T3_compensator.png "Type III Compensator"
 [image14]: ./resources/present.png "Enable PSU"
 [image15]: ./resources/tweak_output.png "Tweak Output Voltage"
+[image16]: ./resources/load_test_voltage.png "Load Test Voltage"
+[image17]: ./resources/load_test_current.png "Load Test Current"
 
 
 ### Enable PSU
@@ -105,3 +107,8 @@ rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0
 The attached file is the firmware that I have modified with an OVP set to 15V.
 
 * [DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)
+
+### Load Test
+Load testing with BMW ignition ON，fan runs at max with AC on, the output voltage is 14.09 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.
+![alt text][image16]
+![alt text][image17]

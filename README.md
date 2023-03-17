@@ -42,14 +42,14 @@ Add a 330ohms resistor between Pin 33 and 36 to enable PSU.
 
 Pin1 - PGEC  
 Pin2 - PGED  
-Pin3 - <span style="text-decoration:overline">MCLR</span>  
+Pin3 - $\overline{\textrm{MCLR}}$  
 Pin4 - GND  
 Pin5 - Vcc(3.3V)  
 
 ![alt text][image4]
 ![alt text][image5]
 
-* [Molex Connector - 218112-0504](https://www.mouser.com/ProductDetail/538-218112-0504)
+* [Molex Connector - 21112-0504](https://www.mouser.com/ProductDetail/538-218112-0504)
 * [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)
 
 
@@ -67,8 +67,11 @@ Connector a parallel resistor "R" together with original resistor(220ohms, "221"
 ### Tweak Over Voltage Protection
 ![alt text][image10]
 Assuming the default OVP is 14V.  
-There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33FJ64GS606).
-
+There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
+$$\frac{1}{1+3.92}{\ast}14=\frac{R_p}{R_p+3.92}{\ast}V_{ovp},\ R_p=\frac{R{\ast}1}{R+1}$$
+$$If \ V_{ovp}=15V,\ R{\approx}11Kohms$$
+$$If \ V_{ovp}=16V,\ R{\approx}5.6Kohms$$
+ 
 ### Rev10 Firmware
 [Original DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
 
@@ -104,7 +107,7 @@ rom:008f48 00 37 20 00     mov.w      #0x370,W0
 --->  
 rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0  
 ```
-The attached file is the firmware that I have modified with an OVP set to 15V.
+The attached file is the firmware that I have modified with an $V_{ovp}$ set to 15V.
 
 * [DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)
 

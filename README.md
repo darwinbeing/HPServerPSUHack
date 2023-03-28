@@ -109,7 +109,8 @@ rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0
 ```
 The attached file is the firmware that I have modified with an $V_{ovp}$ set to 15V.
 
-* [DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)
+* [PL30 DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)
+* [PL11 PIC16F883 OVP Disabled](firmware/Rev12/Patch/PIC16F883.hex)  
 
 ### Load Test
 Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.09 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.

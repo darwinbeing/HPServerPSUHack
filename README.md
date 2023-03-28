@@ -27,6 +27,7 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image15]: ./resources/tweak_output.png "Tweak Output Voltage"
 [image16]: ./resources/load_test_voltage.png "Load Test Voltage"
 [image17]: ./resources/load_test_current.png "Load Test Current"
+[image18]: ./resources/PL11_BMW_LoadWithFanMax.png "PLL Load Test"
 
 
 ### Enable PSU
@@ -107,12 +108,20 @@ rom:008f48 00 37 20 00     mov.w      #0x370,W0
 --->  
 rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0  
 ```
-The attached file is the firmware that I have modified with an $V_{ovp}$ set to 15V.
+The code snippet above is PL30 OVP set to 15V  
 
+**PL30 Rev10 Firmware With OVP 15V**  
 * [PL30 DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)
-* [PL11 PIC16F883 OVP Disabled](firmware/Rev12/Patch/PIC16F883.hex)  
+
+**PL11 Rev12 Firmware With OVP Disabled**  
+* [PL11 PIC16F883 OVP Disabled](firmware/Rev12/Patch/PIC16F883.hex)
 
 ### Load Test
 Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.09 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.
+
+***PL30 BMW Load With Fan On***
 ![alt text][image16]
 ![alt text][image17]
+
+***PL11 BMW Load With Fan On***
+![alt text][image18]

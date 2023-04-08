@@ -74,12 +74,12 @@ $$If \ V_{ovp}=15V,\ R{\approx}11Kohms$$
 $$If \ V_{ovp}=16V,\ R{\approx}5.6Kohms$$
  
 ### Rev10 Firmware
-[Original DSPIC33FJ64GS606](firmware/Rev10/DSPIC33FJ64GS606.hex)
+[Original DSPIC33FJ64GS606](firmware/PL30/10/DSPIC33FJ64GS606.hex)
 
 ### Patch Firmware
 ```
---- firmware/Rev10/DSPIC33FJ64GS606.hex	2023-03-12 14:10:17.000000000 -0700
-+++ firmware/Rev10/Patch/DSPIC33FJ64GS606.hex 2023-03-10 19:01:22.000000000 -0800
+--- firmware/PL30/10/DSPIC33FJ64GS606.hex	2023-03-12 14:10:17.000000000 -0700
++++ firmware/PL30/10/Patch/DSPIC33FJ64GS606.hex 2023-03-10 19:01:22.000000000 -0800
 @@ -1640,7 +1640,7 @@
  :106660000098A30005003A0067006000E20F5000A8
  :1066700002003200D749A80075FF0700000006009D
@@ -111,10 +111,13 @@ rom:008f48 20 3b 20 00     mov.w      #0x3b2,W0
 The code snippet above is PL30 OVP set to 15V  
 
 **PL30 Rev10 Firmware With OVP 15V**  
-* [PL30 DSPIC33FJ64GS606 OVP 15V](firmware/Rev10/Patch/DSPIC33FJ64GS606.hex)
+* [PL30 DSPIC33FJ64GS606 OVP 15V](firmware/PL30/10/Patch/DSPIC33FJ64GS606.hex)
+
+**PL42 Rev01 Firmware With OVP 15.6V**  
+* [PL42 DSPIC33FJ64GS606 OVP 15.6V](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 
 **PL11 Rev12 Firmware With OVP Disabled**  
-* [PL11 PIC16F883 OVP Disabled](firmware/Rev12/Patch/PIC16F883.hex)
+* [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
 
 ### Load Test
 Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.09 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.

@@ -112,11 +112,11 @@ $$If \ V_{ovp}=16V,\ R{\approx}5.6Kohms$$
 ```
 The code snippet above is PL30 Output set to 14.28V  
 
-**PL30 Rev10 Firmware With Output 14.28V**  
-* [PL30 DSPIC33FJ64GS606 Output 14.28V](firmware/PL30/10/Patch/DSPIC33FJ64GS606.hex)
+**PL30 Rev10 Firmware With Output 14.06V**  
+* [PL30 DSPIC33FJ64GS606 Output 14.06V](firmware/PL30/10/Patch/DSPIC33FJ64GS606.hex)
 
 **PL42 Rev01 Firmware With Output 14.28V**  
-* [PL42 DSPIC33FJ64GS606 OVP 14.28V](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
+* [PL42 DSPIC33FJ64GS606 Output 14.28V](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)

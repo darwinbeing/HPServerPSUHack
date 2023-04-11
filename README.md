@@ -27,7 +27,8 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image15]: ./resources/tweak_output.png "Tweak Output Voltage"
 [image16]: ./resources/load_test_voltage.png "Load Test Voltage"
 [image17]: ./resources/load_test_current.png "Load Test Current"
-[image18]: ./resources/PL11_BMW_LoadWithFanMax.png "PLL Load Test"
+[image18]: ./resources/PL11_BMW_LoadWithFanMax.png "PL11 Load Test"
+[image19]: ./resources/PL42BMWLoadTest.jpg "PL42 Load Test"
 
 
 ### Enable PSU
@@ -130,3 +131,6 @@ Load testing with BMW ignition ON, fan runs at max with AC on, the output voltag
 
 ***PL11 BMW Load With Fan On***
 ![alt text][image18]
+
+***PL42 BMW Load With Fan On***
+![alt text][image19]

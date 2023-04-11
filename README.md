@@ -68,11 +68,11 @@ Connector a parallel resistor "R" together with original resistor(220ohms, "221"
 
 ### Tweak Over Voltage Protection
 ![alt text][image10]
-Assuming the default OVP is 14V.  
-There are two methods to modify the OVP. The first method is to connect a resistor in parallel with the 01B resistor, and the second method is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
-$$\frac{1}{1+3.92}{\ast}14=\frac{R_p}{R_p+3.92}{\ast}V_{ovp},\ R_p=\frac{R{\ast}1}{R+1}$$
-$$If \ V_{ovp}=15V,\ R{\approx}11Kohms$$
-$$If \ V_{ovp}=16V,\ R{\approx}5.6Kohms$$
+Assuming the default Output is 12.32V.  
+There are two methods to avoid triggering the OVP, one is to connect a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
+$$\frac{1}{1+3.92}{\ast}12.32=\frac{R_p}{R_p+3.92}{\ast}V_{out},\ R_p=\frac{R{\ast}1}{R+1}$$
+$$If \ V_{out}=14.06V,\ R{\approx}5.64Kohms$$
+$$If \ V_{out}=14.28V,\ R{\approx}5Kohms$$
  
 ### Rev10 Firmware
 [Original DSPIC33FJ64GS606](firmware/PL30/10/DSPIC33FJ64GS606.hex)

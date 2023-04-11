@@ -132,5 +132,5 @@ Load testing with BMW ignition ON, fan runs at max with AC on, the output voltag
 ***PL11 BMW Load With Fan On***
 ![alt text][image18]
 
-***PL42 BMW Load With Fan On***
+***PL42 BMW Load With Fan MAX,Audio,High Beam On***
 ![alt text][image19]

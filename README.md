@@ -73,6 +73,9 @@ There are two methods to avoid triggering the OVP, one is to connect a resistor 
 $$\frac{1}{1+3.92}{\ast}12.32=\frac{R_p}{R_p+3.92}{\ast}V_{out},\ R_p=\frac{R{\ast}1}{R+1}$$
 $$If \ V_{out}=14.06V,\ R{\approx}5.64Kohms$$
 $$If \ V_{out}=14.28V,\ R{\approx}5Kohms$$
+
+The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
+
  
 ### Rev10 Firmware
 [Original DSPIC33FJ64GS606](firmware/PL30/10/DSPIC33FJ64GS606.hex)

@@ -70,9 +70,10 @@ Connector a parallel resistor "R" together with original resistor(220ohms, "221"
 ![alt text][image10]
 Assuming the default Output is 12.32V.  
 There are two methods to avoid triggering the OVP, one is to connect a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
-$$\frac{1}{1+3.92}{\ast}12.32=\frac{R_p}{R_p+3.92}{\ast}V_{out},\ R_p=\frac{R{\ast}1}{R+1}$$
-$$If \ V_{out}=14.06V,\ R{\approx}5.64Kohms$$
-$$If \ V_{out}=14.28V,\ R{\approx}5Kohms$$
+$$\frac{R_{p1}}{R_{p1}+39.2+10+4420}{\ast}V_{out}=0.58,\ R_{p1}=\frac{R_1{\ast}220}{R_1+220}$$
+$$\frac{1}{1+3.92}{\ast}12.32=\frac{R_{p2}}{R_{p2}+3.92}{\ast}V_{out},\ R_{p2}=\frac{R_2{\ast}1}{R_2+1}$$
+$$If \ V_{out}=14.06V,\ R_1{\approx}1.54Kohms,\ R_2{\approx}5.64Kohms$$
+$$If \ V_{out}=14.28V,\ R_1{\approx}1.33Kohms,\ R_2{\approx}5Kohms$$
 
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
 

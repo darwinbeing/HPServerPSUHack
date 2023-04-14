@@ -129,10 +129,12 @@ The code snippet above is PL30 Output set to 14.28V
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
 
 ### PL11 T3 Compensator
-![alt text][image20]  
+![alt text][image20]
 
-$$\frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90$$  
-$$If \ R_3=4.7Kohms,\ V_{out} \in (13.9,15)$$  
+$$\frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90$$
+
+$$If \ R_3=4.7Kohms,\ V_{out} \in (13.9,15)$$
+
 $$If \ R_3=6.8Kohms,\ V_{out} \in (13.3,14.3)$$
 
 

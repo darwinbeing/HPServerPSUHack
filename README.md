@@ -30,6 +30,7 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image18]: ./resources/PL11_BMW_LoadWithFanMax.png "PL11 Load Test"
 [image19]: ./resources/PL42BMWLoadTest.jpg "PL42 Load Test"
 [image20]: ./resources/PL11_T3_Compensator.png "PL11 T3 Compensator"
+[image21]: ./resources/PL11_OVP.png "PL11 OVP"
 
 
 ### Enable PSU
@@ -130,6 +131,7 @@ The code snippet above is PL30 Output set to 14.28V
 
 ### PL11 T3 Compensator
 ![alt text][image20]
+![alt text][image21]
 
 There are two methods to avoid triggering the OVP, one is to connect a resistor in parallel, the other is to modify the firmware of the MCU(PIC16F883).  
 $$\frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90$$

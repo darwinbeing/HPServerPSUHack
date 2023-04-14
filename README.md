@@ -138,6 +138,11 @@ $$\frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R
 $$If \ R_3=4.7Kohms,\ V_{out} \in (13.9,15)$$
 $$If \ R_3=6.8Kohms,\ V_{out} \in (13.3,14.3)$$
 
+$$\frac{R_{p1}+VR}{R_{p1}+VR+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p1}=\frac{R_1{\ast}1100}{R_1+1100} VR=40$$
+$$\frac{1.74}{1.74+5.11}{\ast}12.29=\frac{R_{p2}}{R_{p2}+5.11}{\ast}V_{out},\ R_{p2}=\frac{R_2{\ast}1.74}{R_2+1.74}$$
+$$If \ V_{out}=14.35V,\ R_1{\approx}5K1ohms,\ R_2{\approx}7.68Kohms$$
+$$If \ V_{out}=14.2V,\ R_1{\approx}5.49Kohms,\ R_2{\approx}8K25ohms$$
+$$If \ V_{out}=14,\ R_1{\approx}6K04ohms,\ R_2{\approx}9K31ohms$$
 
 ### Load Test
 Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.28 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.

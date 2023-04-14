@@ -140,9 +140,9 @@ $$If \ R_3=6.8Kohms,\ V_{out} \in (13.3,14.3)$$
 
 $$\frac{R_{p3}+VR}{R_{p3}+VR+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ VR=40$$
 $$\frac{1.74}{1.74+5.11}{\ast}12.29=\frac{R_{p4}}{R_{p4}+5.11}{\ast}V_{out},\ R_{p4}=\frac{R_4{\ast}1.74}{R_4+1.74}$$
-$$If \ V_{out}=14.35V,\ R_3{\approx}5K1ohms,\ R_4{\approx}7.68Kohms$$
-$$If \ V_{out}=14.2V,\ R_3{\approx}5.49Kohms,\ R_4{\approx}8K25ohms$$
-$$If \ V_{out}=14,\ R_3{\approx}6K04ohms,\ R_4{\approx}9K31ohms$$
+$$If \ V_{out}=14.35V,\ R_3{\approx}5K1ohms,\ R_4{\approx}7K68ohms$$
+$$If \ V_{out}=14.2V,\ R_3{\approx}5K49ohms,\ R_4{\approx}8K25ohms$$
+$$If \ V_{out}=14V,\ R_3{\approx}6K04ohms,\ R_4{\approx}9K31ohms$$
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
 
 ### Load Test

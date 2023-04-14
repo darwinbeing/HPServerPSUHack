@@ -60,10 +60,10 @@ Pin5 - Vcc(3.3V)
 ### Tweak Output Voltage
 * Type III Compensator Using Op-Amp  
 
-Find the Type III Compensator Using Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf) in the HP PL30 power supply from the PCB
+Locate the Type III compensator in the HP PL30 power supply by inspecting the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
 ![alt text][image13]
 
-Connector a parallel resistor "R" together with original resistor(220ohms, "221") to increase up to 14.09V,Its value is 1k5
+To increase the voltage to 14.09V, connect a parallel resistor 'R' with the original 220 ohms resistor (labeled '221'), with a value of 1.5 kilo-ohms
 ![alt text][image8]
 ![alt text][image9]
 ![alt text][image15]
@@ -71,14 +71,14 @@ Connector a parallel resistor "R" together with original resistor(220ohms, "221"
 ### Tweak Over Voltage Protection
 ![alt text][image10]
 Assuming the default Output is 12.32V.  
-There are two methods to avoid triggering the OVP, one is to connect a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
+There are two methods to avoid triggering the OVP, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
 $$\frac{R_{p1}}{R_{p1}+39.2+10+4420}{\ast}V_{out}=0.58,\ R_{p1}=\frac{R_1{\ast}220}{R_1+220}$$
 $$\frac{1}{1+3.92}{\ast}12.32=\frac{R_{p2}}{R_{p2}+3.92}{\ast}V_{out},\ R_{p2}=\frac{R_2{\ast}1}{R_2+1}$$
 $$If \ V_{out}=14.06V,\ R_1{\approx}1.54Kohms,\ R_2{\approx}5.64Kohms$$
 $$If \ V_{out}=14.28V,\ R_1{\approx}1.33Kohms,\ R_2{\approx}5Kohms$$
 $$If \ V_{out}=14.4V,\ R_1{\approx}1.27Kohms,\ R_2{\approx}4.7Kohms$$
 
-The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
+The modification mentioned above is not meant to increase the OVP threshold, but rather to trick the dsPIC33FJ64GS606 MCU into thinking that the output voltage has not been adjusted.
 
  
 ### Rev10 Firmware
@@ -151,7 +151,7 @@ $$If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V$$
 Vdd is the supply voltage of the PIC16F883. By default configuration, the over-voltage protection (OVP) trigger voltage is approximately 13.86V.
 
 ### Load Test
-Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.28 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.
+When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 
 ***PL30 BMW Load With Fan On***
 ![alt text][image16]

@@ -145,6 +145,11 @@ $$If \ V_{out}=14.2V,\ R_3{\approx}5K49ohms,\ R_4{\approx}8K25ohms$$
 $$If \ V_{out}=14V,\ R_3{\approx}6K04ohms,\ R_4{\approx}9K31ohms$$
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
 
+$$\frac{1.74}{1.74+5.11}{\ast}V_{ovp}=(\frac{1}{4}+\frac{15}{32}){\ast}V_{dd}$$
+$$If \ V_{dd}=4.9V,\ V_{ovp}{\approx}13.86V$$
+$$If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V$$
+Vdd is the supply voltage of the PIC16F883. By default configuration, the over-voltage protection (OVP) trigger voltage is approximately 13.86V.
+
 ### Load Test
 Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.28 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.
 

@@ -29,6 +29,7 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 [image17]: ./resources/load_test_current.png "Load Test Current"
 [image18]: ./resources/PL11_BMW_LoadWithFanMax.png "PL11 Load Test"
 [image19]: ./resources/PL42BMWLoadTest.jpg "PL42 Load Test"
+[image20]: ./resources/PL11_T3_Compensator.png "PL11 T3 Compensator"
 
 
 ### Enable PSU
@@ -127,6 +128,13 @@ The code snippet above is PL30 Output set to 14.28V
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
 
+### PL11 T3 Compensator  
+![alt text][image20]
+$$\frac{VR+R_{p3}}{VR+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<VR<90$$
+$$If \ R_3=4.7Kohms,\ V_{out}\in(13.9,15)$$
+$$If \ R_3=6.8Kohms,\ V_{out}\in(13.3,14.3)$$
+
+
 ### Load Test
 Load testing with BMW ignition ON, fan runs at max with AC on, the output voltage is 14.28 without load. However, when loaded, there is a voltage drop due to impedance in the wires, which is reasonable.
 
@@ -137,5 +145,5 @@ Load testing with BMW ignition ON, fan runs at max with AC on, the output voltag
 ***PL11 BMW Load With Fan On***
 ![alt text][image18]
 
-***PL42 BMW Load With Fan MAX,Audio,High Beam On***
+***PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image19]

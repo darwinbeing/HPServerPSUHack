@@ -34,7 +34,7 @@ HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programmi
 
 
 ### Enable PSU
-Add a 330ohms resistor between Pin 33 and 36 to enable PSU.  
+To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
 33: ENABLE#  
 36: PRESENT  
 ![alt text][image14]

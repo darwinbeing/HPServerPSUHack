@@ -31,7 +31,7 @@ HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for BMW Flashing and
 [image19]: ./resources/PL42BMWLoadTest.jpg "PL42 Load Test"
 [image20]: ./resources/PL11_T3_Compensator.png "PL11 T3 Compensator"
 [image21]: ./resources/PL11_OVP.png "PL11 OVP"
-
+[image22]: ./resources/PLXXBMWLoadTest.jpg "PLXX BMW Load Test"
 
 ### Enable PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
@@ -154,4 +154,4 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, the over-v
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 
 ***PL11/PL30/PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
-![alt text][image19]
+![alt text][image22]

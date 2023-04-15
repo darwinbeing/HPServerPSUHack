@@ -161,5 +161,7 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, the over-v
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 
+From a technical standpoint, I would recommend employing Nichrome 80 14 gauge AWG resistance wire for the construction of a dummy load.
+
 ***PL11/PL30/PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image22]

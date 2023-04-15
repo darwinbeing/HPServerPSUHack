@@ -152,7 +152,7 @@ The modification above is not to increase the OVP threshold, but to make the MCU
 $$\frac{1.74}{1.74+5.11}{\ast}V_{ovp}=(\frac{1}{4}+\frac{15}{32}){\ast}V_{dd}$$
 $$If \ V_{dd}=4.9V,\ V_{ovp}{\approx}13.86V$$
 $$If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V$$
-Vdd is the supply voltage of the PIC16F883. By default configuration, the over-voltage protection (OVP) trigger voltage is approximately 13.86V.
+Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP voltage is dependent on the MCU supply voltage, which is approximately 13.86 volts in this case.
 
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)

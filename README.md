@@ -4,9 +4,9 @@
 
 ---
 
-## HP HSTNS-PL30
+## HP HSTNS-PL11/PL30/PL42
 
-HP HSTNS-PL30 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programming.
+HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programming.
 
 
 [//]: # (Image References)
@@ -153,12 +153,5 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, the over-v
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 
-***PL30 BMW Load With Fan On***
-![alt text][image16]
-![alt text][image17]
-
-***PL11 BMW Load With Fan On***
-![alt text][image18]
-
-***PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
+***PL11/PL30/PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image19]

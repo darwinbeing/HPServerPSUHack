@@ -8,6 +8,7 @@
 
 HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programming.
 The HPE PSU is a powerful and versatile power supply unit that can be modified or hacked to suit a wide range of needs,With some basic electronics knowledge and proper safety precautions, it's possible to make this PSU even more useful and versatile for your specific applications.
+Modified HPE PSUs are suitable for RC battery charging, radio power supply, and vehicle flashing/powering applications.
 
 [//]: # (Image References)
 [image1]: ./resources/mb_front.png "MB Front"

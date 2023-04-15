@@ -7,7 +7,7 @@
 ## HP HSTNS-PL11/PL30/PL42
 
 HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programming.
-
+The HPE PSU is a powerful and versatile power supply unit that can be modified or hacked to suit a wide range of needs,With some basic electronics knowledge and proper safety precautions, it's possible to make this PSU even more useful and versatile for your specific applications.
 
 [//]: # (Image References)
 [image1]: ./resources/mb_front.png "MB Front"
@@ -33,6 +33,8 @@ HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for BMW Flashing and
 [image21]: ./resources/PL11_OVP.png "PL11 OVP"
 [image22]: ./resources/PLXXBMWLoadTest.jpg "PLXX BMW Load Test"
 [image23]: ./resources/PL30_OVP_HW.png "PL30 OVP HW"
+[image24]: ./resources/PL11_Vout_HW.png "PL11 Output HW"
+[image25]: ./resources/PL11_OVP_HW.png "PL11 OVP HW"
 
 ### Enable PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
@@ -134,7 +136,10 @@ The code snippet above is PL30 Output set to 14.28V
 
 ### PL11 T3 Compensator
 ![alt text][image20]
+![alt text][image24]
+
 ![alt text][image21]
+![alt text][image25]
 
 There are two methods to avoid triggering the OVP, one is to connect a resistor in parallel, the other is to modify the firmware of the MCU(PIC16F883).  
 $$\frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90$$

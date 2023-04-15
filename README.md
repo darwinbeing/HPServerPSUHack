@@ -36,7 +36,7 @@ The HPE PSU is a powerful and versatile power supply unit that can be modified o
 [image24]: ./resources/PL11_Vout_HW.png "PL11 Output HW"
 [image25]: ./resources/PL11_OVP_HW.png "PL11 OVP HW"
 
-### Enable PSU
+### Activate PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
 33: ENABLE#  
 36: PRESENT  
@@ -60,7 +60,7 @@ Pin5 - Vcc(3.3V)
 * [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)
 
 
-### Tweak Output Voltage
+### Modify PL30/PL42 Output & OVP Voltage
 * Type III Compensator Using Op-Amp  
 
 Locate the Type III compensator in the HP PL30 power supply by inspecting the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
@@ -71,7 +71,6 @@ To increase the voltage to 14.09V, connect a parallel resistor 'R' with the orig
 ![alt text][image9]
 ![alt text][image15]
 
-### Tweak Over Voltage Protection
 ![alt text][image10]
 ![alt text][image23]
 
@@ -131,10 +130,7 @@ The code snippet above is PL30 Output set to 14.28V
 **PL42 Rev01 Firmware With Output 14.28V**  
 * [PL42 DSPIC33FJ64GS606 Output 14.28V](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 
-**PL11 Rev12 Firmware With OVP Disabled**  
-* [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
-
-### PL11 T3 Compensator
+### Modify PL11 Output & OVP Voltage
 ![alt text][image20]
 ![alt text][image24]
 
@@ -157,6 +153,9 @@ $$\frac{1.74}{1.74+5.11}{\ast}V_{ovp}=(\frac{1}{4}+\frac{15}{32}){\ast}V_{dd}$$
 $$If \ V_{dd}=4.9V,\ V_{ovp}{\approx}13.86V$$
 $$If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V$$
 Vdd is the supply voltage of the PIC16F883. By default configuration, the over-voltage protection (OVP) trigger voltage is approximately 13.86V.
+
+**PL11 Rev12 Firmware With OVP Disabled**  
+* [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
 
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

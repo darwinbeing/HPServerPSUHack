@@ -165,3 +165,9 @@ Technically speaking, I would recommend employing Nichrome 80 14 gauge AWG resis
 
 ***PL11/PL30/PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image22]
+
+### Video
+**HP HSTNS-PL11 Modification**  
+[![HP HSTNS-PL11](https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg)](https://youtu.be/_pB6r_7EpHQ "HP HSTNS-PL11")  
+**HP HSTNS-PL30/PL42 Modification**  
+[![HP HSTNS-PL30/PL42](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42")

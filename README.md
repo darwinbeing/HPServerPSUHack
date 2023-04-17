@@ -1,6 +1,5 @@
-# **HPServerPSUHack**
 
-![alt text][image11]
+![alt text][image19]
 
 ---
 

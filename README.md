@@ -35,6 +35,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image23]: ./resources/PL30_OVP_HW.png "PL30 OVP HW"
 [image24]: ./resources/PL11_Vout_HW.png "PL11 Output HW"
 [image25]: ./resources/PL11_OVP_HW.png "PL11 OVP HW"
+[image26]: ./resources/PL30_OCP_HW.png "PL30 OCP HW"
 
 ### Activate PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
@@ -129,6 +130,10 @@ The code snippet above is PL30 Output set to 14.28V
 
 **PL42 Rev01 Firmware With Output 14.28V**  
 * [PL42 DSPIC33FJ64GS606 Output 14.28V](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
+
+### PL30/PL42 OCP
+![alt text][image26]
+By tweaking the potentiometer in the diagram, you can cap the maximum output current of the circuit. And if the range falls short of what you need, you can also swap out the 4.42k(labeled '63B') resistor to get the desired result.
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]

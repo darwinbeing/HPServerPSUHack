@@ -36,6 +36,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image24]: ./resources/PL11_Vout_HW.png "PL11 Output HW"
 [image25]: ./resources/PL11_OVP_HW.png "PL11 OVP HW"
 [image26]: ./resources/PL30_OCP_HW.png "PL30 OCP HW"
+[image27]: ./resources/PL11_OCP_HW.png "PL11 OCP HW"
 
 ### Activate PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
@@ -160,6 +161,11 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
+### PL11 OCP
+![alt text][image27]
+
+The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k resistor can reduce the maximum output current.
+A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.
 
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

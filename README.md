@@ -164,8 +164,9 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 ### PL11 OCP
 ![alt text][image27]
 
-The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k resistor can reduce the maximum output current.
-A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.
+The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k（labled '8201') resistor can reduce the maximum output current.
+A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.  
+Shorting the 8.2k resistor would cap the maximum output current at around 30A.
 
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

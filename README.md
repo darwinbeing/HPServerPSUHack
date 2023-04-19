@@ -164,7 +164,7 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 ### PL11 OCP
 ![alt text][image27]
 
-The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k（labled '8201') resistor can reduce the maximum output current.
+The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k（labeled '8201') resistor can reduce the maximum output current.
 A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.  
 Shorting the 8.2k resistor would cap the maximum output current at around 30A.
 
@@ -180,4 +180,8 @@ Technically speaking, I would recommend employing Nichrome 80 14 gauge AWG resis
 **HP HSTNS-PL11 Modification**  
 [![HP HSTNS-PL11](https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg)](https://youtu.be/_pB6r_7EpHQ "HP HSTNS-PL11")  
 **HP HSTNS-PL30/PL42 Modification**  
-[![HP HSTNS-PL30/PL42](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42")
+[![HP HSTNS-PL30/PL42](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42")  
+**HP HSTNS-PL11 OCP Modification**  
+[![HP HSTNS-PL11 OCP](https://img.youtube.com/vi/BLK8ttS5fhQ/0.jpg)](https://youtu.be/BLK8ttS5fhQ "HP HSTNS-PL11")  
+
+

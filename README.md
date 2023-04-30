@@ -170,7 +170,7 @@ Shorting the 8.2k resistor would cap the maximum output current at around 30A.
 
 ### PL30 PICO Watt Meter
 ![alt text][image28]
-The image above demonstrates that the Raspberry Pi Pico read data from the HP HSTNS-PL30 power supply via I2C, measure electrical parameters such as Amps, Volts, Watts, and Watt-hours, and display the results on the PIMORONI Pico Display Pack.
+The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 power supply via I2C, measuring electrical parameters such as Amps, Volts, Watts, and Watt-hours, and displaying the results on the PIMORONI Pico Display Pack.
 
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

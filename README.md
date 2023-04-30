@@ -37,6 +37,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image25]: ./resources/PL11_OVP_HW.png "PL11 OVP HW"
 [image26]: ./resources/PL30_OCP_HW.png "PL30 OCP HW"
 [image27]: ./resources/PL11_OCP_HW.png "PL11 OCP HW"
+[image28]: ./resources/PL30PicoWattMeter.png "PL30 PICO Watt Meter"
 
 ### Activate PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
@@ -167,6 +168,10 @@ The output voltage of the CT amplified is divided down to 5V and fed into the MC
 A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.  
 Shorting the 8.2k resistor would cap the maximum output current at around 30A.
 
+### PL30 PICO Watt Meter
+![alt text][image28]
+The image above demonstrates that the Raspberry Pi Pico read data from the HP HSTNS-PL30 power supply via I2C, measure electrical parameters such as Amps, Volts, Watts, and Watt-hours, and display the results on the PIMORONI Pico Display Pack.
+
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 
@@ -177,10 +182,11 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
 
 ### Video
 **HP HSTNS-PL11 Modification**  
-[![HP HSTNS-PL11](https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg)](https://youtu.be/_pB6r_7EpHQ "HP HSTNS-PL11")  
+[![HP HSTNS-PL11](https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg)](https://youtu.be/_pB6r_7EpHQ "HP HSTNS-PL11 Mod")  
 **HP HSTNS-PL30/PL42 Modification**  
-[![HP HSTNS-PL30/PL42](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42")  
+[![HP HSTNS-PL30/PL42](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42 Mod")  
 **HP HSTNS-PL11 OCP Modification**  
-[![HP HSTNS-PL11 OCP](https://img.youtube.com/vi/BLK8ttS5fhQ/0.jpg)](https://youtu.be/BLK8ttS5fhQ "HP HSTNS-PL11")  
-
+[![HP HSTNS-PL11 OCP](https://img.youtube.com/vi/BLK8ttS5fhQ/0.jpg)](https://youtu.be/BLK8ttS5fhQ "HP HSTNS-PL11 OCP Demo")  
+**HP HSTNS-PL30 PICO Watt Meter**  
+[![HP HSTNS-PL30 Watt Meter](https://img.youtube.com/vi/YhXmV2Y7lFA/0.jpg)](https://youtu.be/YhXmV2Y7lFA "HP HSTNS-PL130 Watt Meter")  
 

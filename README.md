@@ -135,6 +135,8 @@ The code snippet above is PL30 Output set to 14.28V
 ### PL30/PL42 OCP
 ![alt text][image26]
 By tweaking the potentiometer in the diagram, you can cap the maximum output current of the circuit. And if the range falls short of what you need, you can also swap out the 4.42k(labeled '63B') resistor to get the desired result. Alternatively, you can patch the firmware to limit the maximum output current.
+The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current.
+$$V=10{\ast}I$$
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]
 ![alt text][image24]
@@ -167,6 +169,8 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k（labeled '8201') resistor can reduce the maximum output current.
 A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.  
 Shorting the 8.2k resistor would cap the maximum output current at around 30A.
+The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current.
+$$V=10{\ast}I$$
 
 ### PL30 PICO Watt Meter
 ![alt text][image28]

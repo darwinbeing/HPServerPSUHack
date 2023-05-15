@@ -179,7 +179,7 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 | PICO        | PL30 |
 | ----------- | ----------- |
 | VSYS(39)    | 3.3V       |
-| GND(8)      | 30       |
+| GND(38)     | GND       |
 | GP4/SDA(6)  | 31        |
 | GP5/SCL(7)  | 32        |
 

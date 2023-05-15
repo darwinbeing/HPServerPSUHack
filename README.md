@@ -176,6 +176,20 @@ $$V=\frac{I}{10}$$
 ![alt text][image28]
 The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 power supply via I2C, measuring electrical parameters such as Amps, Volts, Watts, and Watt-hours, and displaying the results on the PIMORONI Pico Display Pack.
 
+| PICO        | PL30 |
+| ----------- | ----------- |
+| VSYS(39)    | 3.3V       |
+| GND(8)      | 30       |
+| GP4/SDA(6)  | 31        |
+| GP5/SCL(7)  | 32        |
+
+***BOMs***  
+1. Raspberry Pi Pico  
+2. Pico Display Pack  
+
+**PICO Firmware 14.48V**  
+* [RPI PICO FW](firmware/PICO/zephyr.uf2)
+
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 

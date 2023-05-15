@@ -83,6 +83,7 @@ $$\frac{1}{1+3.92}{\ast}12.32=\frac{R_{p2}}{R_{p2}+3.92}{\ast}V_{out},\ R_{p2}=\
 $$If \ V_{out}=14.06V,\ R_1{\approx}1.54Kohms,\ R_2{\approx}5.64Kohms$$
 $$If \ V_{out}=14.28V,\ R_1{\approx}1.33Kohms,\ R_2{\approx}5Kohms$$
 $$If \ V_{out}=14.4V,\ R_1{\approx}1.27Kohms,\ R_2{\approx}4.7Kohms$$
+$$If \ V_{out}=15.2V,\ R_1{\approx}910ohms,\ R_2{\approx}3.4Kohms$$
 
 The modification mentioned above is not meant to increase the OVP threshold, but rather to trick the dsPIC33FJ64GS606 MCU into thinking that the output voltage has not been adjusted.
 

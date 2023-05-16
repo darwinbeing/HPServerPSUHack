@@ -65,7 +65,8 @@ Pin5 - Vcc(3.3V)
 ### Modify PL30/PL42 Output & OVP Voltage
 * Type III Compensator Using Op-Amp  
 
-Locate the Type III compensator in the HP PL30 power supply by inspecting the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
+Type III compensators, also known as Type 3 compensators, are a type of compensation network used in control systems to improve stability and performance.   
+Locate the Type III compensator in the HP PL30 power supply by examining the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
 ![alt text][image13]
 
 To increase the voltage to 14.09V, connect a parallel resistor 'R' with the original 220 ohms resistor (labeled '221'), with a value of 1.5 kilo-ohms

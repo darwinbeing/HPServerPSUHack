@@ -133,7 +133,7 @@ The modification mentioned above is not meant to increase the OVP threshold, but
 ```
 The code snippet above is PL30 Output set to 14.28V  
 
-**PL30 Rev10 Firmware With Output 15.2**  
+**PL30 Rev10 Firmware With Output 15.2V**  
 * [PL30 DSPIC33FJ64GS606 Output 15.2V](firmware/PL30/10/Patch/DSPIC33FJ64GS606.hex)
 
 **PL42 Rev01 Firmware With Output 14.28V**  

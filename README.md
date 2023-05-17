@@ -81,13 +81,13 @@ Assuming the default Output is 12.32V.
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
 
 $$
-\begin{align}
+\begin{gather*}
 \frac{R_{p1}}{R_{p1}+39.2+10+4420}{\ast}V_{out}=0.58,\ R_{p1}=\frac{R_1{\ast}220}{R_1+220} \\
 \frac{1}{1+3.92}{\ast}12.32=\frac{R_{p2}}{R_{p2}+3.92}{\ast}V_{out},\ R_{p2}=\frac{R_2{\ast}1}{R_2+1} \\
 If \ V_{out}=14.4V,\ R_1{\approx}1.27Kohms,\ R_2{\approx}4.7Kohms \\
 If \ V_{out}=15.2V,\ R_1{\approx}910(Ohms),\ R_2{\approx}3.4Kohms \\
 If \ V_{out}=16V,\ R_1{\approx}715(Ohms),\ R_2{\approx}2.67Kohms
-\end{align}
+\end{gather*}
 $$
 
 R1 is used to adjust the output voltage of the power supply, while R2 is used to adjust the threshold of the Over Voltage Protection (OVP).  
@@ -154,7 +154,7 @@ $$V=\frac{I}{10}$$
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to connect a resistor in parallel, the other is to modify the firmware of the MCU(PIC16F883).  
 
 $$
-\begin{gather}
+\begin{gather*}
 \frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90 \\
 If \ R_3=4.7Kohms,\ V_{out} \in (13.9,15) \\
 If \ R_3=6.8Kohms,\ V_{out} \in (13.3,14.3) \\
@@ -163,18 +163,18 @@ If \ R_3=6.8Kohms,\ V_{out} \in (13.3,14.3) \\
 If \ V_{out}=14.4V,\ R_3{\approx}5K1ohms,\ R_4{\approx}7K68ohms \\
 If \ V_{out}=15.2V,\ R_3{\approx}3K57ohms,\ R_4{\approx}5K49ohms \\
 If \ V_{out}=16V,\ R_3{\approx}2K7ohms,\ R_4{\approx}4K3ohms
-\end{gather}
+\end{gather*}
 $$
 
 R3 is used to adjust the output voltage of the power supply, while R4 is used to adjust the threshold of the Over Voltage Protection (OVP).  
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
 
 $$
-\begin{align}
+\begin{gather*}
 \frac{1.74}{1.74+5.11}{\ast}V_{ovp}=(\frac{1}{4}+\frac{15}{32}){\ast}V_{dd} \\
 If \ V_{dd}=4.9V,\ V_{ovp}{\approx}13.86V \\
 If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V
-\end{align}
+\end{gather*}
 $$
 
 Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP voltage is dependent on the MCU supply voltage, which is approximately 13.86 volts in this case.

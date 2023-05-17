@@ -72,10 +72,9 @@ Locate the Type III compensator in the HP PL30 power supply by examining the PCB
 To increase the voltage to 14.09V, connect a parallel resistor 'R' with the original 220 ohms resistor (labeled '221'), with a value of 1.5 kilo-ohms
 ![alt text][image8]
 ![alt text][image9]
-![alt text][image15]
 
+![alt text][image15]
 ![alt text][image10]
-![alt text][image23]
 
 Assuming the default Output is 12.32V.  
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  

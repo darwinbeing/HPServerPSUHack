@@ -24,5 +24,3 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
-/firmware/PL42/01/IncreaseOVP.X/dist/
-/firmware/PL42/01/IncreaseOVP.X/build/

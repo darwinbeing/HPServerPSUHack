@@ -38,11 +38,13 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image26]: ./resources/PL30_OCP_HW.png "PL30 OCP HW"
 [image27]: ./resources/PL11_OCP_HW.png "PL11 OCP HW"
 [image28]: ./resources/PL30PicoWattMeter.png "PL30 PICO Watt Meter"
+[image29]: ./resources/PL30_EN.png "PL30 Enable"
 
 ### Activate PSU
 To activate the PSU, add a 330 ohm resistor between Pin 33 and 36.  
 33: ENABLE#  
 36: PRESENT  
+![alt text][image29]
 ![alt text][image14]
 
 

@@ -41,7 +41,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image29]: ./resources/PL30_EN.png "PL30 Enable"
 
 ### Activate PSU
-To activate the PSU, add a 330 ohm resistor between Pin 33 and 36 or just short them.  
+To activate the PSU, add a small resistance resistor between Pin 33 and 36 or just short them.  
 33: ENABLE#  
 36: PRESENT  
 ![alt text][image29]
@@ -91,7 +91,7 @@ If \ V_{out}=16V,\ R_1{\approx}715(Ohms),\ R_2{\approx}2.67Kohms
 \end{gather*}
 $$
 
-* [WolframAlpha Solver](https://www.wolframalpha.com/input?i=R_11%2F%28R_11%2B39.2%2B10%2B4420%29*V_1%3D0.58%2CR_11%3D220*R_1%2F%28R_1%2B220%29%2C1%2F%281%2B3.92%29*12.32%3DR_12%2F%28R_12%2B3.92%29*V_1%2CR_12%3DR_2*1%2F%281%2BR_2%29%2CV_1%3D15.2)
+* [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=R_11%2F%28R_11%2B39.2%2B10%2B4420%29*V_1%3D0.58%2CR_11%3D220*R_1%2F%28R_1%2B220%29%2C1%2F%281%2B3.92%29*12.32%3DR_12%2F%28R_12%2B3.92%29*V_1%2CR_12%3DR_2*1%2F%281%2BR_2%29%2CV_1%3D15.2)
 
 R1 is used to adjust the output voltage of the power supply, while R2 is used to adjust the threshold of the Over Voltage Protection (OVP).  
 The modification mentioned above is not meant to increase the OVP threshold, but rather to trick the dsPIC33FJ64GS606 MCU into thinking that the output voltage has not been adjusted.

@@ -41,7 +41,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image29]: ./resources/PL30_EN.png "PL30 Enable"
 
 ### Activate PSU
-To activate the PSU, add a small resistance resistor between Pin 33 and 36 or just short them.  
+To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
 33: ENABLE#  
 36: PRESENT  
 ![alt text][image29]
@@ -168,6 +168,8 @@ If \ V_{out}=15.2V,\ R_3{\approx}3K57ohms,\ R_4{\approx}5K49ohms \\
 If \ V_{out}=16V,\ R_3{\approx}2K7ohms,\ R_4{\approx}4K3ohms
 \end{gather*}
 $$
+
+* [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=%28R_11%2BR_5%29%2F%28R_11%2BR_5%2B39.2%2B10%2B4420%29*V_1%3D2.5%2CR_11%3D1100*R_3%2F%28R_3%2B1100%29%2C1.74%2F%281.74%2B5.11%29*12.29%3DR_12%2F%28R_12%2B5.11%29*V_1%2CR_12%3DR_4*1.74%2F%281.74%2BR_4%29%2CR_5%3D40%2CV_1%3D15.2)
 
 R3 is used to adjust the output voltage of the power supply, while R4 is used to adjust the threshold of the Over Voltage Protection (OVP).  
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.

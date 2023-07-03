@@ -39,6 +39,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image27]: ./resources/PL11_OCP_HW.png "PL11 OCP HW"
 [image28]: ./resources/PL30PicoWattMeter.png "PL30 PICO Watt Meter"
 [image29]: ./resources/PL30_EN.png "PL30 Enable"
+[image30]: ./resources/pickit5.png "Pickit5"
 
 ### Activate PSU
 To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
@@ -58,7 +59,7 @@ Pin3 - $\overline{\textrm{MCLR}}$
 Pin4 - GND  
 Pin5 - Vcc(3.3V)  
 
-![alt text][image4]
+![alt text][image30]
 
 * [Molex Connector - 21112-0504](https://www.mouser.com/ProductDetail/538-218112-0504)
 * [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)

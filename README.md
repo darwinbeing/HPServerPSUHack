@@ -247,5 +247,9 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
  <img src="https://img.youtube.com/vi/YhXmV2Y7lFA/0.jpg" alt="HP HSTNS-PL30 Watt Meter" />
 </a>
 
+**HP HSTNS-PL33 Modification**  
 
+<a href="https://youtu.be/sOMTlh2ckdg" title="HP HSTNS-PL33 Mod">
+ <img src="https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg" alt="HP HSTNS-PL33" />
+</a>
 

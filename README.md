@@ -72,7 +72,7 @@ Type III compensators, also known as Type 3 compensators, are a type of compensa
 Locate the Type III compensator in the HP PL30 power supply by examining the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
 ![alt text][image13]
 
-To increase the voltage to 14.09V, connect a parallel resistor 'R' with the original 220 ohms resistor (labeled '221'), with a value of 1.5 kilo-ohms
+To increase the output voltage, one can either increase the reference voltage or decrease the resistance value of R4.
 ![alt text][image8]
 ![alt text][image9]
 

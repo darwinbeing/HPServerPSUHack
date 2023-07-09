@@ -68,7 +68,7 @@ Pin5 - Vcc(3.3V)
 ### Modify PL30/PL42 Output & OVP Voltage
 * Type III Compensator Using Op-Amp  
 
-Type III compensators, also known as Type 3 compensators, are a type of compensation network used in control systems to improve stability and performance.   
+Type III compensators, are a type of compensation network used in control systems to improve stability and performance.   
 Locate the Type III compensator in the HP PL30 power supply by examining the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
 ![alt text][image13]
 
@@ -82,7 +82,7 @@ To increase the output voltage, one can either increase the reference voltage or
 Assuming the default Output is 12.32V.  
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
 
-$$
+```math
 \begin{gather*}
 \frac{R_{p1}}{R_{p1}+39.2+10+4420}{\ast}V_{out}=0.58,\ R_{p1}=\frac{R_1{\ast}220}{R_1+220} \\
 \frac{1}{1+3.92}{\ast}12.32=\frac{R_{p2}}{R_{p2}+3.92}{\ast}V_{out},\ R_{p2}=\frac{R_2{\ast}1}{R_2+1} \\
@@ -90,7 +90,7 @@ If \ V_{out}=14.4V,\ R_1{\approx}1.27Kohms,\ R_2{\approx}4.7Kohms \\
 If \ V_{out}=15.2V,\ R_1{\approx}910(Ohms),\ R_2{\approx}3.4Kohms \\
 If \ V_{out}=16V,\ R_1{\approx}715(Ohms),\ R_2{\approx}2.67Kohms
 \end{gather*}
-$$
+```
 
 * [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=R_11%2F%28R_11%2B39.2%2B10%2B4420%29*V_1%3D0.58%2CR_11%3D220*R_1%2F%28R_1%2B220%29%2C1%2F%281%2B3.92%29*12.32%3DR_12%2F%28R_12%2B3.92%29*V_1%2CR_12%3DR_2*1%2F%281%2BR_2%29%2CV_1%3D15.2)
 
@@ -146,8 +146,8 @@ The code snippet above is PL30 Output set to 14.28V
 ### PL30/PL42 OCP
 ![alt text][image26]
 By tweaking the potentiometer in the diagram, you can cap the maximum output current of the circuit. And if the range falls short of what you need, you can also swap out the 4.42k(labeled '63B') resistor to get the desired result. Alternatively, you can patch the firmware to limit the maximum output current.  
-The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current.
-$$V=\frac{I}{10}$$
+The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current $V=\frac{I}{10}$.
+
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]
 ![alt text][image24]
@@ -157,7 +157,7 @@ $$V=\frac{I}{10}$$
 
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to connect a resistor in parallel, the other is to modify the firmware of the MCU(PIC16F883).  
 
-$$
+```math
 \begin{gather*}
 \frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90 \\
 If \ R_3=4.7Kohms,\ V_{out} \in (13.9,15) \\
@@ -168,20 +168,20 @@ If \ V_{out}=14.4V,\ R_3{\approx}5K1ohms,\ R_4{\approx}7K68ohms \\
 If \ V_{out}=15.2V,\ R_3{\approx}3K57ohms,\ R_4{\approx}5K49ohms \\
 If \ V_{out}=16V,\ R_3{\approx}2K7ohms,\ R_4{\approx}4K3ohms
 \end{gather*}
-$$
+```
 
 * [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=%28R_11%2BR_5%29%2F%28R_11%2BR_5%2B39.2%2B10%2B4420%29*V_1%3D2.5%2CR_11%3D1100*R_3%2F%28R_3%2B1100%29%2C1.74%2F%281.74%2B5.11%29*12.29%3DR_12%2F%28R_12%2B5.11%29*V_1%2CR_12%3DR_4*1.74%2F%281.74%2BR_4%29%2CR_5%3D40%2CV_1%3D15.2)
 
 R3 is used to adjust the output voltage of the power supply, while R4 is used to adjust the threshold of the Over Voltage Protection (OVP).  
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
 
-$$
+```math
 \begin{gather*}
 \frac{1.74}{1.74+5.11}{\ast}V_{ovp}=(\frac{1}{4}+\frac{15}{32}){\ast}V_{dd} \\
 If \ V_{dd}=4.9V,\ V_{ovp}{\approx}13.86V \\
 If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V
 \end{gather*}
-$$
+```
 
 Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP voltage is dependent on the MCU supply voltage, which is approximately 13.86 volts in this case.
 
@@ -193,8 +193,7 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k（labeled '8201') resistor can reduce the maximum output current.
 A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.  
 Shorting the 8.2k resistor would cap the maximum output current at around 30A.  
-The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current.
-$$V=\frac{I}{10}$$
+The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current $`V=\frac{I}{10}`$.
 
 ### PL30 PICO Watt Meter
 ![alt text][image28]

@@ -81,7 +81,6 @@ To increase the output voltage, one can either increase the reference voltage or
 
 Assuming the default Output is 12.32V.  
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
-
 ```math
 \begin{gather*}
 \frac{R_{p1}}{R_{p1}+39.2+10+4420}{\ast}V_{out}=0.58,\ R_{p1}=\frac{R_1{\ast}220}{R_1+220} \\
@@ -91,7 +90,6 @@ If \ V_{out}=15.2V,\ R_1{\approx}910(Ohms),\ R_2{\approx}3.4Kohms \\
 If \ V_{out}=16V,\ R_1{\approx}715(Ohms),\ R_2{\approx}2.67Kohms
 \end{gather*}
 ```
-
 * [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=R_11%2F%28R_11%2B39.2%2B10%2B4420%29*V_1%3D0.58%2CR_11%3D220*R_1%2F%28R_1%2B220%29%2C1%2F%281%2B3.92%29*12.32%3DR_12%2F%28R_12%2B3.92%29*V_1%2CR_12%3DR_2*1%2F%281%2BR_2%29%2CV_1%3D15.2)
 
 R1 is used to adjust the output voltage of the power supply, while R2 is used to adjust the threshold of the Over Voltage Protection (OVP).  
@@ -156,7 +154,6 @@ The current flowing through the CT(Current Transformer) is transformed into a vo
 ![alt text][image25]
 
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to connect a resistor in parallel, the other is to modify the firmware of the MCU(PIC16F883).  
-
 ```math
 \begin{gather*}
 \frac{{VR}+R_{p3}}{{VR}+R_{p3}+39.2+10+4420}{\ast}V_{out}=2.5,\ R_{p3}=\frac{R_3{\ast}1100}{R_3+1100},\ 0<{VR}<90 \\
@@ -169,19 +166,18 @@ If \ V_{out}=15.2V,\ R_3{\approx}3K57ohms,\ R_4{\approx}5K49ohms \\
 If \ V_{out}=16V,\ R_3{\approx}2K7ohms,\ R_4{\approx}4K3ohms
 \end{gather*}
 ```
-
 * [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=%28R_11%2BR_5%29%2F%28R_11%2BR_5%2B39.2%2B10%2B4420%29*V_1%3D2.5%2CR_11%3D1100*R_3%2F%28R_3%2B1100%29%2C1.74%2F%281.74%2B5.11%29*12.29%3DR_12%2F%28R_12%2B5.11%29*V_1%2CR_12%3DR_4*1.74%2F%281.74%2BR_4%29%2CR_5%3D40%2CV_1%3D15.2)
 
 R3 is used to adjust the output voltage of the power supply, while R4 is used to adjust the threshold of the Over Voltage Protection (OVP).  
 The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
 
-```math
+$$
 \begin{gather*}
 \frac{1.74}{1.74+5.11}{\ast}V_{ovp}=(\frac{1}{4}+\frac{15}{32}){\ast}V_{dd} \\
 If \ V_{dd}=4.9V,\ V_{ovp}{\approx}13.86V \\
 If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V
 \end{gather*}
-```
+$$
 
 Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP voltage is dependent on the MCU supply voltage, which is approximately 13.86 volts in this case.
 
@@ -215,7 +211,6 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 
 ### Load Test
 When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
-
 Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resistance wire for the construction of a dummy load.
 
 ***PL11/PL30/PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
@@ -235,4 +230,6 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
 [![HP HSTNS-PL130 Watt Meter](https://img.youtube.com/vi/YhXmV2Y7lFA/0.jpg)](https://youtu.be/YhXmV2Y7lFA "HP HSTNS-PL30 Watt Meter")
 
 **HP HSTNS-PL33 Modification**  
-[![HP HSTNS-PL33 Mod](https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg)](https://youtu.be/sOMTlh2ckdg "HP HSTNS-PL33")
+<a href="https://youtu.be/sOMTlh2ckdg" title="HP HSTNS-PL33 Mod">
+ <img src="https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg" alt="HP HSTNS-PL33" />
+</a>

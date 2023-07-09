@@ -248,8 +248,4 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
 </a>
 
 **HP HSTNS-PL33 Modification**  
-
-<a href="https://youtu.be/sOMTlh2ckdg" title="HP HSTNS-PL33 Mod">
- <img src="https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg" alt="HP HSTNS-PL33" />
-</a>
-
+[![HP HSTNS-PL33](https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg)](https://youtu.be/sOMTlh2ckdg "HP HSTNS-PL33")

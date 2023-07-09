@@ -224,28 +224,16 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
 
 ### Video
 **HP HSTNS-PL11 Modification**  
-
-<a href="https://youtu.be/_pB6r_7EpHQ" title="HP HSTNS-PL11 Mod">
- <img src="https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg" alt="HP HSTNS-PL11" />
-</a>
+[![HP HSTNS-PL11 Mod](https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg)](https://youtu.be/_pB6r_7EpHQ "HP HSTNS-PL11")
 
 **HP HSTNS-PL30/PL42 Modification**  
-
-<a href="https://youtu.be/eh7FzcV9E4g" title="HP HSTNS-PL30/PL42 Mod">
- <img src="https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg" alt="HP HSTNS-PL30/PL42" />
-</a>
+[![HP HSTNS-PL30/PL42 Mod](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42")
 
 **HP HSTNS-PL11 OCP Modification**  
-
-<a href="https://youtu.be/BLK8ttS5fhQ" title="HP HSTNS-PL11 OCP Demo">
- <img src="https://img.youtube.com/vi/BLK8ttS5fhQ/0.jpg" alt="HP HSTNS-PL11 OCP" />
-</a>
+[![HP HSTNS-PL11 OCP Demo](https://img.youtube.com/vi/BLK8ttS5fhQ/0.jpg)](https://youtu.be/BLK8ttS5fhQ "HP HSTNS-PL11 OCP")
 
 **HP HSTNS-PL30 PICO Watt Meter**  
-
-<a href="https://youtu.be/YhXmV2Y7lFA" title="HP HSTNS-PL130 Watt Meter">
- <img src="https://img.youtube.com/vi/YhXmV2Y7lFA/0.jpg" alt="HP HSTNS-PL30 Watt Meter" />
-</a>
+[![HP HSTNS-PL130 Watt Meter](https://img.youtube.com/vi/YhXmV2Y7lFA/0.jpg)](https://youtu.be/YhXmV2Y7lFA "HP HSTNS-PL30 Watt Meter")
 
 **HP HSTNS-PL33 Modification**  
-[![HP HSTNS-PL33](https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg)](https://youtu.be/sOMTlh2ckdg "HP HSTNS-PL33")
+[![HP HSTNS-PL33 Mod](https://img.youtube.com/vi/sOMTlh2ckdg/0.jpg)](https://youtu.be/sOMTlh2ckdg "HP HSTNS-PL33")

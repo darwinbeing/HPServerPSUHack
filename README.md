@@ -143,6 +143,7 @@ The code snippet above is PL30 Output set to 14.28V
 
 ### PL30/PL42 OCP
 ![alt text][image26]
+
 By tweaking the potentiometer in the diagram, you can cap the maximum output current of the circuit. And if the range falls short of what you need, you can also swap out the 4.42k(labeled '63B') resistor to get the desired result. Alternatively, you can patch the firmware to limit the maximum output current.  
 The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current $V=\frac{I}{10}$.
 

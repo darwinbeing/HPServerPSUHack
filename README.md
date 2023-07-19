@@ -5,7 +5,7 @@
 
 ## HP HSTNS-PL11/PL30/PL42
 
-HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for BMW Flashing and Programming.
+HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for Vehicle Flashing and Programming.
 The HPE PSU is a powerful and versatile power supply unit that can be modified or hacked to suit a wide range of needs,With some basic electronics knowledge and proper safety precautions, it's possible to make this PSU even more useful and versatile for your specific applications.
 Modified HPE PSUs are suitable for RC battery charging, radio power supply, and vehicle flashing/powering applications.
 
@@ -68,7 +68,7 @@ Pin5 - Vcc(3.3V)
 ### Modify PL30/PL42 Output & OVP Voltage
 * Type III Compensator Using Op-Amp  
 
-Type III compensators, are a type of compensation network used in control systems to improve stability and performance.   
+Type III compensators are a type of compensation network used in control systems to improve stability and performance.   
 Locate the Type III compensator in the HP PL30 power supply by examining the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
 ![alt text][image13]
 

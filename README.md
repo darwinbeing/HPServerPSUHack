@@ -211,10 +211,10 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 * [RPI PICO FW](firmware/PICO/zephyr.uf2)
 
 ### Load Test
-When conducting load testing with BMW ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
+When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resistance wire for the construction of a dummy load.
 
-***PL11/PL30/PL42 BMW Load With Fan on MAX,Audio,High Beam activated***
+***PL11/PL30/PL42 Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image22]
 
 ### Video

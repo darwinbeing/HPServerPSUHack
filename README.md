@@ -40,6 +40,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image28]: ./resources/PL30PicoWattMeter.png "PL30 PICO Watt Meter"
 [image29]: ./resources/PL30_EN.png "PL30 Enable"
 [image30]: ./resources/pickit5.png "Pickit5"
+[image31]: ./resources/PL30_OVP_BOTTOM.png "PL30 OVP BOTTOM"
 
 ### Activate PSU
 To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
@@ -78,6 +79,7 @@ To increase the output voltage, one can either increase the reference voltage or
 
 ![alt text][image15]
 ![alt text][image10]
+![alt text][image31]
 
 Assuming the default Output is 12.32V.  
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  

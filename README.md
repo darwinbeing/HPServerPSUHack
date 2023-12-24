@@ -240,3 +240,6 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
 
 **HP HSTNS-PL28 Modification**  
 [![HP HSTNS-PL28 Mod](https://img.youtube.com/vi/eTXfFXV7vOA/0.jpg)](https://youtu.be/eTXfFXV7vOA "HP HSTNS-PL28")
+
+**HP HSTNS-PD19 Modification**  
+[![HP HSTNS-PD19 Mod](https://img.youtube.com/vi/oVpzPtx0xMU/0.jpg)](https://youtu.be/oVpzPtx0xMU "HP HSTNS-PD19")

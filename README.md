@@ -41,6 +41,10 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image29]: ./resources/PL30_EN.png "PL30 Enable"
 [image30]: ./resources/pickit5.png "Pickit5"
 [image31]: ./resources/PL30_OVP_BOTTOM.png "PL30 OVP BOTTOM"
+[image32]: ./resources/HP-HSTNS-PD44_MOD_SCH.png "PD44 MOD SCH"
+[image33]: ./resources/PD44_EN.png "PD44 EN"
+[image34]: ./resources/HP-HSTNS-PD44_MOD.png "PD44 MOD"
+[image35]: ./resources/PD44_MOD_14V4.png "PD44 MOD 14.4V"
 
 ### Activate PSU
 To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
@@ -212,6 +216,27 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 **PICO Firmware 14.48V**  
 * [RPI PICO FW](firmware/PICO/zephyr.uf2)
 * [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
+
+### Modify HP HSTNS-PD44 800W TITANIUM LLC PSU
+
+#### Reverse Engineer a Schematic
+![alt text][image32]
+#### Activate PSU
+![alt text][image33]
+#### Modify Output & OVP
+![alt text][image34]
+
+```math
+\begin{gather*}
+\frac{5.23}{5.23+20}{\ast}12.3=\frac{5.23}{5.23+R_1}{\ast}V_{out} \\
+\frac{5.23}{5.23+20}{\ast}12.3=\frac{5.23}{5.23+R_2}{\ast}V_{out} \\
+If \ V_{out}=13.8V,\ R_1{\approx}23.2Kohms,\ R_2{\approx}23.2Kohms \\
+If \ V_{out}=14.25V,\ R_1{\approx}24Kohms,\ R_2{\approx}24Kohms \\
+If \ V_{out}=14.4V,\ R_1{\approx}24.3Kohms,\ R_2{\approx}24.3Kohms
+\end{gather*}
+```
+#### PD44 14.4V
+![alt text][image35]
 
 ### Load Test
 When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

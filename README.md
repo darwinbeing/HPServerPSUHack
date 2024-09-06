@@ -45,6 +45,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image33]: ./resources/PD44_EN.png "PD44 EN"
 [image34]: ./resources/HP-HSTNS-PD44_MOD.png "PD44 MOD"
 [image35]: ./resources/PD44_MOD_14V4.png "PD44 MOD 14.4V"
+[image36]: ./resources/current_sense.png "Current Sense Amplifier"
 
 ### Activate PSU
 To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
@@ -101,6 +102,9 @@ If \ V_{out}=16V,\ R_1{\approx}715(Ohms),\ R_2{\approx}2.67Kohms
 R1 is used to adjust the output voltage of the power supply, while R2 is used to adjust the threshold of the Over Voltage Protection (OVP).  
 The modification mentioned above is not meant to increase the OVP threshold, but rather to trick the dsPIC33FJ64GS606 MCU into thinking that the output voltage has not been adjusted.
 
+### PL30 Current Sense Amplifier
+
+![alt text][image36]
  
 ### Rev10 Firmware
 [Original DSPIC33FJ64GS606](firmware/PL30/10/DSPIC33FJ64GS606.hex)

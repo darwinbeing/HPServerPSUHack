@@ -105,6 +105,9 @@ The modification mentioned above is not meant to increase the OVP threshold, but
 ### PL30 Current Sense Amplifier
 
 ![alt text][image36]
+Figure above shows a current sense amplifier circuit for high side current measurements based on a Texas Instruments OPA2277 op amp and discrete gain setting resistors.  
+C1,C2,C4 Filter capacitors, GAIN=400.
+
  
 ### Rev10 Firmware
 [Original DSPIC33FJ64GS606](firmware/PL30/10/DSPIC33FJ64GS606.hex)
@@ -150,12 +153,6 @@ The code snippet above is PL30 Output set to 14.28V
 
 **PL42 Rev01 Firmware With Output 14.28V**  
 * [PL42 DSPIC33FJ64GS606 Output 14.28V](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
-
-### PL30/PL42 OCP
-![alt text][image26]
-
-By tweaking the potentiometer in the diagram, you can cap the maximum output current of the circuit. And if the range falls short of what you need, you can also swap out the 4.42k(labeled '63B') resistor to get the desired result. Alternatively, you can patch the firmware to limit the maximum output current.  
-The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current $V=\frac{I}{10}$.
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]

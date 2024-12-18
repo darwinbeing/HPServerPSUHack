@@ -28,7 +28,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image16]: ./resources/load_test_voltage.png "Load Test Voltage"
 [image17]: ./resources/load_test_current.png "Load Test Current"
 [image18]: ./resources/PL11_BMW_LoadWithFanMax.png "PL11 Load Test"
-[image19]: ./resources/PL42BMWLoadTest.jpg "PL42 Load Test"
+[image19]: ./resources/PD52BMWLoadTest.png "PD52 Load Test"
 [image20]: ./resources/PL11_T3_Compensator.png "PL11 T3 Compensator"
 [image21]: ./resources/PL11_OVP.png "PL11 OVP"
 [image22]: ./resources/PLXXBMWLoadTest.jpg "PLXX BMW Load Test"

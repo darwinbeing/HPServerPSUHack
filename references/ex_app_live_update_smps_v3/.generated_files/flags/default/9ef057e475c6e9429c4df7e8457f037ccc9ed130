@@ -1,0 +1,1 @@
+ -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-g$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"/Users/litao/Developer/HPServerPSUHack/ex_app_live_update_smps_v3/src/compensator_isr.s

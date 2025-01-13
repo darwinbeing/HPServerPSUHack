@@ -1,0 +1,282 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: ExKsiPi81TmWYWMTs2XhHf/sTJyg1
+ 8A5sU/NHc+X/Rw=
+SHA-256-Digest-Manifest: +x3are3cbbp92u0h/9ZDCWEdyQbzOB1tHIrka9CTIAI=
+Created-By: 1.8.0_91 (Oracle Corporation)
+
+Name: com/microchip/apps/ezbl/Blob.class
+SHA-256-Digest: hlmo1AkVDKmv6qWRgew2RGr9r7cXfrpDKpnrqTAa1QA=
+
+Name: com/microchip/apps/ezbl/EDCReader$BitFieldParamsNameComparator.c
+ lass
+SHA-256-Digest: 4uM2dAbuawiWlQU2lFyTsmZQvWzvmrNEjhdXS5GSKHg=
+
+Name: com/microchip/apps/ezbl/GLDBuilder.class
+SHA-256-Digest: zXCMyBQ9L99NrVbiHopM3VgOEwWhyKmT3qBtakVOoQI=
+
+Name: com/microchip/apps/ezbl/Communicator$1.class
+SHA-256-Digest: jkxNpesUUs4NiNUSr8PJAGgnPa5AmG1qSQ0KeGcRuic=
+
+Name: com/microchip/apps/ezbl/resources/BootloadableRanges.txt
+SHA-256-Digest: 6bQ8zb0Y//nUPNtB5DXtSOsXTTMrusYCxtrao4XAYBY=
+
+Name: com/microchip/apps/ezbl/EDCReader$EZBL_SFR.class
+SHA-256-Digest: qkO3ce1KfXDnnpn28ZzJ/7CZ9M3YuF2Oq9oPh2gcBQo=
+
+Name: com/microchip/apps/ezbl/PCTraceLogger$1.class
+SHA-256-Digest: Nc93Uhlk69tvGN6QgQPjdhOD+njDxmyo0V8OQ/pArlc=
+
+Name: com/microchip/apps/ezbl/Multifunction.class
+SHA-256-Digest: GgxE/kORhjihkDcBhuv7KT/Yp71L3WklW1OfLhquNCo=
+
+Name: com/microchip/apps/ezbl/EZBLState$SpecialConfigFields.class
+SHA-256-Digest: Oc3zAXUb5wKA58VnT3rXhvGJpSMpWZWES1rD6YUgKFc=
+
+Name: com/microchip/apps/ezbl/Bl2b$1.class
+SHA-256-Digest: UhsgTdzV4Izd7yrKjHf4QD/d+J4zm/jIbTHRK4wZRQc=
+
+Name: com/microchip/apps/ezbl/ELFDumpParser.class
+SHA-256-Digest: 3TkTx3F9qIxVSpXAnUmCXyDkXpENDuHOQPjoielcgas=
+
+Name: com/microchip/apps/ezbl/EZBLState.class
+SHA-256-Digest: ZLGQt19tpMpuzfESpjGYBCCA969VIO+juP/hdK8muuc=
+
+Name: com/microchip/apps/ezbl/OSSpecific$Kernel32.class
+SHA-256-Digest: qWB2GX6Uxpe2fb8L4oAqbEF6/7gqZ95PMB4qpzkcoz0=
+
+Name: com/microchip/apps/ezbl/SectionFlags.class
+SHA-256-Digest: NNtePDFpWghM4KNbLh9ZsIi/U6VqVSOAN3yNOLwKXts=
+
+Name: com/microchip/apps/ezbl/Communicator$WriteCOMThread.class
+SHA-256-Digest: yg5Qex4n7c1q7bQLb1Wp3vt+ACDsx908lk7gEBSDkD4=
+
+Name: com/microchip/apps/ezbl/DumpParser.class
+SHA-256-Digest: 0R9SDMl3sK0yOMfXQH35ATEhavqmUTROd+WMnyU678c=
+
+Name: com/microchip/apps/ezbl/EDCReader$BitFieldList.class
+SHA-256-Digest: ijKIqCspEPXZh9kVhmHzgrv6/dSVUHMLNtQA0zpCd/w=
+
+Name: com/microchip/apps/ezbl/PCTraceLogger.class
+SHA-256-Digest: tRND7YANHlUrJFnJovQfyoohi57G8zmJZVJAae1w8iA=
+
+Name: com/microchip/apps/ezbl/CommandAndBuildState.class
+SHA-256-Digest: YdQCdf68Qqk9s8jUZA2wu15KA8p+fMzfPXVK2kb/i5g=
+
+Name: com/microchip/apps/ezbl/ELFDumpParser$PiecewiseParseStates.class
+SHA-256-Digest: XV8z19pR5gqQAYdaLkRXpHvHM9CVK84owg70q7GZ4LY=
+
+Name: com/microchip/apps/ezbl/EDCReader$Programming2$ProgrammingMemori
+ es.class
+SHA-256-Digest: nnTUUVQnO443GdkgZLgvUH+v4vpw2b9maCBGgkbq3Bs=
+
+Name: com/microchip/apps/ezbl/EDCReader$BitFieldParams.class
+SHA-256-Digest: yDGFbCbmlAIR21gg2FPsSlBJR85nu+cfEi4js33LRBU=
+
+Name: com/microchip/apps/ezbl/Main.class
+SHA-256-Digest: G6tbsr8IGrye9ZTle99rT4ECsL2lMIXCL8gvq3V5gRI=
+
+Name: com/microchip/apps/ezbl/SymbolFlags.class
+SHA-256-Digest: NgZg7VC2lPZOPdp6utcqWQjZW3oWD6S44sOXuUR9utg=
+
+Name: com/microchip/apps/ezbl/EDCReader$Programming2$SpecialRange.clas
+ s
+SHA-256-Digest: H3XxCNfXwhAy+tFWcPT2O2CvNsw1Bg+HGO3bRnWTHsc=
+
+Name: com/microchip/apps/ezbl/EDCReader$Programming2$MemoryRange$Memor
+ yRangeIgnoreAddrComparator.class
+SHA-256-Digest: kT47ruNA4wb7IvvZ5Cdb89YcgXD9+ISpuimxr9bJLno=
+
+Name: com/microchip/apps/ezbl/PairWithText.class
+SHA-256-Digest: C8QgPypaos+EZ3xlvRuYJovshlZRfO5XBotDlNPPmxU=
+
+Name: com/microchip/apps/ezbl/ObjDumpFilter.class
+SHA-256-Digest: Y3oMMqdgyCh10gUW2pHAGaEnA/YjYFQL8Qad/w45EN8=
+
+Name: com/microchip/apps/ezbl/resources/DeviceProperties.txt
+SHA-256-Digest: YKd6x+GQtf4IilCcvv5FtYJSo/94ChLOgP4PXaE8uoc=
+
+Name: com/microchip/apps/ezbl/EDCReader$PICDatabase.class
+SHA-256-Digest: xo0/MqBo4uaaw/pmx7oOqFCx1kA6LRW/o7JJIDUHDaY=
+
+Name: com/microchip/apps/ezbl
+SHA-256-Digest: dR+WyCap/n3wjWYEdfHctlI3Gdls9BmN6t1DYXXO+Do=
+
+Name: com/microchip/apps/ezbl/DecodedNode.class
+SHA-256-Digest: NYlpgp3/JfTbtdEpL+JTbxM7ihbCkS6BigeCnjIhbVI=
+
+Name: com/microchip/apps/ezbl/ELFReader$e_machine.class
+SHA-256-Digest: oljgI/6Xk5UZM942sppLWHYThgd771i5aI/04fMQiek=
+
+Name: com/microchip/apps/ezbl/GLDMemories.class
+SHA-256-Digest: Jn60H8lVBhKni8hKFH5tfrSKFfPMELMonnbVZ9Goxcw=
+
+Name: com/microchip/apps/ezbl/resources/GLDMemories.txt
+SHA-256-Digest: v/8s1eHVsRotNDMilOefP2H9hUf9378wLs6SloCHT/E=
+
+Name: com/microchip/apps/ezbl/ELFReader$e_type.class
+SHA-256-Digest: XVLX8IocpY9XtzWRD0ZOoVdC0w+qCkvPi4y6EjR/VD8=
+
+Name: com/microchip/apps/ezbl/MemoryRegion.class
+SHA-256-Digest: zPpaU/iFrWbnCz29M5+Z6THCFVGPlIrqSrBWES6ooF8=
+
+Name: com/microchip/apps/ezbl/Section.class
+SHA-256-Digest: psjgiZjtOdJ794k1lrQUuOXWCTFgGhbk3cxhBh1RcBY=
+
+Name: com/microchip/apps/ezbl/EDCReader$BitField.class
+SHA-256-Digest: /X4P5XgDnOP5mWCS/UdUc31luIYTlPofOqVa+7A2Uhc=
+
+Name: com/microchip/apps/ezbl/EDCReader$Programming2$MemoryRange.class
+SHA-256-Digest: Q0dyabAYk5sYyajvJRcMTfBrzviNnXZmwsM5/1SQ7eE=
+
+Name: com/microchip/apps/ezbl/DecodedNodeList.class
+SHA-256-Digest: kGvMNV3YtGOrlBnGLVVqQ/6I5iaHn1HPOp3nUIc8aKo=
+
+Name: com/microchip/apps/ezbl/PICXMLLoader.class
+SHA-256-Digest: gGw2wsEvTf/uxmQToCHnG3R4bRkQAzsTR3kJ9N0IFqM=
+
+Name: com/microchip/apps/ezbl/EZBLState$CPUClass.class
+SHA-256-Digest: CA3rCx7tmjBDrQ/d7toxuDgldwN2w50jlhZiBWHfCNU=
+
+Name: com/microchip/apps/ezbl/ELFReader$SectionHeader.class
+SHA-256-Digest: u8pTR9gUeJf3gTZESMpU1Q9TNCVZSMADFRaORXXEswo=
+
+Name: com/microchip/apps/ezbl/EDCReader$SFRList.class
+SHA-256-Digest: o25Oo2TE3a3CEy3ttZUPbkenB0ECgvhyj8pPCU6htLM=
+
+Name: com/microchip/apps/ezbl/InterruptVector.class
+SHA-256-Digest: VGvtX7ugsL1eX4JdSPAtPaSBnWY/aQTOgI2qVP8uEwA=
+
+Name: com/microchip/apps/ezbl/DSPIC33EPPLL.class
+SHA-256-Digest: 8F2a1k/3xoNOjWxlrPWvmaaHPcUJPTUfP2WEvUqr62U=
+
+Name: com/microchip/apps/ezbl/SymbolNameComparator.class
+SHA-256-Digest: QriRJV0Yg76IOQwM8oEmc1+TBN2o4JGJpLSX8Z392WM=
+
+Name: com/microchip/apps/ezbl/TextBlock.class
+SHA-256-Digest: xhJiOr7QzSK+GzUL+qynrraWuJ7MsGoTNmSnVcVKdGo=
+
+Name: com/microchip/apps/ezbl/resources/Interrupts.txt
+SHA-256-Digest: lwrNZg8npGIGfGK2Kxv7m6OTFNQkpIDytJD92DiL9K8=
+
+Name: com/microchip/apps/ezbl/resources/DeviceMemories.txt
+SHA-256-Digest: PzVsuHWsSR29XiCpHj7/L9l+fkEU/BZHykqlKdslfKQ=
+
+Name: com/microchip/apps/ezbl/EDCReader$FieldsOnGenericDevice.class
+SHA-256-Digest: hhCyibZB7lTh3aWLgaXNDNxBdRQVW8nlZGxwDPEr5a4=
+
+Name: com/microchip/apps/ezbl/Multifunction$SimpleFileFilter.class
+SHA-256-Digest: GdZWRsIXDGtyT7IWTGA+1Qk+4V05BkS86ApJywsIJlM=
+
+Name: com/microchip/apps/ezbl/SQLitePartDatabase$MemoryTable.class
+SHA-256-Digest: xl5HmzMXXBvaCgM2p7aJkYORPp+HmD6KquGvIosQQmM=
+
+Name: com/microchip/apps/ezbl/Communicator.class
+SHA-256-Digest: 1jKQ0UOEsRbV6Xa/Pjr/SWdRdiG1LRiZihRXxC8gBOk=
+
+Name: com/microchip/apps/ezbl/EDCReader$Programming2.class
+SHA-256-Digest: ElW4YWSFR7il1qehWKQkusxtRhd+f4cjK7LUQAHG3RQ=
+
+Name: com/microchip/apps/ezbl/PairWithText$PIC32MMBootFirstAddrCompara
+ tor.class
+SHA-256-Digest: 25FyfKtw/QUti/1zjn/zwI77/Rgpj/0pTFIOHa/ddhk=
+
+Name: com/microchip/apps/ezbl/SQLitePartDatabase.class
+SHA-256-Digest: iAgIukIG47Mvp2YIsD3CIQmGuDDKk1Tw2vvN/9zbYkI=
+
+Name: com/microchip/apps/ezbl/resources/DecodedConfigMemories.txt
+SHA-256-Digest: bodZIY85e1ZdCx95EIvSwpV+xirDGhgG53CCUnbaU1g=
+
+Name: com/microchip/apps/ezbl/MakeEditor.class
+SHA-256-Digest: Y36q+Fp4WTTTBxH+j5JZxdsQ7kpg8rZ9sXteOvQ6bUE=
+
+Name: com/microchip/apps/ezbl/COMResult.class
+SHA-256-Digest: XZfSSJDCBJX+pVU3f4/Zbf8IK3u8ORNWxlo/B8gm2OY=
+
+Name: com/microchip/apps/ezbl/ELFDumpParser$1.class
+SHA-256-Digest: vCk6mkDzC8qWWc27Eu5pI49jKGTSHJsJVc0jn6tVCg4=
+
+Name: com/microchip/apps/ezbl/AddressRange.class
+SHA-256-Digest: 9dgpWEqFG4NcQaTHPby9+EO9XCxfvabz09kWxosmZ6M=
+
+Name: com/microchip/apps/ezbl/MemoryRegion$MemType.class
+SHA-256-Digest: G5PBgEt+80fRpCmT1AY/idzjML2NFfv3/ozFj+GHPOM=
+
+Name: com/microchip/apps/ezbl/Symbol.class
+SHA-256-Digest: 1oiflnBg4qChu9N04Q1Y7sSIaJTk8ApOaoIvD/fUiEk=
+
+Name: com/microchip/apps/ezbl/SQLitePartDatabase$1.class
+SHA-256-Digest: 9Ah3b0+wwaUH+/QH78Ie9knkl6BrMW4XzRwrLarNaMw=
+
+Name: com/microchip/apps/ezbl/Blob$HexDecoderState.class
+SHA-256-Digest: p19bVgSxUc9mUTc/51b564NAbVDmfY4kdXrdXGWYG2o=
+
+Name: com/microchip/apps/ezbl/EDCReader$BitFieldParamsAddrComparator.c
+ lass
+SHA-256-Digest: Oyehtr2Nwv05ZtCpep0a+VPiZ5CIbAhplfKgToQZKmQ=
+
+Name: com/microchip/apps/ezbl/Blobber.class
+SHA-256-Digest: LTy5PuTHH4dmmIZGrlsDr+Hm7re2yiztDsgtScPh4nA=
+
+Name: com/microchip/apps/ezbl/ELFReader.class
+SHA-256-Digest: FI6VjF2LanxmdtAcTU3EbTsGtXE0/NMUswrYAq2RdNM=
+
+Name: com/microchip/apps/ezbl/Bl2b$HexDecoderState.class
+SHA-256-Digest: QiJY3rxsO3eUZECnP74re+10mxWL+kOnBYhEg6YSw+A=
+
+Name: com/microchip/apps/ezbl/SQLitePartDatabase$CachedSFRs.class
+SHA-256-Digest: gV2hCgpq44IcTUuHYdWf77kopHyBmVznIMT4QeKbUtA=
+
+Name: com/microchip/apps/ezbl/EDCReader.class
+SHA-256-Digest: MH/qPHBHo2dY7XG+PezzQnDGJ2A2P5+x+sxoKwD/Eoc=
+
+Name: com/microchip/apps/ezbl/Communicator$ReadCOMThread.class
+SHA-256-Digest: 2oT4BxR4N9FXf1D+M58wYXlc/+1k6vfZ4yi5f9x21qw=
+
+Name: com/microchip/apps/ezbl/EDCReader$SFRAlternates.class
+SHA-256-Digest: 6jBFLpoZpJu4shwUDI4cYk+jvVrzj48Q327P051tVFI=
+
+Name: com/microchip/apps/ezbl/Multifunction$StringList.class
+SHA-256-Digest: xXnNkmmWF0vnfi5DG8brDi+D+2RpJlnzSLUG+m0GTZU=
+
+Name: com/microchip/apps/ezbl/EDCReader$Programming2$NVMOp.class
+SHA-256-Digest: wAXcmst4EjR/OXcxSLFWbvIy4cVqVIj0jkRfrHryOuw=
+
+Name: com/microchip/apps/ezbl/Blob$1.class
+SHA-256-Digest: 1Z+GIGv8VGkzI/qFKoZzYJ8Apf1W3CsODCWeDJ8psvQ=
+
+Name: com/microchip/apps/ezbl/PICNameComparator.class
+SHA-256-Digest: JDyn5DegQj2U3jQb+libYKtMYCkLHD1tgwVPl2jekl8=
+
+Name: com/microchip/apps/ezbl/EDCReader$DeviceProductLines.class
+SHA-256-Digest: gDhsFIY0Bonhl97HG71zfp/TDaCJavuA3mwgeaxzMaE=
+
+Name: com/microchip/apps/ezbl/ELFReader$sh_type.class
+SHA-256-Digest: wSOltJ3Ygo/Ersszq5QZOaS5jHKY5fhwlUiN2x9l7Sc=
+
+Name: com/microchip/apps/ezbl/EDCProperties.class
+SHA-256-Digest: h8DXYZbiS5BK1sDrRMLv7iXk4FHio5WlRLCUuA+RxwM=
+
+Name: com/microchip/apps/ezbl/EDCReader$DeviceRegs.class
+SHA-256-Digest: PHuB106yfKT5aZMah5/998kpXybuWacTwP79IuX9VWg=
+
+Name: com/microchip/apps/ezbl/SFRNameComparator.class
+SHA-256-Digest: BxU+ljRxL8EwBVavvoG4AnariuWxdJyP79HfUUY+wZA=
+
+Name: com/microchip/apps/ezbl/MemoryRegion$Partition.class
+SHA-256-Digest: fViiMaythfcvR4CCuPmqDn/FLXCTu0QNFfrcu1s3K+Q=
+
+Name: com/microchip/apps/ezbl/Bl2b.class
+SHA-256-Digest: 2DDkxRLA37kc7LvtaaX/V78NaPvUs4Ipop2/d2rqRWY=
+
+Name: com/microchip/apps/ezbl/EDCReader$PICDevice.class
+SHA-256-Digest: XGIvXLcbBuVeMkMGXub83aMQXAyTktLL0een4eqRjEI=
+
+Name: com/microchip/apps/ezbl/OSSpecific.class
+SHA-256-Digest: MszXTu/PLZFfxlDuqmNFnhO/5FWS+EXINmx68aBLRGY=
+
+Name: com/microchip/apps/ezbl/DataRecord.class
+SHA-256-Digest: CH+DMvQ/NHGDC98uIT1vKd9Fb7M1KYCYOuqjlx3VJ14=
+
+Name: com/microchip/apps/ezbl/ELFReader$ELFHeader.class
+SHA-256-Digest: ezYUNSbx9Oy7L0u5vxdPgsxDC7j2LzrkR/uRHKM508U=
+

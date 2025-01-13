@@ -1,0 +1,1 @@
+ -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG   -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,,-g$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"/Users/litao/Developer/HPServerPSUHack/ex_app_live_update_smps_v3/src/compensator_isr.s

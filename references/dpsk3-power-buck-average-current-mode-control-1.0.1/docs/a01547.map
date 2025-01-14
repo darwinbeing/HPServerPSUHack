@@ -1,0 +1,4 @@
+<map id="CPU_RCON_s" name="CPU_RCON_s">
+<area shape="rect" id="node1" title="Data structure for RCON status capturing." alt="" coords="18,233,125,516"/>
+<area shape="rect" id="node2" href="$a01576.html" title="Global data structure for trap event capturing." alt="" coords="5,5,137,185"/>
+</map>

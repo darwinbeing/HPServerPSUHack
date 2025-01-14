@@ -1,0 +1,4 @@
+<map id="drv_BuckConverter_Stop" name="drv_BuckConverter_Stop">
+<area shape="rect" id="node1" title="This function stop the buck converter opration." alt="" coords="207,5,369,32"/>
+<area shape="rect" id="node2" href="$a00489.html#gaa7d413f62f7b5f25d152cc12354241f0" title="This function calls the buck converter device driver function stopping the power supply." alt="" coords="5,5,159,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="TRAP_FLAGS_s" name="TRAP_FLAGS_s">
+<area shape="rect" id="node1" title="Defines the Trap Flag for primary and secondary vectors." alt="" coords="11,233,131,457"/>
+<area shape="rect" id="node2" href="$a01576.html" title="Global data structure for trap event capturing." alt="" coords="5,5,137,185"/>
+</map>

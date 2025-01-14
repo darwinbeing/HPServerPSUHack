@@ -1,0 +1,50 @@
+/*----------------------------------------------------------------------------*/
+/* TASK LAYER: Power Control Application Layer Task Documentation */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup app-layer-power-control Power Control Application Layer 
+@ingroup task-layer
+@details 
+  The power control application layer is the proprietary user code used to configure the generic
+  power controller device driver defined in dev_buck_typedef.h. This application layer further provides
+  a subset of function calls allowing external software functions to control and monitor the processes
+  of the power control device driver, such as the system-wide fault monitor or communication drivers.
+
+@defgroup app-layer-power-control-functions-public Public Functions
+@ingroup app-layer-power-control
+@brief Public functions of the application layer of the power control task
+@details 
+  The power control application layer is the proprietary user code used to configure the generic
+  power controller device driver defined in dev_buck_typedef.h. This application layer further provides
+  a subset of function calls allowing external software functions to control and monitor the processes
+  of the power control device driver, such as the system-wide fault monitor or communication drivers.
+
+@defgroup app-layer-power-control-properties-public Public Properties
+@ingroup app-layer-power-control
+@brief Public properties of the application layer of the power control task
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the application layer of
+  the power control task.
+
+@defgroup app-layer-power-control-events Events and Interrupts
+@ingroup app-layer-power-control
+@brief Public events of the application layer of the power control task
+@details 
+  This is the event level of the first application layer task. 
+
+@defgroup app-layer-power-control-functions-private Private Functions
+@ingroup app-layer-power-control
+@brief Private functions of the application layer of the power control task
+@details The private functions of the power control application layer are used to configure the generic
+  power controller device driver defined in dev_buck_typedef.h as well as to provide additional functions
+  required by the specific hardware design.
+
+@defgroup app-layer-power-control-properties-private Private Properties
+@ingroup app-layer-power-control
+@brief Public properties of the application layer of the power control task
+@details This is the detailed description of public variables, data types,
+enumerations, defines and macros of the application layer of
+the power control task.
+@note This task doesn't have any private properties.
+*/

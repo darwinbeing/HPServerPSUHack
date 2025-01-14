@@ -1,0 +1,4 @@
+<map id="p33c_PwmModule_Initialize" name="p33c_PwmModule_Initialize">
+<area shape="rect" id="node1" title="Initializes the PWM base module by resetting all its registers to default." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$a00381.html#ga8075fd40f867be8f42bb806622bd91bd" title="Writes a user&#45;defined configuration to the PWM base module registers." alt="" coords="236,5,439,32"/>
+</map>

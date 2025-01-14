@@ -1,0 +1,5 @@
+<map id="BUCK_GPIO_INSTANCE_s" name="BUCK_GPIO_INSTANCE_s">
+<area shape="rect" id="node1" title="GPIO instance of the converter control GPIO." alt="" coords="5,403,188,539"/>
+<area shape="rect" id="node2" href="$a01584.html" title="GPIO instance of the converter control GPIO." alt="" coords="6,263,187,355"/>
+<area shape="rect" id="node3" href="$a01588.html" title="BUCK control &amp; monitoring data structure." alt="" coords="17,5,176,215"/>
+</map>

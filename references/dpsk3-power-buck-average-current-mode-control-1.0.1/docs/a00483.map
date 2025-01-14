@@ -1,0 +1,8 @@
+<map id="Debugging LED Application Layer" name="Debugging LED Application Layer">
+<area shape="rect" id="node1" href="$a00566.html" title="Task Layer." alt="" coords="5,80,128,105"/>
+<area shape="rect" id="node5" title=" " alt="" coords="176,73,356,113"/>
+<area shape="rect" id="node2" href="$a00486.html" title="Private functions of the application layer of the debugging LED task." alt="" coords="405,5,527,31"/>
+<area shape="rect" id="node3" href="$a00485.html" title="Public properties of the application layer of the debugging LED task." alt="" coords="405,55,527,80"/>
+<area shape="rect" id="node4" href="$a00487.html" title="Private properties of the application layer of the debugging LED task." alt="" coords="404,104,528,129"/>
+<area shape="rect" id="node6" href="$a00484.html" title="Public functions of the application layer of the debugging LED task." alt="" coords="407,153,525,179"/>
+</map>

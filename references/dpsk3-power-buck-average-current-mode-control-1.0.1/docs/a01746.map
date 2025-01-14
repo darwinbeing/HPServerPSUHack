@@ -1,0 +1,4 @@
+<map id="PUSH_BUTTON_STATUS_s" name="PUSH_BUTTON_STATUS_s">
+<area shape="rect" id="node1" title="Status word of the push button driver." alt="" coords="5,5,192,171"/>
+<area shape="rect" id="node2" href="$a01760.html" title="Push button function driver data object." alt="" coords="5,233,192,384"/>
+</map>

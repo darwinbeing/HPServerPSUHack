@@ -1,0 +1,5 @@
+<map id="buckPWM_Suspend" name="buckPWM_Suspend">
+<area shape="rect" id="node1" title="This function disables the PWM generator IOs." alt="" coords="148,31,289,57"/>
+<area shape="rect" id="node2" href="$a00507.html#ga47717557335be2404de223606ccf829a" title="If this function is called, the state machine is reset to INITIALIZE (URL=State_Initialize)." alt="" coords="9,5,97,32"/>
+<area shape="rect" id="node3" href="$a00507.html#ga493de6f9e2dbb41c2ff6ac082bcf36a1" title="This function resets the buck control operation by re&#45;initiating the control mode,..." alt="" coords="5,56,100,83"/>
+</map>

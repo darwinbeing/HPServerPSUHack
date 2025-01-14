@@ -1,0 +1,4 @@
+<map id="buckPWM_Start" name="buckPWM_Start">
+<area shape="rect" id="node1" title="This function enables the buck PWM operation." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$a00381.html#ga55e525c7ac54a365ab6dad558ec17f0b" title="Returns the PWM generator index." alt="" coords="172,5,383,32"/>
+</map>

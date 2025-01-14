@@ -1,0 +1,7 @@
+<map id="appPushButton_Initialize" name="appPushButton_Initialize">
+<area shape="rect" id="node1" title="Initializes the USER push button on DPSK3." alt="" coords="5,93,171,120"/>
+<area shape="rect" id="node2" href="$a00541.html#ga3966fddf4ec29e64c6d51a93eee8706f" title="Push button event raised at the &quot;pressed&quot; transition." alt="" coords="219,5,439,32"/>
+<area shape="rect" id="node3" href="$a00541.html#ga6192986e06dbca144461c0315a2a100f" title="Push button event raised at the &quot;is long pressed&quot; detection." alt="" coords="235,57,423,98"/>
+<area shape="rect" id="node4" href="$a00541.html#ga13f736396ad1222ff5cbe35947bd60ac" title="Push button event raised at the &quot;not pressed&quot; transition." alt="" coords="227,123,431,149"/>
+<area shape="rect" id="node5" href="$a00544.html#gaa3ce9c320a37ebc6e1ae113c82e68747" title="Initializes the push button device driver." alt="" coords="245,173,412,200"/>
+</map>

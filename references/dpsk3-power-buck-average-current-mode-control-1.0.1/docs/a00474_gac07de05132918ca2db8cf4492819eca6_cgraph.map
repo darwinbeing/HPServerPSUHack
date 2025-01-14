@@ -1,0 +1,8 @@
+<map id="dev_Lcd_WriteString" name="dev_Lcd_WriteString">
+<area shape="rect" id="node1" title="Writes a complete string on the LCD screen." alt="" coords="5,31,147,57"/>
+<area shape="rect" id="node2" href="$a00474.html#ga3cb1303cba012af043a87af0bcab16d8" title="Writes a character on the LCD screen." alt="" coords="195,31,329,57"/>
+<area shape="rect" id="node3" href="$a00474.html#ga0bff8adf9ea1196bdd69b3e47b2b77cd" title="Clears the LC Display Screen." alt="" coords="384,5,491,32"/>
+<area shape="rect" id="node6" href="$a00474.html#ga5c431635cb94750b2f6e938d7f1f0cf1" title="Sets the cursor position to the given x&#45; and y&#45;coordinates." alt="" coords="377,56,497,83"/>
+<area shape="rect" id="node4" href="$a00479.html#ga3e045335a3463f6a53e4fd91b50bb0ca" title="Sends a command to the LCD controller." alt="" coords="545,31,724,57"/>
+<area shape="rect" id="node5" href="$a00481.html#ga50b8734fca19fc75dd778a9902c63082" title="Sends data through the SPI interface to the LCD controller." alt="" coords="772,31,943,57"/>
+</map>

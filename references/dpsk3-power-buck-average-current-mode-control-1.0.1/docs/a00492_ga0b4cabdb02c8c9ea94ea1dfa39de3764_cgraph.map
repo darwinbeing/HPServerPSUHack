@@ -1,0 +1,11 @@
+<map id="appPowerSupply_ControllerInitialize" name="appPowerSupply_ControllerInitialize">
+<area shape="rect" id="node1" title="This function initializes the control system feedback loop objects." alt="" coords="5,175,187,217"/>
+<area shape="rect" id="node2" href="$a00531.html#ga3d32e66188691f64885c2223f6e08d20" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="241,5,352,32"/>
+<area shape="rect" id="node3" href="$a00531.html#gaade67bca1738eccdbf511c980e79339f" title="Prototype of the Assembly routine &#39;_i_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="407,31,505,57"/>
+<area shape="rect" id="node4" href="$a00531.html#ga15932f07e150c94059c8dc35566dfa36" title="Prototype of the Assembly routine &#39;_i_loop_Precharge&#39; loading user&#45;defined values into the NPNZ16b co..." alt="" coords="235,107,358,133"/>
+<area shape="rect" id="node5" href="$a00531.html#gaeb19529055f7bef1a4817c3005605c23" title="Prototype of the Assembly feedback control loop routine helping to call the i_loop controller from C&#45;..." alt="" coords="245,157,349,184"/>
+<area shape="rect" id="node6" href="$a00531.html#ga62d45a18f3dd47fa691fbb463f90e051" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="241,208,353,235"/>
+<area shape="rect" id="node7" href="$a00531.html#gabb35e824b8586b680f54d59975ada3c7" title="Prototype of the Assembly routine &#39;_v_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="407,233,505,260"/>
+<area shape="rect" id="node8" href="$a00531.html#ga3cdf7d86ab440015768706f04bd588e9" title="Prototype of the Assembly routine &#39;_v_loop_Precharge&#39; loading user&#45;defined values into the NPNZ16b co..." alt="" coords="235,309,359,336"/>
+<area shape="rect" id="node9" href="$a00531.html#gab8180f1cb973d694be5caffaec3ce940" title="Prototype of the Assembly feedback control loop routine helping to call the v_loop controller from C&#45;..." alt="" coords="243,360,350,387"/>
+</map>

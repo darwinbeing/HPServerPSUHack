@@ -1,0 +1,4 @@
+<map id="buckPWM_Resume" name="buckPWM_Resume">
+<area shape="rect" id="node1" title="This function resumes the buck PWM operation." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$a00381.html#ga55e525c7ac54a365ab6dad558ec17f0b" title="Returns the PWM generator index." alt="" coords="192,5,403,32"/>
+</map>

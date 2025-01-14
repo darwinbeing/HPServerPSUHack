@@ -1,0 +1,4 @@
+<map id="Buck Converter" name="Buck Converter">
+<area shape="rect" id="node1" title="PWM peripheral output pins, control signals and register assignments used to drive the buck converter..." alt="" coords="231,5,341,31"/>
+<area shape="rect" id="node2" href="$a00413.html" title="PWM peripheral output pins, control signals and register assignments." alt="" coords="5,5,183,31"/>
+</map>

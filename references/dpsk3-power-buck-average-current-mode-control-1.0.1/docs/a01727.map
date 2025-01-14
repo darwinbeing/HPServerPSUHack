@@ -1,0 +1,4 @@
+<map id="NPNZ_GAIN_CONTROL_s" name="NPNZ_GAIN_CONTROL_s">
+<area shape="rect" id="node1" title="Adaptive Gain Control Modulation Parameters." alt="" coords="5,248,181,369"/>
+<area shape="rect" id="node2" href="$a01736.html" title="Global NPNZ controller data object." alt="" coords="23,5,164,200"/>
+</map>

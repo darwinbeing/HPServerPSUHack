@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$a01520.html" title="This data structure is a collection of data structures for fault handling." alt="" coords="5,56,139,83"/>
+<area shape="rect" id="node2" href="$a01512.html" title="This data structure defines the data object which will be monitored by the fault handler." alt="" coords="187,5,375,32"/>
+<area shape="rect" id="node3" href="$a01516.html" title="This data structure defines the fault monitor event response object." alt="" coords="187,56,375,83"/>
+<area shape="rect" id="node4" href="$a01500.html" title="This data structure defines the fault object status." alt="" coords="195,107,367,133"/>
+</map>

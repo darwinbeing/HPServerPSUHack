@@ -1,0 +1,515 @@
+
+/**
+@defgroup hardware-id-macro Hardware Version ID
+@ingroup abstraction-layer
+@brief Global identified to the hardware version used
+
+@details
+ The main purpose of a hardware abstraction layer is to provide one central point 
+ in complex firmware architectures where hardware dependencies can be specified, 
+ signal scalings can be defined and specific chip resources can be assigned to support/
+ connect generic software functions to the hardware. 
+
+ This central definitions allow fast modifications and optimizations but also support 
+ fast code migration between different hardware platforms. Thus, fast adaptation of new 
+ hardware can be achieved by modifying this set of centralized definitions. 
+
+ By including a hardware abstraction header file in a project results in an automated 
+ adaptation of all parameters available. To ensure no conflicts occur, each hardware 
+ abstraction layer header file needs a unique identifier. This unique identifier is provided
+ by the so-called Hardware Version ID.
+*/
+
+//Abstraction Layer Defines index
+/**
+@defgroup device-abstraction Microcontroller Device Abstraction
+@ingroup abstraction-layer 
+@brief Declarations of fundamental microcontroller device parameters
+
+@details
+ This section is used to define device specific parameters like ADC reference and
+ resolution, main execution clock frequency and peripheral time base settings. 
+ All parameters are defined using physical quantities. Pre-compiler macros are used 
+ to convert physical values into binary (integer) numbers to be written to variables and 
+ SFRs.
+
+@defgroup device-abstraction-settings User Settings
+@ingroup device-abstraction
+@brief Parameter definitions using physical quantities
+
+@defgroup device-abstraction-macros Conversion Macros
+@ingroup device-abstraction
+@brief Conversion macros converting physical quantities of parameters into binary (integer) 
+       numbers for registers and variables
+*/
+
+// State Machine Parameter Declarations 
+/**
+@defgroup state-machine State Machine Settings
+@ingroup abstraction-layer 
+@brief Declaration of global state-machine parameters
+@details
+ This section is used to set global state-machine settings such as the main execution call interval.
+ All parameters are declared using physical quantities. Pre-compiler macros are used to convert user 
+ settings into binary (integer) numbers to be written to SFRs and variables.
+
+@defgroup state-machine-settings User Settings
+@ingroup state-machine
+@brief Parameter definitions using physical quantities
+
+@defgroup state-machine-macros Conversion Macros
+@ingroup state-machine
+@brief Conversion macros converting physical quantities of parameters into binary (integer) 
+       numbers for registers and variables
+ 
+@defgroup state-machine-mcal Device Peripheral Assignments
+@ingroup state-machine
+@brief Assignment of microcontroller device specific chip-resources to circuit functions and signals
+ 
+*/
+
+//Startup Timing Declarations
+/**
+@defgroup startup-timing Startup Timing Settings
+@ingroup abstraction-layer
+@brief Declaration of startup timing periods
+
+@defgroup startup-timing-settings User Settings
+@ingroup startup-timing
+@brief User-declaration of startup timing periods using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup startup-timing-settings-buck Buck Converter
+@ingroup startup-timing-settings
+@brief User-declaration of startup timing periods of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup startup-timing-settings-boost Boost Converter
+@ingroup startup-timing-settings
+@brief User-declaration of startup timing periods of the boost converter using physical quantities
+@endcond
+
+@defgroup startup-timing-macros Conversion Macros
+@ingroup startup-timing
+@brief Conversion macros for user-declarations of startup timing periods
+
+@cond INCLUDE_BUCK
+@defgroup startup-timing-macros-buck Buck Converter
+@ingroup startup-timing-macros
+@brief Conversion macros for user-declarations of startup timing periods of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup startup-timing-macros-boost Boost Converter
+@ingroup startup-timing-macros
+@brief Conversion macros for user-declarations of startup timing periods of the boost converter
+@endcond
+
+*/
+ 
+//Fault Response Declarations
+/**
+@defgroup fault-response Fault Response Settings
+@ingroup abstraction-layer
+@brief Declaration of fault object trip and recovery delays
+
+@defgroup fault-response-settings User Settings
+@ingroup fault-response
+@brief User-declaration of fault object trip and recovery delays using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup fault-response-settings-buck Buck Converter
+@ingroup fault-response-settings
+@brief User-declaration of fault object trip and recovery delays of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup fault-response-settings-boost Boost Converter
+@ingroup fault-response-settings
+@brief User-declaration of fault object trip and recovery delays of the boost converter using physical quantities
+@endcond
+
+@defgroup fault-response-macros Conversion Macros
+@ingroup fault-response
+@brief Conversion macros for user declarations of fault object trip and recovery delays
+
+@cond INCLUDE_BUCK
+@defgroup fault-response-macros-buck Buck Converter
+@ingroup fault-response-macros
+@brief Conversion macros for user declarations of fault object trip and recovery delays of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup fault-response-macros-boost Boost Converter
+@ingroup fault-response-macros
+@brief Conversion macros for user declarations of fault object trip and recovery delays of the boost converter
+@endcond
+
+*/
+
+//PWM Declarations
+/**
+@defgroup pwm-fundamentals PWM Settings
+@ingroup abstraction-layer
+@brief Declaration of fundamental PWM parameters
+ 
+@details
+ This section defines fundamental PWM settings required for the interleaved buck converter
+ of the Digital Power Starter Kit 3. This design requires one PWM generator, generating a
+ complementary, fixed frequency PWM waveform to commutate the switching nodes of the synchronous 
+ buck converter topology. A second PWM channel is used to commutate the switch node of the
+ asynchronous boost converter using a single-ended PWM output.
+ 
+ These settings are determined by the hardware pinout and the target device used. Users can modify 
+ high level parameters such as PWM switching frequency and dead times by using physical quantities. 
+ Pre-compiler macros are used to automatically convert physical values into binary (integer) numbers
+ at compile time to be written to variables and/or Special Function Registers (SFR) at runtime.
+ 
+ This section is also used to assign peripheral instances to the device pins used as PWM generator 
+ outputs. This includes timing parameter registers, interrupt sources, ADC trigger signals and 
+ output pin control registers.
+
+@defgroup pwm-settings User Settings
+@ingroup pwm-fundamentals
+@brief Parameter definitions using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup pwm-settings-buck Buck Converter
+@ingroup pwm-settings
+@brief PWM parameter definitions of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup pwm-settings-boost Boost Converter
+@ingroup pwm-settings
+@brief PWM parameter definitions of the boost converter using physical quantities
+@endcond
+
+
+@defgroup pwm-macros Conversion Macros
+@ingroup pwm-fundamentals
+@brief Conversion macros converting physical quantities of parameters into binary (integer) 
+       numbers for registers and variables
+
+@cond INCLUDE_BUCK
+@defgroup pwm-macros-buck Buck Converter
+@ingroup pwm-macros
+@brief Conversion macros converting physical quantities of PWM parameters of the buck converter  
+       into binary (integer) numbers for registers and variables
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup pwm-macros-boost Boost Converter
+@ingroup pwm-macros
+@brief Conversion macros converting physical quantities of PWM parameters of the boost converter  
+       into binary (integer) numbers for registers and variables
+@endcond
+
+@defgroup pwm-mcal Microcontroller Abstraction
+@ingroup pwm-fundamentals
+@brief PWM peripheral output pins, control signals and register assignments
+@details
+ In this section generic labels are assigned to dedicated device pins and peripheral 
+ registers of PWM generators used to commutate the power supply plant switching node. 
+ These settings allow the fast re-assignments of feedback signals in case of hardware 
+ changes and make the code more readable.
+
+@cond INCLUDE_BUCK
+@defgroup pwm-mcal-buck Buck Converter
+@ingroup pwm-mcal
+@brief PWM peripheral output pins, control signals and register assignments used to drive the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup pwm-mcal-boost Boost Converter
+@ingroup pwm-mcal
+@brief PWM peripheral output pins, control signals and register assignments used to drive the boost converter
+@endcond
+
+*/
+ 
+//Input Voltage Feedback Declarations
+/**
+@defgroup input-voltage-feedback Input Voltage Feedback
+@ingroup abstraction-layer
+@brief Declaration of input voltage feedback parameters
+ 
+@defgroup input-voltage-feedback-settings User Settings
+@ingroup input-voltage-feedback
+@brief User-declaration of input voltage feedback parameters using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup input-voltage-feedback-settings-buck Buck Converter
+@ingroup input-voltage-feedback-settings
+@brief User-declaration of input voltage feedback parameters of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup input-voltage-feedback-settings-boost Boost Converter
+@ingroup input-voltage-feedback-settings
+@brief User-declaration of input voltage feedback parameters of the boost converter using physical quantities
+@endcond
+
+@defgroup input-voltage-feedback-macros Conversion Macros
+@ingroup input-voltage-feedback
+@brief Conversion macros for user-declarations of input voltage feedback parameters
+
+@cond INCLUDE_BUCK
+@defgroup input-voltage-feedback-macros-buck Buck Converter
+@ingroup input-voltage-feedback-macros
+@brief Conversion macros for user-declarations of input voltage feedback parameters of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup input-voltage-feedback-macros-boost Boost Converter
+@ingroup input-voltage-feedback-macros
+@brief Conversion macros for user-declarations of input voltage feedback parameters of the boost converter
+@endcond
+
+@defgroup input-voltage-feedback-mcal Microcontroller Abstraction
+@ingroup input-voltage-feedback
+@brief Device analog input pin, register and interrupt vector assignments of input voltage feedback signal(s)
+
+@cond INCLUDE_BUCK
+@defgroup input-voltage-feedback-mcal-buck Buck Converter
+@ingroup input-voltage-feedback-mcal
+@brief Device analog input pin, register and interrupt vector assignments of input voltage feedback signal(s) of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup input-voltage-feedback-mcal-boost Boost Converter
+@ingroup input-voltage-feedback-mcal
+@brief Device analog input pin, register and interrupt vector assignments of input voltage feedback signal(s) of the boost converter
+@endcond
+
+*/
+ 
+//Output Voltage Feedback Declarations
+/**
+@defgroup output-voltage-feedback Output Voltage Feedback
+@ingroup abstraction-layer
+@brief Declaration of output voltage feedback parameters
+ 
+@defgroup output-voltage-feedback-settings User Settings
+@ingroup output-voltage-feedback
+@brief User-declaration of output voltage feedback parameters using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup output-voltage-feedback-settings-buck Buck Converter
+@ingroup output-voltage-feedback-settings
+@brief User-declaration of output voltage feedback parameters of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup output-voltage-feedback-settings-boost Boost Converter
+@ingroup output-voltage-feedback-settings
+@brief User-declaration of output voltage feedback parameters of the boost converter using physical quantities
+@endcond
+
+@defgroup output-voltage-feedback-macros Conversion Macros
+@ingroup output-voltage-feedback
+@brief Conversion macros for user-declarations of output voltage feedback parameters
+
+@cond INCLUDE_BUCK
+@defgroup output-voltage-feedback-macros-buck Buck Converter
+@ingroup output-voltage-feedback-macros
+@brief Conversion macros for user-declarations of output voltage feedback parameters of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup output-voltage-feedback-macros-boost Boost Converter
+@ingroup output-voltage-feedback-macros
+@brief Conversion macros for user-declarations of output voltage feedback parameters of the boost converter
+@endcond
+
+@defgroup output-voltage-feedback-mcal Microcontroller Abstraction
+@ingroup output-voltage-feedback
+@brief Device analog output pin, register and interrupt vector assignments of output voltage feedback signal(s)
+
+@cond INCLUDE_BUCK
+@defgroup output-voltage-feedback-mcal-buck Buck Converter
+@ingroup output-voltage-feedback-mcal
+@brief Device analog output pin, register and interrupt vector assignments of output voltage feedback signal(s) of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup output-voltage-feedback-mcal-boost Boost Converter
+@ingroup output-voltage-feedback-mcal
+@brief Device analog output pin, register and interrupt vector assignments of output voltage feedback signal(s) of the boost converter
+@endcond
+
+ */
+ 
+//Phase Current Feedback Declarations
+/**
+@defgroup phase-current-feedback Phase Current Feedback
+@ingroup abstraction-layer
+@brief Declaration of phase current feedback parameters
+ 
+@defgroup phase-current-feedback-settings User Settings
+@ingroup phase-current-feedback
+@brief User-declaration of phase current feedback parameters using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup phase-current-feedback-settings-buck Buck Converter
+@ingroup phase-current-feedback-settings
+@brief User-declaration of phase current feedback parameters of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup phase-current-feedback-settings-boost Boost Converter
+@ingroup phase-current-feedback-settings
+@brief User-declaration of phase current feedback parameters of the boost converter using physical quantities
+@endcond
+
+@defgroup phase-current-feedback-macros Conversion Macros
+@ingroup phase-current-feedback
+@brief Conversion macros for user-declarations of phase current feedback parameters
+
+@cond INCLUDE_BUCK
+@defgroup phase-current-feedback-macros-buck Buck Converter
+@ingroup phase-current-feedback-macros
+@brief Conversion macros for user-declarations of phase current feedback parameters of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup phase-current-feedback-macros-boost Boost Converter
+@ingroup phase-current-feedback-macros
+@brief Conversion macros for user-declarations of phase current feedback parameters of the boost converter
+@endcond
+
+@defgroup phase-current-feedback-mcal Microcontroller Abstraction
+@ingroup phase-current-feedback
+@brief Device analog input pin, register and interrupt vector assignments of phase current feedback signal(s)
+
+@cond INCLUDE_BUCK
+@defgroup phase-current-feedback-mcal-buck Buck Converter
+@ingroup phase-current-feedback-mcal
+@brief Device analog output pin, register and interrupt vector assignments of phase current feedback signal(s) of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup phase-current-feedback-mcal-boost Boost Converter
+@ingroup phase-current-feedback-mcal
+@brief Device analog output pin, register and interrupt vector assignments of phase current feedback signal(s) of the boost converter
+@endcond
+
+*/
+
+//Temperature Feedback Declarations
+/**
+@defgroup temperature-feedback Temperature Feedback
+@ingroup abstraction-layer
+@brief Declaration of temperature feedback parameters
+ 
+@defgroup temperature-feedback-settings User Settings
+@ingroup temperature-feedback
+@brief User-declaration of temperature feedback parameters using physical quantities
+
+@defgroup temperature-feedback-macros Conversion Macros
+@ingroup temperature-feedback
+@brief Conversion macros for user-declarations of temperature feedback parameters
+
+@defgroup temperature-feedback-mcal Microcontroller Abstraction
+@ingroup temperature-feedback
+@brief Device analog input pin, register and interrupt vector assignments of temperature feedback signal(s)
+*/
+
+
+//Adaptive Gain Control Declarations
+/**
+@defgroup adaptive-gain-control Adaptive Gain Control Feed Forward 
+@ingroup abstraction-layer
+@brief Declaration of macros calculating additional parameters for Adaptive Gain Modulation
+
+@defgroup adaptive-gain-control-settings User Settings
+@ingroup adaptive-gain-control
+@brief User-declaration of Adaptive Gain Modulation parameters using physical quantities
+
+@cond INCLUDE_BUCK
+@defgroup adaptive-gain-control-settings-buck Buck Converter
+@ingroup adaptive-gain-control-settings
+@brief User-declaration of Adaptive Gain Modulation parameters of the buck converter using physical quantities
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup adaptive-gain-control-settings-boost Boost Converter
+@ingroup adaptive-gain-control-settings
+@brief User-declaration of Adaptive Gain Modulation parameters of the boost converter using physical quantities
+@endcond
+
+@defgroup adaptive-gain-control-macros Conversion Macros
+@ingroup adaptive-gain-control
+@brief Conversion macros for user-declarations of Adaptive Gain Modulation parameters
+
+@cond INCLUDE_BUCK
+@defgroup adaptive-gain-control-macros-buck Buck Converter
+@ingroup adaptive-gain-control-macros
+@brief Conversion macros for user-declarations of Adaptive Gain Modulation parameters of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup adaptive-gain-control-macros-boost Boost Converter
+@ingroup adaptive-gain-control-macros
+@brief Conversion macros for user-declarations of Adaptive Gain Modulation parameters of the boost converter
+@endcond
+
+*/
+ 
+//Control Loop Interrupt Vector Settings
+/**
+@defgroup isr-settings Control Interrupt Vector Declarations
+@ingroup abstraction-layer
+@brief Real-time control loop interrupt service routine declarations
+@details Real-time control loops are executed in dedicated, high-priority interrupts to ensure a constant and reliable
+call rate, which is the time base for the control loop response filter. Hence, no other firmware process should be able
+to interrupt or delay the execution of the loop controllers. This section allows the selection of different interrupt
+sources used to trigger the control loop execution and its priority.
+
+@cond INCLUDE_BUCK
+@defgroup isr-settings-buck Buck Converter
+@ingroup isr-settings
+@brief Control loop Interrupt Vector Settings of the buck converter
+@endcond
+
+@cond INCLUDE_BOOST
+@defgroup isr-settings-boost Boost Converter
+@ingroup isr-settings
+@brief Control loop Interrupt Vector Settings of the boost converter
+@endcond
+
+*/
+
+//LC Display Interface Declarations
+/**
+@cond INCLUDE_LCD
+@defgroup lcd-interface-declarations LC Display Interface Declarations
+@ingroup abstraction-layer
+@brief LC display SPI interface GPIO declarations
+@details
+@endcond
+*/
+
+// Device GPIO Assignment Declarations 
+/**
+@defgroup circuit-peripherals Special Circuit Signals
+@ingroup abstraction-layer
+@brief 
+
+@defgroup circuit-gpio-mcal Device GPIO Assignments
+@ingroup circuit-peripherals
+@brief Assignment of microcontroller device pins to circuit functions and signals
+
+@defgroup circuit-peripheral-mcal Device Peripheral Assignments
+@ingroup circuit-peripherals
+@brief Assignment of microcontroller device specific chip-resources to circuit functions and signals
+ 
+*/
+
+// Special Firmware Options
+/**
+@defgroup special-options Special Firmware Options
+@ingroup abstraction-layer
+@brief 
+*/

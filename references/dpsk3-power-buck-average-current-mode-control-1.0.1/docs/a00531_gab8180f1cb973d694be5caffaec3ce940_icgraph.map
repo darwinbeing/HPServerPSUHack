@@ -1,0 +1,6 @@
+<map id="v_loop_Update" name="v_loop_Update">
+<area shape="rect" id="node1" title="Prototype of the Assembly feedback control loop routine helping to call the v_loop controller from C&#45;..." alt="" coords="663,13,769,39"/>
+<area shape="rect" id="node2" href="$a00492.html#ga0b4cabdb02c8c9ea94ea1dfa39de3764" title="This function initializes the control system feedback loop objects." alt="" coords="433,5,615,47"/>
+<area shape="rect" id="node3" href="$a00489.html#ga7a4cf6371d09457539f96a74b2809ca0" title="Calls the application layer power controller initialization." alt="" coords="212,13,385,39"/>
+<area shape="rect" id="node4" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,13,164,39"/>
+</map>

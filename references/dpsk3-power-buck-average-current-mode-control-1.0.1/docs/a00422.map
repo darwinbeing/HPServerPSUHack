@@ -1,0 +1,7 @@
+<map id="Output Voltage Feedback" name="Output Voltage Feedback">
+<area shape="rect" id="node1" href="$a00565.html" title="Hardware Abstraction Layer Declarations." alt="" coords="5,47,152,87"/>
+<area shape="rect" id="node5" title="Declaration of output voltage feedback parameters." alt="" coords="200,55,371,80"/>
+<area shape="rect" id="node2" href="$a00427.html" title="Device analog output pin, register and interrupt vector assignments of output voltage feedback signal..." alt="" coords="419,5,596,31"/>
+<area shape="rect" id="node3" href="$a00425.html" title="Conversion macros for user&#45;declarations of output voltage feedback parameters." alt="" coords="441,55,573,80"/>
+<area shape="rect" id="node4" href="$a00423.html" title="User&#45;declaration of output voltage feedback parameters using physical quantities." alt="" coords="457,104,558,129"/>
+</map>

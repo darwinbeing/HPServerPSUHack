@@ -1,0 +1,4 @@
+<map id="TASK_INFO_s" name="TASK_INFO_s">
+<area shape="rect" id="node1" title="Provides information for executed task, fault event and operating mode ID of task manager." alt="" coords="18,233,125,340"/>
+<area shape="rect" id="node2" href="$a01500.html" title="Global data structure for trap event capturing." alt="" coords="5,5,137,185"/>
+</map>

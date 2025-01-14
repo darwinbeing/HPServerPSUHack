@@ -1,0 +1,5 @@
+<map id="dev_Lcd_GotoXY" name="dev_Lcd_GotoXY">
+<area shape="rect" id="node1" title="Sets the cursor position to the given x&#45; and y&#45;coordinates." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node2" href="$a00479.html#ga3e045335a3463f6a53e4fd91b50bb0ca" title="Sends a command to the LCD controller." alt="" coords="173,5,352,32"/>
+<area shape="rect" id="node3" href="$a00481.html#ga50b8734fca19fc75dd778a9902c63082" title="Sends data through the SPI interface to the LCD controller." alt="" coords="400,5,571,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="drv_BuckConverter_Resume" name="drv_BuckConverter_Resume">
+<area shape="rect" id="node1" title="This function resume the operation of the buck converter." alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$a00496.html#gab9877f90ffb129964ae42ce2921b3fe1" title="This function is the main buck converter state machine executing the most recent state." alt="" coords="237,5,421,32"/>
+<area shape="rect" id="node3" href="$a00519.html#ga8e2253c136f05033e774d09032b283a1" title="This function gets the state of the selected pin." alt="" coords="469,5,629,32"/>
+<area shape="rect" id="node4" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="677,5,879,32"/>
+</map>

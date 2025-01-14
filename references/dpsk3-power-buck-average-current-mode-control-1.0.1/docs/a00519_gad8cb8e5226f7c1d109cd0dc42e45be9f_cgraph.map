@@ -1,0 +1,4 @@
+<map id="buckGPIO_Set" name="buckGPIO_Set">
+<area shape="rect" id="node1" title="This function sets the selected general purpose input/ouput pins." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="163,5,364,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="p33c_PwmModule_Dispose" name="p33c_PwmModule_Dispose">
+<area shape="rect" id="node1" title="Resets all PWM base module registers to their RESET default values." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$a00381.html#ga8075fd40f867be8f42bb806622bd91bd" title="Writes a user&#45;defined configuration to the PWM base module registers." alt="" coords="236,5,439,32"/>
+</map>

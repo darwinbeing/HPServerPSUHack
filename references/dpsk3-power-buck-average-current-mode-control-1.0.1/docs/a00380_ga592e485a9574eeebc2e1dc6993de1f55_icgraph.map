@@ -1,0 +1,4 @@
+<map id="PPS_RemapOutput" name="PPS_RemapOutput">
+<area shape="rect" id="node1" title="Assigns a digital function output to a pin." alt="" coords="189,5,325,32"/>
+<area shape="rect" id="node2" href="$a00380.html#gac40d40430a5237549eaafb4aa6ab3a24" title="Disconnects a pin from a digital function output." alt="" coords="5,5,141,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ocp_FaultInitialize" name="ocp_FaultInitialize">
+<area shape="rect" id="node1" title="Initializes the user&#45;defined fault objects for overcurrent protection." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node2" href="$a00489.html#gafa4e90d260e60cf20f06acee067c39cd" title="This function stops the power supply operation." alt="" coords="180,5,357,32"/>
+<area shape="rect" id="node3" href="$a00496.html#ga0d68d132b52175c43503c9b5794bae64" title="This function suspends the operation of the buck converter." alt="" coords="405,5,592,32"/>
+<area shape="rect" id="node4" href="$a00496.html#gab9877f90ffb129964ae42ce2921b3fe1" title="This function is the main buck converter state machine executing the most recent state." alt="" coords="640,5,824,32"/>
+<area shape="rect" id="node5" href="$a00519.html#ga8e2253c136f05033e774d09032b283a1" title="This function gets the state of the selected pin." alt="" coords="872,5,1032,32"/>
+<area shape="rect" id="node6" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="1080,5,1281,32"/>
+</map>

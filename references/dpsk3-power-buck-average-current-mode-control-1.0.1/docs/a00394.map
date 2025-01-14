@@ -1,0 +1,7 @@
+<map id="State Machine Settings" name="State Machine Settings">
+<area shape="rect" id="node1" href="$a00565.html" title="Hardware Abstraction Layer Declarations." alt="" coords="5,47,152,87"/>
+<area shape="rect" id="node3" title="Declaration of global state&#45;machine parameters." alt="" coords="200,55,359,80"/>
+<area shape="rect" id="node2" href="$a00395.html" title="Parameter definitions using physical quantities." alt="" coords="457,5,559,31"/>
+<area shape="rect" id="node4" href="$a00396.html" title="Conversion macros converting physical quantities of parameters into binary (integer) numbers for regi..." alt="" coords="442,55,574,80"/>
+<area shape="rect" id="node5" href="$a00397.html" title="Assignment of microcontroller device specific chip&#45;resources to circuit functions and signals." alt="" coords="407,104,609,129"/>
+</map>

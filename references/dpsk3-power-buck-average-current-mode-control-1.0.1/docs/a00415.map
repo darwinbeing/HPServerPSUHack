@@ -1,0 +1,7 @@
+<map id="Input Voltage Feedback" name="Input Voltage Feedback">
+<area shape="rect" id="node1" href="$a00418.html" title="Conversion macros for user&#45;declarations of input voltage feedback parameters." alt="" coords="429,5,561,31"/>
+<area shape="rect" id="node2" href="$a00565.html" title="Hardware Abstraction Layer Declarations." alt="" coords="5,47,152,87"/>
+<area shape="rect" id="node3" title="Declaration of input voltage feedback parameters." alt="" coords="200,55,359,80"/>
+<area shape="rect" id="node4" href="$a00420.html" title="Device analog input pin, register and interrupt vector assignments of input voltage feedback signal(s..." alt="" coords="407,55,584,80"/>
+<area shape="rect" id="node5" href="$a00416.html" title="User&#45;declaration of input voltage feedback parameters using physical quantities." alt="" coords="445,104,546,129"/>
+</map>

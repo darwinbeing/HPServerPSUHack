@@ -1,0 +1,4 @@
+<map id="NPNZ_LIMITS_s" name="NPNZ_LIMITS_s">
+<area shape="rect" id="node1" title="System Anti&#45;Windup (Output Clamping) Thresholds." alt="" coords="17,248,135,369"/>
+<area shape="rect" id="node2" href="$a01736.html" title="Global NPNZ controller data object." alt="" coords="5,5,147,200"/>
+</map>

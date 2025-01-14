@@ -1,0 +1,6 @@
+<map id="Peripheral Pin Select Module (PPS)" name="Peripheral Pin Select Module (PPS)">
+<area shape="rect" id="node1" href="$a00380.html" title="Public functions of the PPS PRAL driver." alt="" coords="380,5,499,31"/>
+<area shape="rect" id="node2" title="Peripheral Pin Select Module Special Function Register Abstraction Driver." alt="" coords="185,23,329,63"/>
+<area shape="rect" id="node3" href="$a00388.html" title="Private properties of the PPS PRAL driver." alt="" coords="377,55,501,80"/>
+<area shape="rect" id="node4" href="$a00365.html" title=" " alt="" coords="5,16,137,71"/>
+</map>

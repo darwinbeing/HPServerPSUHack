@@ -1,0 +1,195 @@
+/*----------------------------------------------------------------------------*/
+/* LIBRARY LAYER: PRAL Library Layer Documentation */
+/*----------------------------------------------------------------------------*/
+
+/**
+@defgroup device-abstraction-pral Peripheral Register Abstraction Layer (PRAL) Library
+@ingroup lib-driver-layer
+@details
+    The Peripheral Register Abstraction Layer (PRAL) Library is used to provide abstracted (virtual)
+    versions of peripheral specific Special Function Register (SFR) sets of specific peripherals. 
+    
+    For each supported peripheral type a Peripheral Module Special Function Register Abstraction Driver
+    provides a specific set of standardized functions and properties allowing applications to access and 
+    control specific instances of this peripheral using indirect addressing of registers. 
+    
+    This abstraction allows to create and apply templates of peripheral configurations, which can be 
+    written to specific instances of a peripheral at runtime. Further, these PRAL drivers provide a mechanism
+    to write generic code utilizing peripheral functions without direct association to specific peripheral
+    instances. This mechanism is vital to support easy code migration across devices and are the basis of
+    the chip resource management of device drivers.
+*/
+
+/**
+@defgroup p33c-ccp-pral Capture Compare Module (SCCP/MCCP)
+@ingroup device-abstraction-pral
+@brief Capture Compare Peripheral Module Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the Capture/Compare/PWM/Timer 
+    modules (SCCP/MCCP) of dsPIC33CK and dsPIC33CH families of devices.
+ 
+@defgroup p33c-dac-pral Digital-To-Analog Converter Module (DAC)
+@ingroup device-abstraction-pral
+@brief Digital-To-Analog Converter Peripheral Module Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the High-Speed Analog
+    Comparator with Pulse Density Modulation DAC modules (DAC) of dsPIC33CK and dsPIC33CH 
+    families of devices.
+
+@defgroup p33c-dsp-pral Digital Signal Processor Converter Module (DSP)
+@ingroup device-abstraction-pral
+@brief Digital Signal Processor Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the Digital Signal Processor (DSP)
+    of dsPIC33CK and dsPIC33CH families of devices.
+
+@defgroup p33c-gpio-pral General Purpose Input/Output (GPIO)
+@ingroup device-abstraction-pral
+@brief General Purpose Input/Output Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the General Purpose Input/Output
+    control instances of dsPIC33CK and dsPIC33CH families of devices.
+
+@defgroup p33c-opa-pral Operational Amplifier Module (AMP)
+@ingroup device-abstraction-pral
+@brief Operational Amplifier Peripheral Module Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the Operational Amplifier
+    module (AMP) of dsPIC33CK and dsPIC33CH families of devices.
+
+@defgroup p33c-osc-pral Oscillator Module (OSC)
+@ingroup device-abstraction-pral
+@brief Oscillator Module Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the Oscillator and PLL/APLL
+    module of dsPIC33CK and dsPIC33CH families of devices.
+
+@defgroup p33c-pps-pral Peripheral Pin Select Module (PPS)
+@ingroup device-abstraction-pral
+@brief Peripheral Pin Select Module Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the Peripheral Pin Select (PPS)
+    module of dsPIC33CK and dsPIC33CH families of devices.
+
+@defgroup p33c-pwm-pral High-Speed PWM Module (HSPWM)
+@ingroup device-abstraction-pral
+@brief High-Speed PWM Module Special Function Register Abstraction Driver
+@details
+    Peripheral Module Special Function Register Abstraction Driver for the High-Speed PWM Module
+    with Fine Edge Placement (HSPWM) module of dsPIC33CK and dsPIC33CH families of devices.
+*/
+
+/*----------------------------------------------------------------------------*/
+/* Public Functions */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup lib-layer-pral-functions-public-ccp Public Functions
+@ingroup p33c-ccp-pral
+@brief Public functions of the SCCP/MCCP PRAL driver
+@details 
+    This is the detailed description of public functions of the SCCP/MCCP PRAL driver
+
+@defgroup lib-layer-pral-functions-public-dac Public Functions
+@ingroup p33c-dac-pral
+@brief Public functions of the DAC PRAL driver
+@details 
+    This is the detailed description of public functions of the DAC PRAL driver
+
+@defgroup lib-layer-pral-functions-public-dsp Public Functions
+@ingroup p33c-dsp-pral
+@brief Public functions of the DSP PRAL driver
+@details 
+    This is the detailed description of public functions of the DSP PRAL driver
+
+@defgroup lib-layer-pral-functions-public-gpio Public Functions
+@ingroup p33c-gpio-pral
+@brief Public functions of the GPIO PRAL driver
+@details 
+    This is the detailed description of public functions of the GPIO PRAL driver
+
+@defgroup lib-layer-pral-functions-public-opa Public Functions
+@ingroup p33c-opa-pral
+@brief Public functions of the AMP PRAL driver
+@details 
+    This is the detailed description of public functions of the AMP PRAL driver
+
+@defgroup lib-layer-pral-functions-public-osc Public Functions
+@ingroup p33c-osc-pral
+@brief Public functions of the OSC PRAL driver
+@details 
+    This is the detailed description of public functions of the OSC PRAL driver
+
+@defgroup lib-layer-pral-functions-public-pps Public Functions
+@ingroup p33c-pps-pral
+@brief Public functions of the PPS PRAL driver
+@details 
+    This is the detailed description of public functions of the PPS PRAL driver
+
+@defgroup lib-layer-pral-functions-public-pwm Public Functions
+@ingroup p33c-pwm-pral
+@brief Public functions of the HSPWM PRAL driver
+@details 
+    This is the detailed description of public functions of the HSPWM PRAL driver
+*/
+
+/*----------------------------------------------------------------------------*/
+/* Private Properties */
+/*----------------------------------------------------------------------------*/
+
+/**
+@defgroup lib-layer-pral-properties-private-ccp Private Properties
+@ingroup p33c-ccp-pral
+@brief Private properties of the SCCP/MCCP PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the SCCP/MCCP PRAL driver
+
+@defgroup lib-layer-pral-properties-private-dac Private Properties
+@ingroup p33c-dac-pral
+@brief Private properties of the SDAC PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the DAC PRAL driver
+
+@defgroup lib-layer-pral-properties-private-dsp Private Properties
+@ingroup p33c-dsp-pral
+@brief Private properties of the DSP PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the DSP PRAL driver
+
+@defgroup lib-layer-pral-properties-private-gpio Private Properties
+@ingroup p33c-gpio-pral
+@brief Private properties of the GPIO PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the GPIO PRAL driver
+
+@defgroup lib-layer-pral-properties-private-opa Private Properties
+@ingroup p33c-opa-pral
+@brief Private properties of the AMP PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the AMP PRAL driver
+
+@defgroup lib-layer-pral-properties-private-osc Private Properties
+@ingroup p33c-osc-pral
+@brief Private properties of the OSC PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the OSC PRAL driver
+
+@defgroup lib-layer-pral-properties-private-pps Private Properties
+@ingroup p33c-pps-pral
+@brief Private properties of the PPS PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the PPS PRAL driver
+
+@defgroup lib-layer-pral-properties-private-pwm Private Properties
+@ingroup p33c-pwm-pral
+@brief Private properties of the HSPWM PRAL driver
+@details 
+    This is the detailed description of privte variables, data types,
+    enumerations, defines and macros of the HSPWM PRAL driver
+*/

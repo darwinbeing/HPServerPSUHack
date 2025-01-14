@@ -1,0 +1,172 @@
+
+digraph pconfig {
+
+    // Name Label and Format
+    compound=true;
+    fontname="Consolas, 'Courier New', Courier, Sans-Serif";
+    fontsize=11;
+    rankdir=TB;
+    ranksep=0.5;
+    nodesep=0.3;
+    splines = ortho;
+
+    // Application Layer
+    {
+        
+        label="Application Layer Initialization"
+        color=grey;
+        rank = same;
+
+        node [
+                shape=box, style=filled, fontcolor=black, fillcolor=darkseagreen1, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=11,
+                width = 2.8
+            ]; 
+            
+        converter_object_init[label="Converter Object\nInitialization", fillcolor=white];
+        controller_init[label="Control Loop\nInitialization", fillcolor=white];
+        peripheral_init[label="Peripheral Initialization"];
+        custom_init[label="Custom Peripehral\nConfiguration", fillcolor=white];
+
+        converter_object_init -> controller_init -> peripheral_init -> custom_init;
+    }
+
+    // Power Converter Device Driver
+    subgraph cluster1
+    {
+        label="Power Converter Device Driver";
+        color=grey;
+
+        node [
+                shape=box, 
+                style=filled, 
+                fontcolor=black, 
+                fillcolor=lightcyan, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=11,
+                width = 1.2
+            ]; pwm_template; adc_template; gpio_template;
+
+            pwm_template[label="PWM\nTemplate"];
+            adc_template[label="ADC\nTemplate"];
+            gpio_template[label="GPIO\nTemplate"];
+
+        node [
+                shape=box, 
+                style=filled, 
+                fillcolor=papayawhip, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=11,
+                width=1.2
+            ]; swnode_config; feedback_config; gpio_config;
+
+            swnode_config[label="Switch\nNode"];
+            feedback_config[label="Feedback"];
+            gpio_config[label="GPIO"];
+
+        node [
+                shape=box, 
+                style=filled, 
+                fillcolor=white, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=11,
+                width=2.4
+            ]; merge1; merge2; merge3;
+
+            merge1[label="merge settings"];
+            merge2[label="merge settings"];
+            merge3[label="merge settings"];
+
+        node  [
+                shape=box, 
+                style=filled, 
+                fontcolor=black, 
+                fillcolor=darkgoldenrod1, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=11,
+                width = 2.4
+            ]; pwm_drv; adc_drv; gpio_drv;
+
+            adc_drv[label="ADC\nDriver"];
+            gpio_drv[label="GPIO\nDriver"];
+            pwm_drv[label="PWM\nDriver"];
+
+    }
+
+    // SFR Abstraction Layer
+    subgraph cluster2
+    {
+        label="Register Abstraction Layer";
+        color=grey;
+        rank = same;
+
+        node [
+                shape=box, 
+                style=filled, 
+                fontcolor=black, 
+                fillcolor=grey, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=11,
+                width = 2.4
+            ]; p33c_pral_pwm; p33c_pral_adc; p33c_pral_gpio;
+
+            p33c_pral_pwm[label="dsPIC33C MP PWM\nRegister Abstraction Layer"];
+            p33c_pral_adc[label="dsPIC33C MP ADC\nRegister Abstraction Layer"];
+            p33c_pral_gpio[label="dsPIC33C GPIO\nRegister Abstraction Layer"];
+    }
+
+    // Silicon Layer
+    subgraph cluster3
+    {
+        label="dsPIC33C MP Peripheral Special Function Registers";
+        color=grey;
+        node  [
+                shape=record, 
+                style=filled, 
+                fontcolor=black, 
+                fillcolor=lightcyan, 
+                fontname="Consolas, 'Courier New', Courier, Sans-Serif",
+                fontsize=10,
+                width = 2.4
+            ]; device_sfr_pwm; device_sfr_adc; device_sfr_gpio;
+
+            device_sfr_pwm[label="<f0> PWM1 | <f1> PWM2 | <f2> PWM3 | <f3> PWM4 | <f4> (...)"];
+            device_sfr_adc[label="<f0> AN1 | <f1> AN2 | <f2> AN2 | <f3> (...) | <f4> ANn"];
+            device_sfr_gpio[label="<f0> RAy | <f1> RBy | <f2> RCy | <f3> (...) | <f4> Rny"];
+    }
+
+    // Network Description PWM Configuration
+    peripheral_init -> swnode_config;
+    swnode_config -> merge3;
+    pwm_template -> merge3;
+    merge3 -> pwm_drv;
+    pwm_drv -> p33c_pral_pwm;
+    p33c_pral_pwm -> device_sfr_pwm;
+
+
+    // Network Description ADC Configuration
+    peripheral_init -> feedback_config;
+    feedback_config -> merge2;
+    adc_template -> merge2;
+    merge2 -> adc_drv;
+    adc_drv -> p33c_pral_adc;
+    p33c_pral_adc -> device_sfr_adc;
+
+    // Network Description GPIO Configuration
+    peripheral_init -> gpio_config;
+    gpio_config -> merge1;
+    gpio_template -> merge1;
+    merge1 -> gpio_drv;
+    gpio_drv -> p33c_pral_gpio;
+    p33c_pral_gpio -> device_sfr_gpio;
+
+    // Custom modifications are added after successful peripheral configuration
+    custom_init -> p33c_pral_pwm; 
+
+}
+
+
+/*
+[arrowhead=normal, style=solid, color=darkgrey];
+*/

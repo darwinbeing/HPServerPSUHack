@@ -1,0 +1,4 @@
+<map id="p33c_DacInstance_ConfigRead" name="p33c_DacInstance_ConfigRead">
+<area shape="rect" id="node1" title="Read the current configuration from the DAC instance registers." alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" href="$a00375.html#gac471660aeec8e8329369435914c5befa" title="Writes a user&#45;defined configuration to the DAC instance registers." alt="" coords="256,5,459,32"/>
+</map>

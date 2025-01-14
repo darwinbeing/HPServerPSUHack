@@ -1,0 +1,4 @@
+<map id="p33c_GpioInstance_ConfigRead" name="p33c_GpioInstance_ConfigRead">
+<area shape="rect" id="node1" title="Read the current configuration from the GPIO instance registers" alt="" coords="5,13,212,39"/>
+<area shape="rect" id="node2" href="$a00377.html#gadf3bba95ba8b4f2c34af8678ea5e7ff0" title="Writes a user&#45;defined configuration to the GPIO instance registers." alt="" coords="260,5,436,47"/>
+</map>

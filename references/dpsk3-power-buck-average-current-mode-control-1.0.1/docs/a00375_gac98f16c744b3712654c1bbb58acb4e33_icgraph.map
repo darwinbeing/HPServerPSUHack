@@ -1,0 +1,7 @@
+<map id="p33c_DacInstance_GetHandle" name="p33c_DacInstance_GetHandle">
+<area shape="rect" id="node1" title="Gets pointer to DAC Instance SFR set." alt="" coords="395,56,592,83"/>
+<area shape="rect" id="node2" href="$a00560.html#gae4c70ecb7b13f328f1458f5f2cfbe48a" title=" " alt="" coords="190,5,345,32"/>
+<area shape="rect" id="node3" href="$a00560.html#ga2f97c3082e0d6f724cea482c10c2d08f" title=" " alt="" coords="191,56,343,83"/>
+<area shape="rect" id="node5" href="$a00560.html#ga231ffdd65b0ae520b467cbc6fbbf8d03" title="Initializes a user specified DAC instance with DAC output enabled." alt="" coords="188,107,347,133"/>
+<area shape="rect" id="node4" href="$a00559.html#ga70c5cba054e38a4e8c8285a187ff61fa" title="Initializes the user&#45;defined chip resources." alt="" coords="5,74,140,115"/>
+</map>

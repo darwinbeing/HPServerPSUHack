@@ -1,0 +1,4 @@
+<map id="p33c_PwmModule_ConfigRead" name="p33c_PwmModule_ConfigRead">
+<area shape="rect" id="node1" title="Read the current configuration from the PWM base module registers." alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node2" href="$a00381.html#ga8075fd40f867be8f42bb806622bd91bd" title="Writes a user&#45;defined configuration to the PWM base module registers." alt="" coords="255,5,457,32"/>
+</map>

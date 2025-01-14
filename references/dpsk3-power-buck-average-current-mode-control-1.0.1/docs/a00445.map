@@ -1,0 +1,5 @@
+<map id="Control Interrupt Vector Declarations" name="Control Interrupt Vector Declarations">
+<area shape="rect" id="node1" href="$a00565.html" title="Hardware Abstraction Layer Declarations." alt="" coords="5,5,152,45"/>
+<area shape="rect" id="node2" title="Real&#45;time control loop interrupt service routine declarations." alt="" coords="200,5,356,45"/>
+<area shape="rect" id="node3" href="$a00446.html" title="Control loop Interrupt Vector Settings of the buck converter." alt="" coords="404,13,515,38"/>
+</map>

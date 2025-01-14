@@ -1,0 +1,9 @@
+<map id="Power Control Application Layer" name="Power Control Application Layer">
+<area shape="rect" id="node1" title=" " alt="" coords="176,97,347,137"/>
+<area shape="rect" id="node2" href="$a00489.html" title="Public functions of the application layer of the power control task." alt="" coords="407,5,526,31"/>
+<area shape="rect" id="node3" href="$a00490.html" title="Public properties of the application layer of the power control task." alt="" coords="406,55,527,80"/>
+<area shape="rect" id="node4" href="$a00492.html" title="Private functions of the application layer of the power control task." alt="" coords="405,104,528,129"/>
+<area shape="rect" id="node6" href="$a00491.html" title="Public events of the application layer of the power control task." alt="" coords="395,153,539,179"/>
+<area shape="rect" id="node7" href="$a00493.html" title="Public properties of the application layer of the power control task." alt="" coords="405,203,529,228"/>
+<area shape="rect" id="node5" href="$a00566.html" title="Task Layer." alt="" coords="5,104,128,129"/>
+</map>

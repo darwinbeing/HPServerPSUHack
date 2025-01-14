@@ -1,0 +1,4 @@
+<map id="sysOpAmp_ModuleReset" name="sysOpAmp_ModuleReset">
+<area shape="rect" id="node1" title="Resets the on&#45;chip operational amplifier module." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$a00378.html#gacaacda32efbc1383f62de2ba1bb95a34" title="Gets pointer to op&#45;amp Module SFR set." alt="" coords="224,5,415,32"/>
+</map>

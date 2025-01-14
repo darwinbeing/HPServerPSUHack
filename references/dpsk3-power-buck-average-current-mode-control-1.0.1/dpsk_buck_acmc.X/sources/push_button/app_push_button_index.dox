@@ -1,0 +1,40 @@
+/*----------------------------------------------------------------------------*/
+/* TASK LAYER: Push-Button Layer Task Documentation */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup app-layer-push-button Push-Button Application Layer 
+@ingroup task-layer
+@details 
+  The push button application layer is the proprietary user code used to configure and drive 
+  the on-board push button. 
+
+@defgroup app-layer-push-button-functions-public Public Functions
+@ingroup app-layer-push-button
+@brief Public functions of the application layer of the power control task
+@details 
+  The push button application layer is the proprietary user code used to configure and drive 
+  the on-board push button.
+
+@defgroup app-layer-push-button-properties-public Public Properties
+@ingroup app-layer-push-button
+@brief Public properties of the application layer of the push button task
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the application layer of
+  the push button task.
+
+@defgroup app-layer-push-button-functions-private Private Functions
+@ingroup app-layer-push-button
+@brief Private functions of the application layer of the push button task
+@details The private functions of the push button application layer are used to configure the generic
+  push button device driver.
+
+@defgroup app-layer-push-button-properties-private Private Properties
+@ingroup app-layer-push-button
+@brief Public properties of the application layer of the push button task
+@details This is the detailed description of public variables, data types,
+enumerations, defines and macros of the application layer of
+the push button task.
+@note This module doesn't have any private properties
+
+*/

@@ -1,0 +1,5 @@
+<map id="appPowerSupply_PeripheralsInitialize" name="appPowerSupply_PeripheralsInitialize">
+<area shape="rect" id="node1" title="This function is used to load peripheral configuration templates from the power controller device dri..." alt="" coords="433,5,624,47"/>
+<area shape="rect" id="node2" href="$a00489.html#ga7a4cf6371d09457539f96a74b2809ca0" title="Calls the application layer power controller initialization." alt="" coords="212,13,385,39"/>
+<area shape="rect" id="node3" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,13,164,39"/>
+</map>

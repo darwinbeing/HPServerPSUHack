@@ -1,0 +1,4 @@
+<map id="p33c_OpaModule_ConfigRead" name="p33c_OpaModule_ConfigRead">
+<area shape="rect" id="node1" title="Read the current configuration from the op&#45;amp module base registers." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node2" href="$a00378.html#ga2e41506a3b90ae5a8221a73aaa4bfdde" title="Writes a user&#45;defined configuration to the op&#45;amp module base registers." alt="" coords="249,5,447,32"/>
+</map>

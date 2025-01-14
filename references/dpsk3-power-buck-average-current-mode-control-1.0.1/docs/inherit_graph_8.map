@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$a01736.html" title="Global NPNZ controller data object." alt="" coords="5,208,96,235"/>
+<area shape="rect" id="node2" href="$a01716.html" title="Automated ADC Trigger handling." alt="" coords="166,5,335,32"/>
+<area shape="rect" id="node3" href="$a01720.html" title="Data Provider Target Memory Addresses." alt="" coords="153,56,348,83"/>
+<area shape="rect" id="node4" href="$a01724.html" title="User Extension Function Call Parameters." alt="" coords="149,107,352,133"/>
+<area shape="rect" id="node5" href="$a01708.html" title="Filter Coefficient Arrays, Number Format Handling and Input/Output History Parameters." alt="" coords="159,157,342,184"/>
+<area shape="rect" id="node6" href="$a01728.html" title="Adaptive Gain Control Modulation Parameters." alt="" coords="163,208,339,235"/>
+<area shape="rect" id="node7" href="$a01712.html" title="System Anti&#45;Windup (Output Clamping) Thresholds." alt="" coords="192,259,309,285"/>
+<area shape="rect" id="node8" href="$a01704.html" title="Filter Coefficient Arrays, Number Format Handling and Input/Output History Parameters." alt="" coords="190,309,311,336"/>
+<area shape="rect" id="node10" href="$a01680.html" title="NPNZ16b controller object status and control word." alt="" coords="187,360,314,387"/>
+<area shape="rect" id="node11" href="$a01732.html" title="User Data Space for Advanced Control Functions." alt="" coords="144,411,357,437"/>
+<area shape="rect" id="node9" href="$a01700.html" title="Data Input/Output Port declaration of memory addresses, signal offsets and normalization settings." alt="" coords="405,309,517,336"/>
+</map>

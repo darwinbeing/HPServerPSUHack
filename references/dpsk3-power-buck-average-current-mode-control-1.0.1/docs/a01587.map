@@ -1,0 +1,16 @@
+<map id="BUCK_CONVERTER_s" name="BUCK_CONVERTER_s">
+<area shape="rect" id="node1" title="BUCK control &amp; monitoring data structure." alt="" coords="1005,5,1163,215"/>
+<area shape="rect" id="node2" href="$a01552.html" title="Publicly accessible data buffer of most recent runtime data values." alt="" coords="5,314,205,494"/>
+<area shape="rect" id="node3" href="$a01556.html" title="Generic power controller control settings." alt="" coords="229,343,459,465"/>
+<area shape="rect" id="node4" href="$a01548.html" title="Power Converter Startup Timing Settings." alt="" coords="483,343,709,465"/>
+<area shape="rect" id="node6" href="$a01520.html" title="Generic power controller status word." alt="" coords="733,263,949,545"/>
+<area shape="rect" id="node7" href="$a01576.html" title="Buck converter feedback declarations." alt="" coords="974,343,1194,465"/>
+<area shape="rect" id="node10" href="$a01584.html" title="GPIO instance of the converter control GPIO." alt="" coords="1219,358,1400,450"/>
+<area shape="rect" id="node12" href="$a01560.html" title="User defined settings for control loops;." alt="" coords="1425,299,1610,509"/>
+<area shape="rect" id="node13" href="$a01532.html" title="data structure for the buck statement ID for sub&#45;operating and operating states" alt="" coords="1635,343,1773,465"/>
+<area shape="rect" id="node14" href="$a01564.html" title="Switching signal timing settings." alt="" coords="1797,292,2040,516"/>
+<area shape="rect" id="node5" href="$a01544.html" title="Generic power controller startup period settings." alt="" coords="506,645,686,781"/>
+<area shape="rect" id="node8" href="$a01572.html" title="ADC input channel configuration." alt="" coords="974,593,1194,832"/>
+<area shape="rect" id="node9" href="$a01568.html" title="ADC input signal scaling = (ADCBUF &#45; &lt;offset&gt;) * &lt;factor&gt; &gt;&gt; 2^&lt;scaler&gt;" alt="" coords="977,880,1191,987"/>
+<area shape="rect" id="node11" href="$a01580.html" title="GPIO instance of the converter control GPIO." alt="" coords="1218,645,1401,781"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="sysDsp_Initialize" name="sysDsp_Initialize">
+<area shape="rect" id="node1" title="Digital Signal Processor initialization." alt="" coords="184,5,304,32"/>
+<area shape="rect" id="node2" href="$a00554.html#ga12ce46460ff0657fc879f5b23ed8ccb1" title="Initializes essential chip resources." alt="" coords="5,5,136,32"/>
+</map>

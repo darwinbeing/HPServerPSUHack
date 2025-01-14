@@ -1,0 +1,6 @@
+<map id="sysDacModule_Initialize" name="sysDacModule_Initialize">
+<area shape="rect" id="node1" title="DAC Module Base Register Initialization." alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$a00375.html#gaddf7b491a947c7f557b89235588c0219" title="Writes a user&#45;defined configuration to the DAC module base registers." alt="" coords="216,5,412,32"/>
+<area shape="rect" id="node3" href="$a00375.html#gaf0ea62728fde73f2119e47f67baf2ff0" title="Resets all DAC Module registers to their RESET default values." alt="" coords="226,56,402,83"/>
+<area shape="rect" id="node4" href="$a00375.html#ga72e7cdf4177d0403e8ff925314ec1bc7" title="Gets pointer to DAC Module SFR set." alt="" coords="219,107,409,133"/>
+</map>

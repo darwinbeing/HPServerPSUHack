@@ -1,0 +1,4 @@
+<map id="appPushButton_Execute" name="appPushButton_Execute">
+<area shape="rect" id="node1" title="Executes the USER push button monitor." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node2" href="$a00544.html#ga29d5123115f34320a92fabc8be2f796c" title="Initializes the push button device driver." alt="" coords="220,5,388,32"/>
+</map>

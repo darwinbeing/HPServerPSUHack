@@ -1,0 +1,4 @@
+<map id="buckGPIO_Set" name="buckGPIO_Set">
+<area shape="rect" id="node1" title="This function sets the selected general purpose input/ouput pins." alt="" coords="236,5,345,32"/>
+<area shape="rect" id="node2" href="$a00507.html#ga93fe19751c6c8aebbbcc69e9fed56bb7" title="In this function, a counter is incremented until the power good delay has expired." alt="" coords="5,5,188,32"/>
+</map>

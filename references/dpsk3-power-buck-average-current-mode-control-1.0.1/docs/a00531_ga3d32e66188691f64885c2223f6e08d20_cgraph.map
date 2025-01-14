@@ -1,0 +1,4 @@
+<map id="i_loop_Initialize" name="i_loop_Initialize">
+<area shape="rect" id="node1" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$a00531.html#gaade67bca1738eccdbf511c980e79339f" title="Prototype of the Assembly routine &#39;_i_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="164,5,261,32"/>
+</map>

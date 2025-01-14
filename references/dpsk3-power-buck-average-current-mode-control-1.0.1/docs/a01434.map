@@ -1,0 +1,6 @@
+<map id="FLT_COMPARE_OBJECT_s" name="FLT_COMPARE_OBJECT_s">
+<area shape="rect" id="node1" title="This data structure defines the data object which will be monitored by the fault handler." alt="" coords="112,5,300,97"/>
+<area shape="rect" id="node2" href="$a01444.html" title="This data structure is a collection of data structures for fault handling." alt="" coords="139,175,273,252"/>
+<area shape="rect" id="node3" href="$a01424.html" title="This data structure defines the fault object status." alt="" coords="5,329,177,495"/>
+<area shape="rect" id="node4" href="$a01440.html" title="This data structure defines the fault monitor event response object." alt="" coords="201,359,389,465"/>
+</map>

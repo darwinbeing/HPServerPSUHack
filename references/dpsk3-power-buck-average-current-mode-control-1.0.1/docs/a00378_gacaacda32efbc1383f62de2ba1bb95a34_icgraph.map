@@ -1,0 +1,7 @@
+<map id="p33c_OpaModule_GetHandle" name="p33c_OpaModule_GetHandle">
+<area shape="rect" id="node1" title="Gets pointer to op&#45;amp Module SFR set." alt="" coords="412,56,603,83"/>
+<area shape="rect" id="node2" href="$a00561.html#gaf4c74cf390185b49d99838e0f9885076" title="Initializes the on&#45;chip operational amplifier module." alt="" coords="205,5,347,32"/>
+<area shape="rect" id="node4" href="$a00561.html#ga3cd080c9a48a5d74d8b2f89fdec161da" title="Enables the on&#45;chip operational amplifier module." alt="" coords="188,56,364,83"/>
+<area shape="rect" id="node5" href="$a00561.html#ga4dbd2367ecd449226460b0b0a52cbe8b" title="Resets the on&#45;chip operational amplifier module." alt="" coords="191,107,361,133"/>
+<area shape="rect" id="node3" href="$a00559.html#ga70c5cba054e38a4e8c8285a187ff61fa" title="Initializes the user&#45;defined chip resources." alt="" coords="5,49,140,90"/>
+</map>

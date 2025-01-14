@@ -1,0 +1,354 @@
+/*----------------------------------------------------------------------------*/
+/* LIBRARY LAYER: Buck Converter Library Layer Documentation */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup lib-layer-buck Buck Converter Library
+@ingroup lib-layer
+@details
+ The Buck Converter Library is a comprehensive device driver providing a state machine managing
+ initialization, configurable, protected startup, runtime reference tuning and auto-restart capabilities.
+ Special Functions are available to extend the essential features of the state machine supporting
+ specific, optional sub-circuits and functions.
+
+ This device driver also includes functions for the configuration of device peripherals by providing 
+ templates of the fundamental peripheral set initialization required to drive and control the supported 
+ type of power converter, significantly reducing the amount of parameters users have to select and set.
+ 
+ All settings are made available through the BUCK_CONVERTER_s data structure, described in the Public 
+ Properties / Data Types section of this documentation.
+
+*/
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/* SECTIONS */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+/* Buck Converter Library API */
+/*----------------------------------------------------------------------------*/
+
+/* LEVEL 1 */
+/**
+@defgroup lib-layer-buck-converter-api Buck Converter Library API
+@ingroup lib-layer-buck
+@brief 
+@details 
+ The buck converter device driver is a comprehensive, self-contained driver for single- and multiphase, 
+ non-isolated, asynchronous and synchronous buck converters. It comprises a state machine managing dynamic
+ soft-start and soft-stop control, runtime reference tuning and fault shut-down and self-recovery.
+*/
+
+	/* PUBLIC FUNCTIONS */
+	/** 
+	@defgroup lib-layer-buck-converter-functions-public Public Functions
+	@ingroup lib-layer-buck-converter-api
+	@brief Public functions of the second library layer
+	@details 
+	 This is the detailed description of public functions of the
+	 buck converter device driver library application programming interface (API). 
+	*/
+	
+	/* PUBLIC PROPERTIES */
+	/**
+	@defgroup lib-layer-buck-converter-properties-public Public Properties
+	@ingroup lib-layer-buck-converter-api
+	@brief Public properties of the second library layer
+	@details This is the detailed description of public variables, data types,
+	enumerations, defines and macros of the library layer of
+	buck converter device driver.
+	*/
+		/* VARIABLES */
+		/**
+		@defgroup lib-layer-buck-converter-properties-public-variables Variables & Constants
+		@ingroup lib-layer-buck-converter-properties-public
+		*/
+		/* DATA TYPES */
+		/**
+		@defgroup lib-layer-buck-converter-properties-public-data-types Data Types
+		@ingroup lib-layer-buck-converter-properties-public
+		*/
+		/* MACROS */
+		/**
+		@defgroup lib-layer-buck-converter-properties-public-defines Defines and Macros
+		@ingroup lib-layer-buck-converter-properties-public
+		*/
+
+	/* PRIVATE FUNCTIONS */
+	/*
+	@defgroup lib-layer-buck-converter-functions-private Private Functions
+	@ingroup lib-layer-buck-converter-api
+	@brief Private functions of the second library layer
+	@details 
+	 This is the detailed description of private functions of the
+	 buck converter device driver library application programming interface (API). 
+	 @note 
+	 This library segment does not have any private functions
+	*/
+		
+	/* PRIVATE PROPERTIES */
+	/**
+	@defgroup lib-layer-buck-converter-properties-private Private Properties
+	@ingroup lib-layer-buck-converter-api
+	@brief Private properties of the second library layer
+	@details This is the detailed description of private variables, data types,
+	enumerations, defines and macros of the library layer of the buck converter
+	device driver.
+	*/
+		/* VARIABLES */
+		/**
+		@defgroup lib-layer-buck-converter-properties-private-variables Variables & Constants
+		@ingroup lib-layer-buck-converter-properties-private
+		@note This part of the library does not have any private variables or constants
+		*/
+		/* DATA TYPES */
+		/**
+		@defgroup lib-layer-buck-converter-properties-private-data-types Data Types
+		@ingroup lib-layer-buck-converter-properties-private
+		*/
+		/* MACROS */
+		/**
+		@defgroup lib-layer-buck-converter-properties-private-defines Defines and Macros
+		@ingroup lib-layer-buck-converter-properties-private
+		@note This part of the library does not have any private defines and macros
+		*/
+
+
+/*----------------------------------------------------------------------------*/
+/* Buck Converter Library Modules */
+/*----------------------------------------------------------------------------*/
+
+/* LEVEL 1 */
+/**
+@defgroup lib-layer-buck-modules Buck Converter Library Modules
+@ingroup lib-layer-buck
+@brief 
+@details 
+ The buck converter device driver is a comprehensive, self-contained driver for single- and multiphase, 
+ non-isolated, asynchronous and synchronous buck converters. It comprises a state machine managing dynamic
+ soft-start and soft-stop control, runtime reference tuning and fault shut-down and self-recovery.
+*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Buck Converter Library Module State Machine */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* LEVEL 1 */
+/**
+@defgroup lib-layer-buck-state-machine Buck Converter State Machine
+@ingroup  lib-layer-buck-modules
+@brief    Description of the Buck Converter Library State Machine library module
+@details 
+The converter state machine defines the steps required to initialize the power supply chip resources
+and converter data objects, resets the most recent runtime data in preparation for a power supply startup,
+monitors the status of fault and control flags and provides sub-functions for powering up the power converter
+and its control system dependent on which kind of control mode is selected. 
+ 
+The soft-start process includes programmable delays such as Power-On Delay and Power Good Delay including 
+the ramp-up slew rate of the output voltage. In case of system or software errors, the state machine will 
+shut down the power supply and execute a restart attempt.
+
+The complete state machine is encapsulated in and managed by the converter device driver. No user control
+is required other than calling the high-level 'drv_BuckConverter_Execute' device driver API function at 
+a constant repetition rate.
+*/
+	
+/* LEVEL 2 */
+/**
+@defgroup lib-layer-buck-state-machine-functions Functions
+@ingroup  lib-layer-buck-state-machine
+@brief    Functions of the second library layer
+@details 
+This is the detailed description of functions of the state machine 
+of the buck converter device driver library.
+*/
+
+/**
+@defgroup lib-layer-buck-state-machine-properties Properties
+@ingroup  lib-layer-buck-state-machine
+@brief    Properties of the second library layer
+@details 
+This is the detailed description of variables, data types,
+enumerations, defines and macros of the state machine of the buck converter 
+device driver library.
+*/
+	
+/* LEVEL 3 */
+/**
+@defgroup lib-layer-buck-state-machine-properties-variables Variables & Constants
+@ingroup  lib-layer-buck-state-machine-properties
+@brief    Variables of the buck converter state machine
+*/
+/**
+@defgroup lib-layer-buck-state-machine-properties-data-types Data Types
+@ingroup  lib-layer-buck-state-machine-properties
+@brief    Data types of the buck converter state machine
+@note     This library module does not provide any data types 
+*/
+/**
+@defgroup lib-layer-buck-state-machine-properties-defines Defines and Macros
+@ingroup  lib-layer-buck-state-machine-properties
+@brief    Defines and macros of the buck converter state machine
+@note     This library module does not provide any defines or macros 
+*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Buck Converter Library Module Special Functions */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* LEVEL 1 */
+/**
+@defgroup lib-layer-buck-specialfn Buck Special Functions
+@ingroup lib-layer-buck-modules
+@brief 
+@details 
+The Special Function layer of the power converter state machine provides optional extension states
+to the common state machine functions, which may only be applicable to specific power converter 
+architectures or in presence of specific sub-circuit types. The common state machine incorporates 
+calls of Special Function states at an approriate point making them optionally available through 
+user configuration in the BUCK_CONVERTER_s data structure.
+*/
+
+/* LEVEL 2 */
+/**
+@defgroup lib-layer-buck-specialfn-functions Functions
+@ingroup lib-layer-buck-specialfn
+@brief Public functions of the second library layer
+@details 
+This is the detailed description of public functions of the
+special function module of the buck converter device driver library.
+*/
+/**
+@defgroup lib-layer-buck-specialfn-properties Properties
+@ingroup lib-layer-buck-specialfn
+@brief Public properties of the second library layer
+@details This is the detailed description of public variables, data types,
+enumerations, defines and macros of the library layer of
+buck converter device driver.
+*/
+
+/* LEVEL 3 */
+/**
+@defgroup lib-layer-buck-specialfn-properties-variables Variables & Constants
+@ingroup  lib-layer-buck-specialfn-properties
+@brief    List of variables of the Special Function state machine extensions
+*/
+/**
+@defgroup lib-layer-buck-specialfn-properties-data-types Data Types
+@ingroup  lib-layer-buck-specialfn-properties
+@brief    List of data types of the Special Function state machine extensions
+@details 
+*/
+/**
+@defgroup lib-layer-buck-specialfn-properties-defines Defines and Macros
+@ingroup  lib-layer-buck-specialfn-properties
+@brief    List of defines and macros of the Special Function state machine extensions
+*/
+		
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Buck Converter Library Peripheral Configuration Module */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* LEVEL 1 */
+/**
+@defgroup lib-layer-buck-pconfig Buck Peripheral Configuration
+@ingroup lib-layer-buck-modules
+@brief 
+@details 
+The buck converter device driver self-manages its chip resources required to initialize and drive
+the converter stage and related control loops. The device driver provides standard configurations
+for all peripherals which are loaded into the respective Special Function Registers of each peripheral.
+The generic configuraitons are sublemented by the user-settings written to the converter data structure
+in the application layer initialization routine.
+*/
+
+/* LEVEL 2 */
+/**
+@defgroup lib-layer-buck-pconfig-functions Functions
+@ingroup lib-layer-buck-pconfig
+@brief Functions of the second library layer
+@details 
+This is the detailed description of public functions of the
+peripheral configuration module of the buck converter device driver library.
+*/
+/**
+@defgroup lib-layer-buck-pconfig-properties Properties
+@ingroup lib-layer-buck-pconfig
+@brief Properties of the second library layer
+@details 
+This is the detailed description of public variables, data types,
+enumerations, defines and macros of the peripheral configuration module
+of the buck converter device driver library.
+*/
+
+/* LEVEL 3 */
+/**
+@defgroup lib-layer-buck-pconfig-properties-variables Variables & Constants
+@ingroup lib-layer-buck-pconfig-properties
+*/
+/**
+@defgroup lib-layer-buck-pconfig-properties-data-types Data Types
+@ingroup  lib-layer-buck-pconfig-properties
+@note     This library module does not provide any data types
+*/
+/**
+@defgroup lib-layer-buck-pconfig-properties-defines Defines and Macros
+@ingroup  lib-layer-buck-pconfig-properties
+@note     This library module does not provide any defines or macros
+*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Buck Converter Library Peripheral Configuration Template Module */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* LEVEL 1 */
+/**
+@defgroup lib-layer-buck-ptemplate Buck Peripheral Templates
+@ingroup lib-layer-buck-modules
+@brief 
+@details 
+Peripheral Templates of the power converter device driver are used to preconfigure device peripheral
+modules required to drive and control the power converter circuit. Specific control modes might include
+different sets of peripherals. Peripheral templates are provided for each supported control mode as well
+as for optional and special features such as hardware protection, feedback conditioning, Enable input or 
+Power Good output pins.
+*/
+
+/* LEVEL 2 */
+/**
+@defgroup lib-layer-buck-ptemplate-functions Functions
+@ingroup  lib-layer-buck-ptemplate
+@brief    Functions of the second library layer
+@details  This is the detailed description of functions of the
+library layer of buck converter device driver.
+@note     This library module does not provide any functions
+*/
+/**
+@defgroup lib-layer-buck-ptemplate-properties Properties
+@ingroup lib-layer-buck-ptemplate
+@brief Properties of the second library layer
+@details This is the detailed description of variables, data types,
+enumerations, defines and macros of the library layer of
+buck converter device driver.
+*/
+
+/* LEVEL 3 */
+/**
+@defgroup lib-layer-buck-ptemplate-properties-variables Variables & Constants
+@ingroup lib-layer-buck-ptemplate-properties
+*/
+/**
+@defgroup lib-layer-buck-ptemplate-properties-data-types Data Types
+@ingroup lib-layer-buck-ptemplate-properties
+@note     This library module does not provide any data types
+*/
+/**
+@defgroup lib-layer-buck-ptemplate-properties-defines Defines and Macros
+@ingroup lib-layer-buck-ptemplate-properties
+*/
+
+
+/* end of file */

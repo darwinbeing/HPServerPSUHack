@@ -1,0 +1,39 @@
+/*----------------------------------------------------------------------------*/
+/* DRIVER LAYER: LCD Interface Driver Library Layer Documentation */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup lib-driver-layer-lcd LC-Display Interface Driver 
+@ingroup lib-driver-layer
+@details 
+  The LC display interface driver is the generic library component used to configure and drive 
+  an on-board LC display interface. 
+
+@defgroup lib-driver-layer-lcd-interface-functions-public Public Functions
+@ingroup lib-driver-layer-lcd
+@brief Public functions of the LC display interface driver
+@details 
+  This is the detailed description of public API functions of the LC display interface driver.
+
+@defgroup lib-driver-layer-lcd-interface-properties-public Public Properties
+@ingroup lib-driver-layer-lcd
+@brief Public properties of the LC display interface driver
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the LC display interface driver.
+
+@note This module doesn't have any public properties
+
+@defgroup lib-driver-layer-lcd-interface-functions-private Private Functions
+@ingroup lib-driver-layer-lcd
+@brief Private functions of the LC display interface driver
+@details 
+  This is the detailed description of private functions of the LC display interface driver.
+
+@defgroup lib-driver-layer-lcd-interface-properties-private Private Properties
+@ingroup lib-driver-layer-lcd
+@brief Private properties of the LC display interface driver
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the LC display interface driver.
+  
+*/

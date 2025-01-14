@@ -1,0 +1,4 @@
+<map id="p33c_PwmGenerator_GetGroup" name="p33c_PwmGenerator_GetGroup">
+<area shape="rect" id="node1" title="Get the PWM generator group." alt="" coords="297,5,504,32"/>
+<area shape="rect" id="node2" href="$a00381.html#ga9e915aaf4de147d97a05e808113d86d6" title="Sets the synchronization triggers of two PWM generators, of which the Mother PWM generator is the tri..." alt="" coords="5,5,249,32"/>
+</map>

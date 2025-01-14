@@ -1,0 +1,7 @@
+<map id="i_loop_Reset" name="i_loop_Reset">
+<area shape="rect" id="node1" title="Prototype of the Assembly routine &#39;_i_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="821,13,919,39"/>
+<area shape="rect" id="node2" href="$a00492.html#ga0b4cabdb02c8c9ea94ea1dfa39de3764" title="This function initializes the control system feedback loop objects." alt="" coords="433,5,615,47"/>
+<area shape="rect" id="node5" href="$a00531.html#ga3d32e66188691f64885c2223f6e08d20" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="663,38,773,65"/>
+<area shape="rect" id="node3" href="$a00489.html#ga7a4cf6371d09457539f96a74b2809ca0" title="Calls the application layer power controller initialization." alt="" coords="212,13,385,39"/>
+<area shape="rect" id="node4" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,13,164,39"/>
+</map>

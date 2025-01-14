@@ -1,0 +1,27 @@
+<map id="BUCK_CONVERTER_SETTINGS_s" name="BUCK_CONVERTER_SETTINGS_s">
+<area shape="rect" id="node1" title="Generic power controller control settings." alt="" coords="713,5,942,127"/>
+<area shape="rect" id="node2" href="$a01664.html" title="BUCK control &amp; monitoring data structure." alt="" coords="748,189,907,267"/>
+<area shape="rect" id="node3" href="$a01596.html" title="Generic power controller status word." alt="" coords="1093,351,1309,634"/>
+<area shape="rect" id="node4" href="$a01628.html" title="Publicly accessible data buffer of most recent runtime data values." alt="" coords="250,403,450,583"/>
+<area shape="rect" id="node5" href="$a01640.html" title="Switching signal timing settings." alt="" coords="1333,381,1575,605"/>
+<area shape="rect" id="node6" href="$a01636.html" title="User defined settings for control loops;." alt="" coords="1600,395,1785,590"/>
+<area shape="rect" id="node18" href="$a01652.html" title="Buck converter feedback declarations." alt="" coords="5,454,225,531"/>
+<area shape="rect" id="node21" href="$a01608.html" title="data structure for the buck statement ID for sub&#45;operating and operating states" alt="" coords="474,432,613,553"/>
+<area shape="rect" id="node22" href="$a01660.html" title="GPIO instance of the converter control GPIO." alt="" coords="637,454,818,531"/>
+<area shape="rect" id="node24" href="$a01624.html" title="Power Converter Startup Timing Settings." alt="" coords="843,454,1068,531"/>
+<area shape="rect" id="node7" href="$a01736.html" title="Global NPNZ controller data object." alt="" coords="2657,189,2747,267"/>
+<area shape="rect" id="node8" href="$a01716.html" title="Automated ADC Trigger handling." alt="" coords="2257,432,2429,553"/>
+<area shape="rect" id="node9" href="$a01728.html" title="Adaptive Gain Control Modulation Parameters." alt="" coords="2454,432,2630,553"/>
+<area shape="rect" id="node10" href="$a01712.html" title="System Anti&#45;Windup (Output Clamping) Thresholds." alt="" coords="2862,432,2979,553"/>
+<area shape="rect" id="node11" href="$a01732.html" title="User Data Space for Advanced Control Functions." alt="" coords="3265,403,3478,583"/>
+<area shape="rect" id="node12" href="$a01704.html" title="Filter Coefficient Arrays, Number Format Handling and Input/Output History Parameters." alt="" coords="3503,454,3651,531"/>
+<area shape="rect" id="node14" href="$a01708.html" title="Filter Coefficient Arrays, Number Format Handling and Input/Output History Parameters." alt="" coords="2655,359,2837,627"/>
+<area shape="rect" id="node15" href="$a01720.html" title="Data Provider Target Memory Addresses." alt="" coords="1810,432,2042,553"/>
+<area shape="rect" id="node16" href="$a01724.html" title="User Extension Function Call Parameters." alt="" coords="3004,344,3240,641"/>
+<area shape="rect" id="node17" href="$a01680.html" title="NPNZ16b controller object status and control word." alt="" coords="2067,395,2233,590"/>
+<area shape="rect" id="node13" href="$a01700.html" title="Data Input/Output Port declaration of memory addresses, signal offsets and normalization settings." alt="" coords="3521,799,3633,921"/>
+<area shape="rect" id="node19" href="$a01648.html" title="ADC input channel configuration." alt="" coords="7,748,227,972"/>
+<area shape="rect" id="node20" href="$a01644.html" title="ADC input signal scaling = (ADCBUF &#45; &lt;offset&gt;) * &lt;factor&gt; &gt;&gt; 2^&lt;scaler&gt;" alt="" coords="10,1035,223,1141"/>
+<area shape="rect" id="node23" href="$a01656.html" title="GPIO instance of the converter control GPIO." alt="" coords="635,792,817,928"/>
+<area shape="rect" id="node25" href="$a01620.html" title="Generic power controller startup period settings." alt="" coords="865,792,1045,928"/>
+</map>

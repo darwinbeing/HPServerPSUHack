@@ -1,0 +1,52 @@
+<map id="sysUserTasks_Initialize" name="sysUserTasks_Initialize">
+<area shape="rect" id="node1" title="Initializes the user&#45;defined tasks." alt="" coords="5,668,164,695"/>
+<area shape="rect" id="node2" href="$a00453.html#ga830e5c7087a8e5ee8ea39b7e3df94b68" title="Initialization of user&#45;defined fault objects." alt="" coords="214,107,383,133"/>
+<area shape="rect" id="node10" href="$a00469.html#gab93992748ced72fdc2989d0b0f369e54" title="Initializes the LC display." alt="" coords="237,284,360,311"/>
+<area shape="rect" id="node21" href="$a00484.html#ga900c95201f101cb3c8644bcf7aab8af9" title="Initializes the LED driving GPIO." alt="" coords="237,643,360,669"/>
+<area shape="rect" id="node22" href="$a00489.html#ga7a4cf6371d09457539f96a74b2809ca0" title="Calls the application layer power controller initialization." alt="" coords="212,693,385,720"/>
+<area shape="rect" id="node45" href="$a00539.html#ga7c903bd2ce5b08d78de218d726830947" title="Initializes the USER push button on DPSK3." alt="" coords="216,864,381,891"/>
+<area shape="rect" id="node50" href="$a00563.html#ga8e89a1a4ee5bf8c794bd29163b92bf49" title="Initializes the timer used as time&#45;base for the task scheduler." alt="" coords="225,915,372,941"/>
+<area shape="rect" id="node3" href="$a00455.html#ga54f9db91ea0782b08aa16ee77a57c5e5" title="Initializes the user&#45;defined fault objects for overcurrent protection." alt="" coords="480,5,607,32"/>
+<area shape="rect" id="node7" href="$a00455.html#gade437244e8f6e5ff7c57a73442063350" title="Initializes the user&#45;defined fault objects for overvoltage lockout." alt="" coords="480,56,607,83"/>
+<area shape="rect" id="node8" href="$a00455.html#ga82dc317e3adac0308e5ac3f5ad321605" title="Initializes the user&#45;defined fault objects for regulation error." alt="" coords="474,107,613,133"/>
+<area shape="rect" id="node9" href="$a00455.html#ga9441220f8a7d4a6805467d04b734e6b5" title="Initializes the user&#45;defined fault objects for under&#45;voltage lockout." alt="" coords="480,157,607,184"/>
+<area shape="rect" id="node4" href="$a00489.html#gafa4e90d260e60cf20f06acee067c39cd" title="This function stops the power supply operation." alt="" coords="704,56,881,83"/>
+<area shape="rect" id="node5" href="$a00496.html#ga0d68d132b52175c43503c9b5794bae64" title="This function suspends the operation of the buck converter." alt="" coords="932,56,1119,83"/>
+<area shape="rect" id="node6" href="$a00496.html#gab9877f90ffb129964ae42ce2921b3fe1" title="This function is the main buck converter state machine executing the most recent state." alt="" coords="1180,56,1364,83"/>
+<area shape="rect" id="node11" href="$a00474.html#ga5d8f09855e28846e87400692d186781a" title="Initializes the LCD Device." alt="" coords="482,208,605,235"/>
+<area shape="rect" id="node16" href="$a00474.html#ga24701a4c3ae760e7e0b9c70d93370ff3" title="Sets the cursor position to the given x&#45; and y&#45;coordinates and writes the given string on the lcd scr..." alt="" coords="465,284,622,311"/>
+<area shape="rect" id="node12" href="$a00479.html#gaeb25fdecced4c325cd0d986a30d57e90" title="Initializes the LCD interface driver." alt="" coords="708,107,877,133"/>
+<area shape="rect" id="node13" href="$a00479.html#ga3f10606b6c67ff33338ab2c5c6a2d4c8" title="Resets the LCD controller." alt="" coords="715,157,871,184"/>
+<area shape="rect" id="node14" href="$a00479.html#ga3e045335a3463f6a53e4fd91b50bb0ca" title="Sends a command to the LCD controller." alt="" coords="1425,259,1604,285"/>
+<area shape="rect" id="node15" href="$a00481.html#ga50b8734fca19fc75dd778a9902c63082" title="Sends data through the SPI interface to the LCD controller." alt="" coords="1652,259,1823,285"/>
+<area shape="rect" id="node17" href="$a00474.html#ga5c431635cb94750b2f6e938d7f1f0cf1" title="Sets the cursor position to the given x&#45; and y&#45;coordinates." alt="" coords="1212,259,1332,285"/>
+<area shape="rect" id="node18" href="$a00474.html#gac07de05132918ca2db8cf4492819eca6" title="Writes a complete string on the LCD screen." alt="" coords="722,309,863,336"/>
+<area shape="rect" id="node19" href="$a00474.html#ga3cb1303cba012af043a87af0bcab16d8" title="Writes a character on the LCD screen." alt="" coords="958,309,1093,336"/>
+<area shape="rect" id="node20" href="$a00474.html#ga0bff8adf9ea1196bdd69b3e47b2b77cd" title="Clears the LC Display Screen." alt="" coords="1219,309,1325,336"/>
+<area shape="rect" id="node23" href="$a00492.html#ga0b4cabdb02c8c9ea94ea1dfa39de3764" title="This function initializes the control system feedback loop objects." alt="" coords="453,555,634,597"/>
+<area shape="rect" id="node32" href="$a00492.html#gad0f6ff4894bf23722884c60bbcdcacd0" title="This function initializes the buck converter device driver instance." alt="" coords="453,653,633,694"/>
+<area shape="rect" id="node33" href="$a00492.html#ga0b26acfec74d1804384b4ba1a3cffab4" title="This function is used to load peripheral configuration templates from the power controller device dri..." alt="" coords="448,718,639,759"/>
+<area shape="rect" id="node42" href="$a00496.html#ga86289c82938655142075e84ac90aa603" title="This function starts the buck converter." alt="" coords="461,784,625,811"/>
+<area shape="rect" id="node24" href="$a00531.html#ga3d32e66188691f64885c2223f6e08d20" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="737,360,848,387"/>
+<area shape="rect" id="node25" href="$a00531.html#gaade67bca1738eccdbf511c980e79339f" title="Prototype of the Assembly routine &#39;_i_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="977,385,1074,412"/>
+<area shape="rect" id="node26" href="$a00531.html#ga15932f07e150c94059c8dc35566dfa36" title="Prototype of the Assembly routine &#39;_i_loop_Precharge&#39; loading user&#45;defined values into the NPNZ16b co..." alt="" coords="731,461,854,488"/>
+<area shape="rect" id="node27" href="$a00531.html#gaeb19529055f7bef1a4817c3005605c23" title="Prototype of the Assembly feedback control loop routine helping to call the i_loop controller from C&#45;..." alt="" coords="741,512,845,539"/>
+<area shape="rect" id="node28" href="$a00531.html#ga62d45a18f3dd47fa691fbb463f90e051" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="737,563,849,589"/>
+<area shape="rect" id="node29" href="$a00531.html#gabb35e824b8586b680f54d59975ada3c7" title="Prototype of the Assembly routine &#39;_v_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="976,575,1075,601"/>
+<area shape="rect" id="node30" href="$a00531.html#ga3cdf7d86ab440015768706f04bd588e9" title="Prototype of the Assembly routine &#39;_v_loop_Precharge&#39; loading user&#45;defined values into the NPNZ16b co..." alt="" coords="731,664,855,691"/>
+<area shape="rect" id="node31" href="$a00531.html#gab8180f1cb973d694be5caffaec3ce940" title="Prototype of the Assembly feedback control loop routine helping to call the v_loop controller from C&#45;..." alt="" coords="739,715,846,741"/>
+<area shape="rect" id="node34" href="$a00496.html#gaf3c64772d6dfd473d6924fb8893bd180" title="This function initializes all peripheral modules and their instances used by the power controller." alt="" coords="701,765,884,792"/>
+<area shape="rect" id="node35" href="$a00519.html#gac2bfd6c3ccd9ec11b8e91322ea9354d2" title="This function initializes the settings for the ADC channel." alt="" coords="936,651,1115,677"/>
+<area shape="rect" id="node36" href="$a00519.html#ga44f537d9ad5dcb0e744480802cfbf170" title="This fucntion initializes the buck by resetting all its registers to default." alt="" coords="939,701,1112,728"/>
+<area shape="rect" id="node37" href="$a00519.html#gac7e5924475733c189b2318844ae01844" title="This function initializes the buck input pins." alt="" coords="957,752,1093,779"/>
+<area shape="rect" id="node39" href="$a00519.html#ga45a54def97cc67eb8d36e22a3867d95f" title="This function initializes the output pins for the PWM output and the default buck PWM settings." alt="" coords="933,803,1117,829"/>
+<area shape="rect" id="node41" href="$a00519.html#ga6d12fd9e2f1d4f01ec6db21454693863" title="Initializes the buck PWM module by resetting its registers to default." alt="" coords="936,853,1115,880"/>
+<area shape="rect" id="node38" href="$a00519.html#ga7f1d554e08d756b8677b572216908a3a" title="This function clears the selected general purpose input/output pin." alt="" coords="1213,752,1331,779"/>
+<area shape="rect" id="node40" href="$a00381.html#ga55e525c7ac54a365ab6dad558ec17f0b" title="Returns the PWM generator index." alt="" coords="1167,853,1377,880"/>
+<area shape="rect" id="node43" href="$a00519.html#gab089e35bcd5d68072aa53298ee276959" title="This function enables the ADC module and starts the ADC cores analog inputs for the required input si..." alt="" coords="737,816,849,843"/>
+<area shape="rect" id="node44" href="$a00519.html#gac63073d04bc35c0cce5df47ea0d33165" title="This function enables the buck PWM operation." alt="" coords="966,904,1085,931"/>
+<area shape="rect" id="node46" href="$a00541.html#ga3966fddf4ec29e64c6d51a93eee8706f" title="Push button event raised at the &quot;pressed&quot; transition." alt="" coords="433,835,653,861"/>
+<area shape="rect" id="node47" href="$a00541.html#ga6192986e06dbca144461c0315a2a100f" title="Push button event raised at the &quot;is long pressed&quot; detection." alt="" coords="449,886,637,927"/>
+<area shape="rect" id="node48" href="$a00541.html#ga13f736396ad1222ff5cbe35947bd60ac" title="Push button event raised at the &quot;not pressed&quot; transition." alt="" coords="441,952,645,979"/>
+<area shape="rect" id="node49" href="$a00544.html#gaa3ce9c320a37ebc6e1ae113c82e68747" title="Initializes the push button device driver." alt="" coords="460,1003,627,1029"/>
+</map>

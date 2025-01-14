@@ -1,0 +1,4 @@
+<map id="buckGPIO_PrivateInitialize" name="buckGPIO_PrivateInitialize">
+<area shape="rect" id="node1" title="This function sets the pin as input or output." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="228,5,429,32"/>
+</map>

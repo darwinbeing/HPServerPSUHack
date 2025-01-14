@@ -1,0 +1,6 @@
+<map id="p33c_OscAuxClk_Initialize" name="p33c_OscAuxClk_Initialize">
+<area shape="rect" id="node1" title="Initializes the auxiliary clock and its PLL module step by step in software. Each step is tested and ..." alt="" coords="620,5,797,32"/>
+<area shape="rect" id="node2" href="$a00379.html#gab06b90f28b398245a399304dde2c1576" title="Initializes the auxiliary clock and its PLL module step by step in software. Each step is tested and ..." alt="" coords="355,5,572,32"/>
+<area shape="rect" id="node3" href="$a00555.html#ga3f3f3c22c6c2b95518271fae8f58b03f" title="Initializes the auxiliary clock of the device." alt="" coords="184,5,307,32"/>
+<area shape="rect" id="node4" href="$a00554.html#ga12ce46460ff0657fc879f5b23ed8ccb1" title="Initializes essential chip resources." alt="" coords="5,5,136,32"/>
+</map>

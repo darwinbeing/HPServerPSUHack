@@ -1,0 +1,7 @@
+<map id="dev_Lcd_Initialize" name="dev_Lcd_Initialize">
+<area shape="rect" id="node1" title="Initializes the LCD Device." alt="" coords="5,56,128,83"/>
+<area shape="rect" id="node2" href="$a00479.html#gaeb25fdecced4c325cd0d986a30d57e90" title="Initializes the LCD interface driver." alt="" coords="181,5,350,32"/>
+<area shape="rect" id="node3" href="$a00479.html#ga3f10606b6c67ff33338ab2c5c6a2d4c8" title="Resets the LCD controller." alt="" coords="187,56,343,83"/>
+<area shape="rect" id="node4" href="$a00479.html#ga3e045335a3463f6a53e4fd91b50bb0ca" title="Sends a command to the LCD controller." alt="" coords="176,107,355,133"/>
+<area shape="rect" id="node5" href="$a00481.html#ga50b8734fca19fc75dd778a9902c63082" title="Sends data through the SPI interface to the LCD controller." alt="" coords="403,107,573,133"/>
+</map>

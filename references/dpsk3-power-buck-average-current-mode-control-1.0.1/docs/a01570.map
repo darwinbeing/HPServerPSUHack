@@ -1,0 +1,8 @@
+<map id="TASK_INFO_s" name="TASK_INFO_s">
+<area shape="rect" id="node1" title="Provides information for executed task, fault event and operating mode ID of task manager." alt="" coords="233,5,340,112"/>
+<area shape="rect" id="node2" href="$a01576.html" title="Global data structure for trap event capturing." alt="" coords="221,175,353,281"/>
+<area shape="rect" id="node3" href="$a01524.html" title="Defines the Trap Flag for primary and secondary vectors." alt="" coords="5,373,125,597"/>
+<area shape="rect" id="node4" href="$a01548.html" title="Data structure for RCON status capturing." alt="" coords="149,344,256,627"/>
+<area shape="rect" id="node5" href="$a01536.html" title="defining the CPU interrupt for primary and secondary vectors" alt="" coords="281,417,405,553"/>
+<area shape="rect" id="node6" href="$a01560.html" title="Data structure for RCON status capturing." alt="" coords="429,425,584,546"/>
+</map>

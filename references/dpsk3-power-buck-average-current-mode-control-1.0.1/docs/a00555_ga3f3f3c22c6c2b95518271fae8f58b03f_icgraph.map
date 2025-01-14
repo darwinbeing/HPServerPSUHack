@@ -1,0 +1,4 @@
+<map id="sysAclk_Initialize" name="sysAclk_Initialize">
+<area shape="rect" id="node1" title="Initializes the auxiliary clock of the device." alt="" coords="184,5,307,32"/>
+<area shape="rect" id="node2" href="$a00554.html#ga12ce46460ff0657fc879f5b23ed8ccb1" title="Initializes essential chip resources." alt="" coords="5,5,136,32"/>
+</map>

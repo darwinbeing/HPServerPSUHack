@@ -1,0 +1,6 @@
+<map id="buckPWM_ChannelInitialize" name="buckPWM_ChannelInitialize">
+<area shape="rect" id="node1" title="This function initializes the output pins for the PWM output and the default buck PWM settings." alt="" coords="5,64,189,91"/>
+<area shape="rect" id="node2" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="242,5,443,32"/>
+<area shape="rect" id="node3" href="$a00381.html#gab66f225bac6b132d1418a4c808e3babb" title="Disposes a given PWM generator by resetting all its registers to default." alt="" coords="249,57,436,98"/>
+<area shape="rect" id="node4" href="$a00381.html#ga55e525c7ac54a365ab6dad558ec17f0b" title="Returns the PWM generator index." alt="" coords="237,123,448,149"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="appLCD_Initialize" name="appLCD_Initialize">
+<area shape="rect" id="node1" title="Initializes the LC display." alt="" coords="5,132,128,159"/>
+<area shape="rect" id="node2" href="$a00474.html#ga5d8f09855e28846e87400692d186781a" title="Initializes the LCD Device." alt="" coords="193,81,316,108"/>
+<area shape="rect" id="node7" href="$a00474.html#ga24701a4c3ae760e7e0b9c70d93370ff3" title="Sets the cursor position to the given x&#45; and y&#45;coordinates and writes the given string on the lcd scr..." alt="" coords="176,157,333,184"/>
+<area shape="rect" id="node3" href="$a00479.html#gaeb25fdecced4c325cd0d986a30d57e90" title="Initializes the LCD interface driver." alt="" coords="381,5,551,32"/>
+<area shape="rect" id="node4" href="$a00479.html#ga3f10606b6c67ff33338ab2c5c6a2d4c8" title="Resets the LCD controller." alt="" coords="388,56,544,83"/>
+<area shape="rect" id="node5" href="$a00479.html#ga3e045335a3463f6a53e4fd91b50bb0ca" title="Sends a command to the LCD controller." alt="" coords="949,157,1128,184"/>
+<area shape="rect" id="node6" href="$a00481.html#ga50b8734fca19fc75dd778a9902c63082" title="Sends data through the SPI interface to the LCD controller." alt="" coords="1176,157,1347,184"/>
+<area shape="rect" id="node8" href="$a00474.html#ga5c431635cb94750b2f6e938d7f1f0cf1" title="Sets the cursor position to the given x&#45; and y&#45;coordinates." alt="" coords="781,157,901,184"/>
+<area shape="rect" id="node9" href="$a00474.html#gac07de05132918ca2db8cf4492819eca6" title="Writes a complete string on the LCD screen." alt="" coords="395,208,537,235"/>
+<area shape="rect" id="node10" href="$a00474.html#ga3cb1303cba012af043a87af0bcab16d8" title="Writes a character on the LCD screen." alt="" coords="599,208,733,235"/>
+<area shape="rect" id="node11" href="$a00474.html#ga0bff8adf9ea1196bdd69b3e47b2b77cd" title="Clears the LC Display Screen." alt="" coords="788,208,895,235"/>
+</map>

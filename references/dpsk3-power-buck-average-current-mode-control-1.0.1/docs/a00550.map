@@ -1,0 +1,6 @@
+<map id="Main Loop" name="Main Loop">
+<area shape="rect" id="node1" href="$a00551.html" title="Low priority task execution The execution of the sequence of low priority tasks is called from the ma..." alt="" coords="333,5,517,31"/>
+<area shape="rect" id="node2" title="Main Loop." alt="" coords="203,35,285,60"/>
+<area shape="rect" id="node4" href="$a00552.html" title="High priority task execution." alt="" coords="363,55,488,95"/>
+<area shape="rect" id="node3" href="$a00548.html" title="Firmware Flowchart." alt="" coords="5,35,155,60"/>
+</map>

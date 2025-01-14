@@ -1,0 +1,4 @@
+<map id="sysOpAmp_Initialize" name="sysOpAmp_Initialize">
+<area shape="rect" id="node1" title="Initializes the on&#45;chip operational amplifier module." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node2" href="$a00378.html#gacaacda32efbc1383f62de2ba1bb95a34" title="Gets pointer to op&#45;amp Module SFR set." alt="" coords="195,5,385,32"/>
+</map>

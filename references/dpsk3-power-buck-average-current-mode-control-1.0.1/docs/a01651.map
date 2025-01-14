@@ -1,0 +1,6 @@
+<map id="BUCK_FEEDBACK_SETTINGS_s" name="BUCK_FEEDBACK_SETTINGS_s">
+<area shape="rect" id="node1" title="Buck converter feedback declarations." alt="" coords="5,263,225,384"/>
+<area shape="rect" id="node3" href="$a01648.html" title="ADC input channel configuration." alt="" coords="5,432,225,671"/>
+<area shape="rect" id="node2" href="$a01664.html" title="BUCK control &amp; monitoring data structure." alt="" coords="36,5,195,215"/>
+<area shape="rect" id="node4" href="$a01644.html" title="ADC input signal scaling = (ADCBUF &#45; &lt;offset&gt;) * &lt;factor&gt; &gt;&gt; 2^&lt;scaler&gt;" alt="" coords="9,719,222,825"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="appPowerSupply_Initialize" name="appPowerSupply_Initialize">
+<area shape="rect" id="node1" title="Calls the application layer power controller initialization." alt="" coords="5,407,179,433"/>
+<area shape="rect" id="node2" href="$a00492.html#ga0b4cabdb02c8c9ea94ea1dfa39de3764" title="This function initializes the control system feedback loop objects." alt="" coords="231,201,413,242"/>
+<area shape="rect" id="node11" href="$a00492.html#gad0f6ff4894bf23722884c60bbcdcacd0" title="This function initializes the buck converter device driver instance." alt="" coords="232,370,412,411"/>
+<area shape="rect" id="node12" href="$a00492.html#ga0b26acfec74d1804384b4ba1a3cffab4" title="This function is used to load peripheral configuration templates from the power controller device dri..." alt="" coords="227,509,417,550"/>
+<area shape="rect" id="node26" href="$a00496.html#ga86289c82938655142075e84ac90aa603" title="This function starts the buck converter." alt="" coords="240,436,404,463"/>
+<area shape="rect" id="node3" href="$a00531.html#ga3d32e66188691f64885c2223f6e08d20" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="501,157,612,184"/>
+<area shape="rect" id="node4" href="$a00531.html#gaade67bca1738eccdbf511c980e79339f" title="Prototype of the Assembly routine &#39;_i_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="739,132,837,159"/>
+<area shape="rect" id="node5" href="$a00531.html#ga15932f07e150c94059c8dc35566dfa36" title="Prototype of the Assembly routine &#39;_i_loop_Precharge&#39; loading user&#45;defined values into the NPNZ16b co..." alt="" coords="495,5,618,32"/>
+<area shape="rect" id="node6" href="$a00531.html#gaeb19529055f7bef1a4817c3005605c23" title="Prototype of the Assembly feedback control loop routine helping to call the i_loop controller from C&#45;..." alt="" coords="505,56,609,83"/>
+<area shape="rect" id="node7" href="$a00531.html#ga62d45a18f3dd47fa691fbb463f90e051" title="Initializes controller coefficient arrays and normalization factors." alt="" coords="501,309,613,336"/>
+<area shape="rect" id="node8" href="$a00531.html#gabb35e824b8586b680f54d59975ada3c7" title="Prototype of the Assembly routine &#39;_v_loop_Reset&#39; clearing the NPNZ16b controller output and error hi..." alt="" coords="739,335,837,361"/>
+<area shape="rect" id="node9" href="$a00531.html#ga3cdf7d86ab440015768706f04bd588e9" title="Prototype of the Assembly routine &#39;_v_loop_Precharge&#39; loading user&#45;defined values into the NPNZ16b co..." alt="" coords="495,208,619,235"/>
+<area shape="rect" id="node10" href="$a00531.html#gab8180f1cb973d694be5caffaec3ce940" title="Prototype of the Assembly feedback control loop routine helping to call the v_loop controller from C&#45;..." alt="" coords="503,259,610,285"/>
+<area shape="rect" id="node13" href="$a00496.html#gaf3c64772d6dfd473d6924fb8893bd180" title="This function initializes all peripheral modules and their instances used by the power controller." alt="" coords="465,549,648,576"/>
+<area shape="rect" id="node14" href="$a00519.html#gac2bfd6c3ccd9ec11b8e91322ea9354d2" title="This function initializes the settings for the ADC channel." alt="" coords="699,473,877,500"/>
+<area shape="rect" id="node15" href="$a00519.html#ga44f537d9ad5dcb0e744480802cfbf170" title="This fucntion initializes the buck by resetting all its registers to default." alt="" coords="701,524,875,551"/>
+<area shape="rect" id="node16" href="$a00519.html#gac7e5924475733c189b2318844ae01844" title="This function initializes the buck input pins." alt="" coords="720,629,856,656"/>
+<area shape="rect" id="node20" href="$a00519.html#ga45a54def97cc67eb8d36e22a3867d95f" title="This function initializes the output pins for the PWM output and the default buck PWM settings." alt="" coords="696,575,880,601"/>
+<area shape="rect" id="node23" href="$a00519.html#ga6d12fd9e2f1d4f01ec6db21454693863" title="Initializes the buck PWM module by resetting its registers to default." alt="" coords="699,731,877,757"/>
+<area shape="rect" id="node17" href="$a00519.html#ga7f1d554e08d756b8677b572216908a3a" title="This function clears the selected general purpose input/output pin." alt="" coords="974,680,1093,707"/>
+<area shape="rect" id="node19" href="$a00519.html#ga3d3f91c0e40884874e7df3a67fff23f3" title="This function sets the pin as input or output." alt="" coords="946,629,1121,656"/>
+<area shape="rect" id="node18" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="1187,629,1388,656"/>
+<area shape="rect" id="node21" href="$a00381.html#gab66f225bac6b132d1418a4c808e3babb" title="Disposes a given PWM generator by resetting all its registers to default." alt="" coords="940,563,1127,605"/>
+<area shape="rect" id="node22" href="$a00381.html#ga55e525c7ac54a365ab6dad558ec17f0b" title="Returns the PWM generator index." alt="" coords="928,441,1139,468"/>
+<area shape="rect" id="node24" href="$a00381.html#ga8075fd40f867be8f42bb806622bd91bd" title="Writes a user&#45;defined configuration to the PWM base module registers." alt="" coords="932,731,1135,757"/>
+<area shape="rect" id="node25" href="$a00381.html#ga3ed5f08051a70f5cb426b8254119845f" title="Gets pointer to PWM module SFR set." alt="" coords="935,781,1131,808"/>
+<area shape="rect" id="node27" href="$a00519.html#gab089e35bcd5d68072aa53298ee276959" title="This function enables the ADC module and starts the ADC cores analog inputs for the required input si..." alt="" coords="501,411,613,437"/>
+<area shape="rect" id="node28" href="$a00519.html#gac63073d04bc35c0cce5df47ea0d33165" title="This function enables the buck PWM operation." alt="" coords="729,423,847,449"/>
+</map>

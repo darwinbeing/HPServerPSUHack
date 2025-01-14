@@ -1,0 +1,5 @@
+<map id="NPNZ_PORTS_s" name="NPNZ_PORTS_s">
+<area shape="rect" id="node1" title="Filter Coefficient Arrays, Number Format Handling and Input/Output History Parameters." alt="" coords="5,248,153,384"/>
+<area shape="rect" id="node3" href="$a01700.html" title="Data Input/Output Port declaration of memory addresses, signal offsets and normalization settings." alt="" coords="23,432,135,553"/>
+<area shape="rect" id="node2" href="$a01736.html" title="Global NPNZ controller data object." alt="" coords="9,5,150,200"/>
+</map>

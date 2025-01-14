@@ -1,0 +1,5 @@
+<map id="appPushButton_EventButtonDown" name="appPushButton_EventButtonDown">
+<area shape="rect" id="node1" title="Push button event raised at the &quot;pressed&quot; transition." alt="" coords="425,5,645,32"/>
+<area shape="rect" id="node2" href="$a00539.html#ga7c903bd2ce5b08d78de218d726830947" title="Initializes the USER push button on DPSK3." alt="" coords="212,5,377,32"/>
+<area shape="rect" id="node3" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,5,164,32"/>
+</map>

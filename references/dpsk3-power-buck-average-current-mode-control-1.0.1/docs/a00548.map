@@ -1,0 +1,5 @@
+<map id="Firmware Architecture" name="Firmware Architecture">
+<area shape="rect" id="node1" href="$a00550.html" title="Main Loop." alt="" coords="217,5,300,31"/>
+<area shape="rect" id="node2" title="Firmware Flowchart." alt="" coords="5,31,155,56"/>
+<area shape="rect" id="node3" href="$a00549.html" title="Device Start Up." alt="" coords="203,55,315,80"/>
+</map>

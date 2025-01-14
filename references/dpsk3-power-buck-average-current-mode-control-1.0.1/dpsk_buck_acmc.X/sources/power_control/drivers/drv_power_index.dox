@@ -1,0 +1,70 @@
+/*----------------------------------------------------------------------------*/
+/* DRIVER LAYER: Power Converter Control Driver Library Layer Documentation */
+/*----------------------------------------------------------------------------*/
+/* LEVEL 1 */
+/**
+@defgroup special-function-layer-power-control Power Converter Control Driver 
+@ingroup lib-driver-layer
+@details 
+  The Power Converter Control driver is the generic library component used to configure and run 
+  power converter control loops. 
+*/
+/* LEVEL 2 */
+/**
+@defgroup special-function-layer-npnz16-functions Functions
+@ingroup special-function-layer-power-control
+@brief Public functions of the Power Converter Control driver
+@details 
+  This is the detailed description of public API functions of the Power Converter Control driver
+  listing all available public functions of each individual feedback loop object.
+*/
+/**
+@defgroup special-function-layer-npnz16-objects Objects
+@ingroup special-function-layer-power-control
+@brief Public Objects of the Power Converter Control driver
+@details 
+  This is the detailed description of public objects of the Power Converter Control driver.
+  Each object represents an individual control loop block, such as a voltage or current feedback loop.
+*/
+/**
+@defgroup special-function-layer-npnz16-properties Properties
+@ingroup special-function-layer-power-control
+@brief Public properties of the Power Converter Control driver
+@details 
+  This is the detailed description of public data object declarations, their members,
+  enumerations, defines and macros of the Power Converter Control driver.
+*/
+/* LEVEL 3 */
+/**
+@defgroup special-function-layer-npnz16-data-objects Data Objects
+@ingroup special-function-layer-npnz16-properties
+@brief Public properties of the Power Converter Control driver
+@details 
+  This is the detailed description of public data objects
+  of the Power Converter Control driver.
+*/
+/**
+@defgroup special-function-layer-npnz16-object-members Data Object Members
+@ingroup special-function-layer-npnz16-properties
+@brief Public properties of the Power Converter Control driver
+@details 
+  This is the detailed description of nested data objects 
+  of the Power Converter Control driver.
+*/
+/**
+@defgroup special-function-layer-npnz16-macros Defines & Macros
+@ingroup special-function-layer-npnz16-properties
+@brief Public properties of the Power Converter Control driver
+@details 
+  This is the detailed description of public defines and macros
+  of the Power Converter Control driver.
+*/
+/**
+@defgroup special-function-layer-npnz16-variables Variables
+@ingroup special-function-layer-npnz16-properties
+@brief Public variables of the Power Converter Control driver
+@details 
+  This is the detailed description of public variables of the 
+  Power Converter Control driver.
+*/
+

@@ -1,0 +1,4 @@
+<map id="p33c_OpaModule_Dispose" name="p33c_OpaModule_Dispose">
+<area shape="rect" id="node1" title="Resets all Op&#45;Amp Module registers to their RESET default values." alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node2" href="$a00378.html#ga2e41506a3b90ae5a8221a73aaa4bfdde" title="Writes a user&#45;defined configuration to the op&#45;amp module base registers." alt="" coords="231,5,428,32"/>
+</map>

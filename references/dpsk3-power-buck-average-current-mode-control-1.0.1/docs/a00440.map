@@ -1,0 +1,6 @@
+<map id="Adaptive Gain Control Feed Forward" name="Adaptive Gain Control Feed Forward">
+<area shape="rect" id="node1" href="$a00565.html" title="Hardware Abstraction Layer Declarations." alt="" coords="5,23,152,63"/>
+<area shape="rect" id="node2" title="Declaration of macros calculating additional parameters for Adaptive Gain Modulation." alt="" coords="200,23,347,63"/>
+<area shape="rect" id="node3" href="$a00443.html" title="Conversion macros for user&#45;declarations of Adaptive Gain Modulation parameters." alt="" coords="395,5,527,31"/>
+<area shape="rect" id="node4" href="$a00441.html" title="User&#45;declaration of Adaptive Gain Modulation parameters using physical quantities." alt="" coords="410,55,511,80"/>
+</map>

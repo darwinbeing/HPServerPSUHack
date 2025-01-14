@@ -1,0 +1,8 @@
+<map id="sysHighPriorityTasks_Execute" name="sysHighPriorityTasks_Execute">
+<area shape="rect" id="node1" title="High priority task sequence executed at a fixed repetition frequency." alt="" coords="5,23,151,65"/>
+<area shape="rect" id="node2" href="$a00453.html#ga30537acd44b4c1bae429a78aeccad56e" title="Application wide fault object monitoring routine." alt="" coords="201,5,371,32"/>
+<area shape="rect" id="node3" href="$a00489.html#ga13094235dd6cc123d9299925359ca178" title="This is the top&#45;level function call triggering the most recent state machine of all associated power ..." alt="" coords="199,56,373,83"/>
+<area shape="rect" id="node4" href="$a00496.html#gab9877f90ffb129964ae42ce2921b3fe1" title="This function is the main buck converter state machine executing the most recent state." alt="" coords="421,56,605,83"/>
+<area shape="rect" id="node5" href="$a00519.html#ga8e2253c136f05033e774d09032b283a1" title="This function gets the state of the selected pin." alt="" coords="653,56,813,83"/>
+<area shape="rect" id="node6" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="861,56,1063,83"/>
+</map>

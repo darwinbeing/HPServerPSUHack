@@ -1,0 +1,4 @@
+<map id="sysFosc_Initialize" name="sysFosc_Initialize">
+<area shape="rect" id="node1" title="System oscillator initialization." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node2" href="$a00379.html#ga110faf14914c3a8ebb3a4c1486aefb9d" title="Initializes the major oscillator and the PLL module step by step by using clock switching in software..." alt="" coords="180,5,375,32"/>
+</map>

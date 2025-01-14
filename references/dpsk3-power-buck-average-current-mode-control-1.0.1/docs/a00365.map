@@ -1,0 +1,12 @@
+<map id="Peripheral Register Abstraction Layer (PRAL) Library" name="Peripheral Register Abstraction Layer (PRAL) Library">
+<area shape="rect" id="node1" href="$a00369.html" title="General Purpose Input/Output Special Function Register Abstraction Driver." alt="" coords="381,5,531,45"/>
+<area shape="rect" id="node2" href="$a00371.html" title="Oscillator Module Special Function Register Abstraction Driver." alt="" coords="375,70,537,95"/>
+<area shape="rect" id="node3" href="$a00367.html" title="Digital&#45;To&#45;Analog Converter Peripheral Module Special Function Register Abstraction Driver." alt="" coords="367,120,545,160"/>
+<area shape="rect" id="node4" href="$a00366.html" title="Capture Compare Peripheral Module Special Function Register Abstraction Driver." alt="" coords="371,184,541,224"/>
+<area shape="rect" id="node5" href="$a00368.html" title="Digital Signal Processor Special Function Register Abstraction Driver." alt="" coords="373,248,539,288"/>
+<area shape="rect" id="node6" href="$a00568.html" title="Generic Library Driver Layer." alt="" coords="5,223,139,249"/>
+<area shape="rect" id="node10" title=" " alt="" coords="187,209,319,263"/>
+<area shape="rect" id="node7" href="$a00370.html" title="Operational Amplifier Peripheral Module Special Function Register Abstraction Driver." alt="" coords="385,312,527,352"/>
+<area shape="rect" id="node8" href="$a00372.html" title="Peripheral Pin Select Module Special Function Register Abstraction Driver." alt="" coords="384,376,528,416"/>
+<area shape="rect" id="node9" href="$a00373.html" title="High&#45;Speed PWM Module Special Function Register Abstraction Driver." alt="" coords="370,440,542,480"/>
+</map>

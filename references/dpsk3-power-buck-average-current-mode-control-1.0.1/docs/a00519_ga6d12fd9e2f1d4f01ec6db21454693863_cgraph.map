@@ -1,0 +1,5 @@
+<map id="buckPWM_ModuleInitialize" name="buckPWM_ModuleInitialize">
+<area shape="rect" id="node1" title="Initializes the buck PWM module by resetting its registers to default." alt="" coords="5,31,184,57"/>
+<area shape="rect" id="node2" href="$a00381.html#ga8075fd40f867be8f42bb806622bd91bd" title="Writes a user&#45;defined configuration to the PWM base module registers." alt="" coords="232,5,435,32"/>
+<area shape="rect" id="node3" href="$a00381.html#ga3ed5f08051a70f5cb426b8254119845f" title="Gets pointer to PWM module SFR set." alt="" coords="235,56,431,83"/>
+</map>

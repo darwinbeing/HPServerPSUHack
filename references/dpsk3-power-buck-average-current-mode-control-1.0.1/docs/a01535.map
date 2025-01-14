@@ -1,0 +1,4 @@
+<map id="CPU_INTTREG_s" name="CPU_INTTREG_s">
+<area shape="rect" id="node1" title="defining the CPU interrupt for primary and secondary vectors" alt="" coords="9,233,133,369"/>
+<area shape="rect" id="node2" href="$a01576.html" title="Global data structure for trap event capturing." alt="" coords="5,5,137,185"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="TRAP_FLAGS_s" name="TRAP_FLAGS_s">
+<area shape="rect" id="node1" title="Defines the Trap Flag for primary and secondary vectors." alt="" coords="225,5,345,229"/>
+<area shape="rect" id="node2" href="$a01500.html" title="Global data structure for trap event capturing." alt="" coords="219,292,351,399"/>
+<area shape="rect" id="node3" href="$a01496.html" title="Provides information for executed task, fault event and operating mode ID of task manager." alt="" coords="5,549,112,656"/>
+<area shape="rect" id="node4" href="$a01472.html" title="Data structure for RCON status capturing." alt="" coords="140,461,247,744"/>
+<area shape="rect" id="node5" href="$a01460.html" title="defining the CPU interrupt for primary and secondary vectors" alt="" coords="271,535,395,671"/>
+<area shape="rect" id="node6" href="$a01484.html" title="Data structure for RCON status capturing." alt="" coords="420,542,575,663"/>
+</map>

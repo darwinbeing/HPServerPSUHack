@@ -1,0 +1,10 @@
+<map id="p33c_PwmModule_ConfigWrite" name="p33c_PwmModule_ConfigWrite">
+<area shape="rect" id="node1" title="Writes a user&#45;defined configuration to the PWM base module registers." alt="" coords="1152,63,1355,90"/>
+<area shape="rect" id="node2" href="$a00519.html#ga6d12fd9e2f1d4f01ec6db21454693863" title="Initializes the buck PWM module by resetting its registers to default." alt="" coords="914,13,1093,39"/>
+<area shape="rect" id="node7" href="$a00381.html#ga5bb4954e471caa1dbbb505b513257821" title="Read the current configuration from the PWM base module registers." alt="" coords="903,63,1104,90"/>
+<area shape="rect" id="node8" href="$a00381.html#gac24b378de17cd1f040a2a562a3839084" title="Initializes the PWM base module by resetting all its registers to default." alt="" coords="912,114,1095,141"/>
+<area shape="rect" id="node3" href="$a00496.html#gaf3c64772d6dfd473d6924fb8893bd180" title="This function initializes all peripheral modules and their instances used by the power controller." alt="" coords="672,13,855,39"/>
+<area shape="rect" id="node4" href="$a00492.html#ga0b26acfec74d1804384b4ba1a3cffab4" title="This function is used to load peripheral configuration templates from the power controller device dri..." alt="" coords="433,5,624,47"/>
+<area shape="rect" id="node5" href="$a00489.html#ga7a4cf6371d09457539f96a74b2809ca0" title="Calls the application layer power controller initialization." alt="" coords="212,13,385,39"/>
+<area shape="rect" id="node6" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,13,164,39"/>
+</map>

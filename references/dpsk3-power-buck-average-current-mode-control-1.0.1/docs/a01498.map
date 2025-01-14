@@ -1,0 +1,6 @@
+<map id="FLT_OBJECT_STATUS_s" name="FLT_OBJECT_STATUS_s">
+<area shape="rect" id="node1" title="This data structure defines the fault object status." alt="" coords="120,5,292,171"/>
+<area shape="rect" id="node2" href="$a01520.html" title="This data structure is a collection of data structures for fault handling." alt="" coords="139,233,273,311"/>
+<area shape="rect" id="node3" href="$a01516.html" title="This data structure defines the fault monitor event response object." alt="" coords="5,388,193,495"/>
+<area shape="rect" id="node4" href="$a01512.html" title="This data structure defines the data object which will be monitored by the fault handler." alt="" coords="223,395,411,487"/>
+</map>

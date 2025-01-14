@@ -1,0 +1,8 @@
+<map id="TRAP_LOGGER_s" name="TRAP_LOGGER_s">
+<area shape="rect" id="node1" title="Global data structure for trap event capturing." alt="" coords="293,5,425,112"/>
+<area shape="rect" id="node2" href="$a01572.html" title="Provides information for executed task, fault event and operating mode ID of task manager." alt="" coords="5,263,112,369"/>
+<area shape="rect" id="node3" href="$a01524.html" title="Defines the Trap Flag for primary and secondary vectors." alt="" coords="141,204,261,428"/>
+<area shape="rect" id="node4" href="$a01548.html" title="Data structure for RCON status capturing." alt="" coords="285,175,392,457"/>
+<area shape="rect" id="node5" href="$a01536.html" title="defining the CPU interrupt for primary and secondary vectors" alt="" coords="417,248,541,384"/>
+<area shape="rect" id="node6" href="$a01560.html" title="Data structure for RCON status capturing." alt="" coords="565,255,720,377"/>
+</map>

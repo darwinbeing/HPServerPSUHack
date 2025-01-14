@@ -1,0 +1,4 @@
+<map id="sysGpio_Initialize" name="sysGpio_Initialize">
+<area shape="rect" id="node1" title="Resets the device input/output pins to digital inputs." alt="" coords="184,5,308,32"/>
+<area shape="rect" id="node2" href="$a00554.html#ga12ce46460ff0657fc879f5b23ed8ccb1" title="Initializes essential chip resources." alt="" coords="5,5,136,32"/>
+</map>

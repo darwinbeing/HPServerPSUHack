@@ -1,0 +1,5 @@
+<map id="dev_Lcd_Initialize" name="dev_Lcd_Initialize">
+<area shape="rect" id="node1" title="Initializes the LCD Device." alt="" coords="383,5,505,32"/>
+<area shape="rect" id="node2" href="$a00469.html#gab93992748ced72fdc2989d0b0f369e54" title="Initializes the LC display." alt="" coords="212,5,335,32"/>
+<area shape="rect" id="node3" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,5,164,32"/>
+</map>

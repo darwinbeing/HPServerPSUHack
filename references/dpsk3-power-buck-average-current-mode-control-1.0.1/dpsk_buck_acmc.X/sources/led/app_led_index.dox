@@ -1,0 +1,42 @@
+/*----------------------------------------------------------------------------*/
+/* TASK LAYER: Debugging LED Application Layer Task Documentation */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup app-layer-debug-led Debugging LED Application Layer 
+@ingroup task-layer
+@details 
+  The debugging LED application layer is the proprietary user code used to configure and drive 
+  the on-board debugging LED. 
+
+@defgroup app-layer-debug-led-functions-public Public Functions
+@ingroup app-layer-debug-led
+@brief Public functions of the application layer of the debugging LED task
+@details 
+  This is the detailed description of public API functions of the 
+  on-board debugging LED task.
+
+@defgroup app-layer-debug-led-properties-public Public Properties
+@ingroup app-layer-debug-led
+@brief Public properties of the application layer of the debugging LED task
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the application layer of
+  the debugging LED task.
+
+@defgroup app-layer-debug-led-functions-private Private Functions
+@ingroup app-layer-debug-led
+@brief Private functions of the application layer of the debugging LED task
+@details 
+  This is the detailed description of private functions of the 
+  on-board debugging LED task.
+@note This task doesn't have any private functions.
+
+@defgroup app-layer-debug-led-properties-private Private Properties
+@ingroup app-layer-debug-led
+@brief Private properties of the application layer of the debugging LED task
+@details 
+  This is the detailed description of private variables, data types,
+  enumerations, defines and macros of the application layer of
+  the debugging LED task.
+@note This task doesn't have any private properties.
+*/

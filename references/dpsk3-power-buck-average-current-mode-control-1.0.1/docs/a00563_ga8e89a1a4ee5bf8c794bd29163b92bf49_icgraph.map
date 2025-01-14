@@ -1,0 +1,4 @@
+<map id="sysOsTimer_Initialize" name="sysOsTimer_Initialize">
+<area shape="rect" id="node1" title="Initializes the timer used as time&#45;base for the task scheduler." alt="" coords="212,5,359,32"/>
+<area shape="rect" id="node2" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,5,164,32"/>
+</map>

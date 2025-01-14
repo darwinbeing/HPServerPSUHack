@@ -1,0 +1,5 @@
+<map id="ovlo_FaultInitialize" name="ovlo_FaultInitialize">
+<area shape="rect" id="node1" title="Initializes the user&#45;defined fault objects for overvoltage lockout." alt="" coords="429,5,556,32"/>
+<area shape="rect" id="node2" href="$a00453.html#ga830e5c7087a8e5ee8ea39b7e3df94b68" title="Initialization of user&#45;defined fault objects." alt="" coords="212,5,381,32"/>
+<area shape="rect" id="node3" href="$a00564.html#ga2be64f5f0b9a2c0c6713f5a69d793e05" title="Initializes the user&#45;defined tasks." alt="" coords="5,5,164,32"/>
+</map>

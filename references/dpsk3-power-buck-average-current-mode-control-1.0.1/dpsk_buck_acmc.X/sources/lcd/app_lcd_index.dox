@@ -1,0 +1,39 @@
+/*----------------------------------------------------------------------------*/
+/* TASK LAYER: LCD Device Application Layer Documentation */
+/*----------------------------------------------------------------------------*/
+/**
+@defgroup app-layer-lcd LC-Display Application Layer 
+@ingroup task-layer
+@details 
+  The LC display task is the proprietary application layer code used to configure and drive 
+  an on-board LC display. 
+
+@defgroup app-layer-lcd-functions-public Public Functions
+@ingroup app-layer-lcd
+@brief Public functions of the LC display task
+@details 
+  This is the detailed description of public API functions of the LC display task.
+
+@defgroup app-layer-lcd-properties-public Public Properties
+@ingroup app-layer-lcd
+@brief Public properties of the LC display task
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the LC display task.
+
+@defgroup app-layer-lcd-functions-private Private Functions
+@ingroup app-layer-lcd
+@brief Private functions of the LC display task
+@details 
+  This is the detailed description of private functions of the LC display task.
+
+@note This module doesn't have any private functions
+
+@defgroup app-layer-lcd-properties-private Private Properties
+@ingroup app-layer-lcd
+@brief Private properties of the LC display task
+@details 
+  This is the detailed description of public variables, data types,
+  enumerations, defines and macros of the LC display task.
+
+*/

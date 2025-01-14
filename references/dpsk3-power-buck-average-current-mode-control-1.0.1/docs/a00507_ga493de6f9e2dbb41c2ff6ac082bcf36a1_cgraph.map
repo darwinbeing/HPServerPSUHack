@@ -1,0 +1,7 @@
+<map id="State_Reset" name="State_Reset">
+<area shape="rect" id="node1" title="This function resets the buck control operation by re&#45;initiating the control mode,..." alt="" coords="5,31,100,57"/>
+<area shape="rect" id="node2" href="$a00519.html#gae63dbb1465ca458b8b7f6733a30f7d0b" title="This function disables the PWM generator IOs." alt="" coords="148,31,289,57"/>
+<area shape="rect" id="node3" href="$a00519.html#ga7f1d554e08d756b8677b572216908a3a" title="This function clears the selected general purpose input/output pin." alt="" coords="383,5,502,32"/>
+<area shape="rect" id="node5" href="$a00381.html#ga55e525c7ac54a365ab6dad558ec17f0b" title="Returns the PWM generator index." alt="" coords="337,56,548,83"/>
+<area shape="rect" id="node4" href="$a00377.html#ga4d67af688d8f7f911d79107974e11e6b" title="Gets pointer to GPIO Instance SFR set." alt="" coords="596,5,797,32"/>
+</map>

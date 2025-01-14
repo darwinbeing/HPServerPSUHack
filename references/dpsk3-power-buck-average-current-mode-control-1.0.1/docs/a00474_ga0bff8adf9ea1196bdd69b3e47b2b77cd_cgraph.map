@@ -1,0 +1,5 @@
+<map id="dev_Lcd_Clear" name="dev_Lcd_Clear">
+<area shape="rect" id="node1" title="Clears the LC Display Screen." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$a00479.html#ga3e045335a3463f6a53e4fd91b50bb0ca" title="Sends a command to the LCD controller." alt="" coords="160,5,339,32"/>
+<area shape="rect" id="node3" href="$a00481.html#ga50b8734fca19fc75dd778a9902c63082" title="Sends data through the SPI interface to the LCD controller." alt="" coords="387,5,557,32"/>
+</map>

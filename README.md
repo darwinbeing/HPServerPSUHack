@@ -46,6 +46,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image34]: ./resources/HP-HSTNS-PD44_MOD.png "PD44 MOD"
 [image35]: ./resources/PD44_MOD_14V4.png "PD44 MOD 14.4V"
 [image36]: ./resources/current_sense.png "Current Sense Amplifier"
+[image37]: ./resources/PL30_FeedbackLoop.png "ACMC Feedback Loop"
 
 ### Activate PSU
 To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
@@ -153,6 +154,11 @@ The code snippet above is PL30 Output set to 14.28V
 
 **PL42 Rev01 Firmware With Output 14.4V(Without Hardware Modifications)**  
 * [PL42 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
+
+
+### PL30 Feedback Loop
+![alt text][image37]
+The most common approach to establishing a bi-directional control stage is by using Average Current Mode Control (ACMC). This control mode employs a multi-loop system consisting of one outer voltage loop and one inner current loop. The outer voltage loop, implemented as a Type III analog compensator in hardware, regulates a constant output voltage by providing a dynamic current reference to the inner current loop. The inner current loop, realized as a digital compensator designed with a PID controller and implemented within a dsPIC MCU, then adjusts the PWM to achieve precise control.
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]

@@ -47,6 +47,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image35]: ./resources/PD44_MOD_14V4.png "PD44 MOD 14.4V"
 [image36]: ./resources/current_sense.png "Current Sense Amplifier"
 [image37]: ./resources/PL30_FeedbackLoop.png "ACMC Feedback Loop"
+[image38]: ./resources/PL30_NoHWMod.png "PL30 Mod Firmware Only"
 
 ### Activate PSU
 To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
@@ -151,6 +152,7 @@ The code snippet above is PL30 Output set to 14.28V
 
 **PL30 Rev10 Firmware With Output 14.4V(Without Hardware Modifications)**  
 * [PL30 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL30/10/Patch/DSPIC33FJ64GS606_NoHWMod.hex)
+![alt text][image38]
 
 **PL42 Rev01 Firmware With Output 14.4V(Without Hardware Modifications)**  
 * [PL42 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)

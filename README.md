@@ -110,10 +110,6 @@ The modification mentioned above is not meant to increase the OVP threshold, but
 Figure above shows a current sense amplifier circuit for high side current measurements based on a Texas Instruments OPA2277 op amp and discrete gain setting resistors.  
 C1,C2,C4 Filter capacitors, GAIN=400.
 
- 
-### Rev10 Firmware
-[Original DSPIC33FJ64GS606](firmware/PL30/10/DSPIC33FJ64GS606.hex)
-
 ### Patch Firmware
 
 **PL30 Rev10 Firmware With Output 14.4V(Without Hardware Modifications)**  

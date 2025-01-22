@@ -125,9 +125,11 @@ C1,C2,C4 Filter capacitors, GAIN=400.
 * [PL42 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 
 
-### PL30 Feedback Loop
+### PL30 Digital Control Scheme ACMC
 ![alt text][image37]
-The most common approach to establishing a bi-directional control stage is by using Average Current Mode Control (ACMC). This control mode employs a multi-loop system consisting of one outer voltage loop and one inner current loop. The outer voltage loop, implemented as a Type III analog compensator in hardware, regulates a constant output voltage by providing a dynamic current reference to the inner current loop. The inner current loop, realized as a digital compensator designed with a PID controller and implemented within a dsPIC MCU, then adjusts the PWM to achieve precise control.
+The average current feedback loop is established by cascading a dedicated voltage and current loop compensator, each tied to its respective feedback signal. Just like in peak current mode control, the outer voltage loop compensator output provides the reference for the inner current loop, where a second compensation filter adjusts the average inductor current by adjusting the modulated switch node control signal.
+
+In the PL30, the outer voltage loop is a TYPE III analog compensator. This choice might have been made due to insufficient dsPIC MCU resources to implement a digital solution, or possibly because the analog compensator provides a faster response.
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]

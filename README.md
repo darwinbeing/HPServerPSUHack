@@ -121,11 +121,45 @@ C1,C2,C4 Filter capacitors, GAIN=400.
 * [PL42 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 
 
-### PL30 Digital Control Scheme ACMC
+### PL30 Analog/Digital Control Scheme ACMC
 ![alt text][image37]
 The average current feedback loop is established by cascading a dedicated voltage and current loop compensator, each tied to its respective feedback signal. Just like in peak current mode control, the outer voltage loop compensator output provides the reference for the inner current loop, where a second compensation filter adjusts the average inductor current by adjusting the modulated switch node control signal.
 
 In the PL30, the outer voltage loop is a TYPE III analog compensator. This choice might have been made due to insufficient dsPIC MCU resources to implement a digital solution, or possibly because the analog compensator provides a faster response.
+
+In later power supply designs, with upgraded processors offering more resources, a 3P3Z digital compensator replaced the analog TYPE III compensator, providing improved flexibility and control precision.
+
+### PL30 System Signal and Pin Configuration
+
+| Module         | Description                                              |
+|----------------|----------------------------------------------------------|
+| **PWM Module** |                                                          |
+| PWM1H/PWM1L PWM2H/PWM2L  | Q1/Q2 Q3/Q4 |
+| PWM4H                    | TYPE III Compensator Vref |
+| PWM4L                    | FAN PWM |
+| PWM6H                               |                                      |
+| **ADC Module** |                                                          |
+| AN0 | Voltage Feedback TSV994/Current Loop ADC Pair 0 Convert Done |
+| AN1 | Output High-Side Shunt Current Sense OPA2277 0.75mR//3 |
+| AN2 | OVP ADC Pair 1 Convert Done |
+| AN3 | Primary DC/DC main transformer current OCP? |
+| AN4 | Voltage comparator standby vs boot |
+| AN6/AN7 | PSU Enable/Disable ADC Pair 3 Convert Done |
+| AN8 | Standby Output Voltage |
+| AN9 | Standby Output Current Sense 10mR ADC Pair 4 Convert Done |
+| AN10 | Secondary Ambient Temperature ADC Pair 5 Convert Done |
+| AN11 | Secondary Semiconductor Temperature AN13 |
+| AN12 | Transformer Center Tap (Np/Ns=Vp/Vct) |
+| **UART1** | Communication with PFC Stage                                  |
+| **I2C1** | I2C1 External Communication                                    |
+| IC1/FLT1/SYNCI1/INT1/RD8 | FAN RPM |
+| **Programming/Debugging** | PGEC2/PGED2 |
+| **LED Indicator** | RG9 LATG 0x2F4                                        |
+| **Other** |                                                              |
+| **STATUS PIN35** | RC12                                                  |
+| **PSALARM PIN38** | RD1                                                  |
+| PIN 27/28/29 | I2C Address                                               |
+| I2C2 | I2C Bus EEPROM M24256-BW                                          |
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]

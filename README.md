@@ -45,7 +45,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image33]: ./resources/PD44_EN.png "PD44 EN"
 [image34]: ./resources/HP-HSTNS-PD44_MOD.png "PD44 MOD"
 [image35]: ./resources/PD44_MOD_14V4.png "PD44 MOD 14.4V"
-[image36]: ./resources/current_sense.png "Current Sense Amplifier"
+[image36]: ./resources/PL30_CSA.png "Current Sense Amplifier"
 [image37]: ./resources/PL30_FeedbackLoop.png "ACMC Feedback Loop"
 [image38]: ./resources/PL30_NoHWMod.png "PL30 Mod Firmware Only"
 

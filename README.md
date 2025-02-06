@@ -140,7 +140,7 @@ In later power supply designs, with upgraded processors offering more resources,
 | PWM6H                               |                                      |
 | **ADC Module** |                                                          |
 | AN0 | Voltage Feedback TSV994/Current Loop ADC Pair 0 Convert Done |
-| AN1 | Output High-Side Shunt Current Sense OPA2277 0.75mR//3 |
+| AN1 | Output High-Side Shunt Current Sense OPA2277 0.75uR//3, OCP and Load Sharing |
 | AN2 | OVP ADC Pair 1 Convert Done |
 | AN3 | Primary DC/DC main transformer current OCP? |
 | AN4 | Voltage comparator standby vs boot |

@@ -167,7 +167,7 @@ In later power supply designs, with upgraded processors offering more resources,
 | 30  | AN15/CMP4D/CN12/RB15            | NC                                            |                                            |
 | 31  | SDA2                            | I2C Bus                                       | EEPROM M24256-BW                           |
 | 32  | SCL2                            | I2C Bus                                       | EEPROM M24256-BW                           |
-| 33  | U1TX                            | ADUM2201                                      | → Primary BaudRate = 925                   |
+| 33  | U1TX                            | ADUM2201                                      | → Primary BaudRate = 92593                 |
 | 34  | U1RX                            | ADUM2201                                      | → Primary                                  |
 | 35  | U1RTS/SCK1/INT0/RF6             | NC                                            |                                            |
 | 36  | SDA1                            | I2C1 External Communication                   |                                            |

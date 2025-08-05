@@ -131,7 +131,6 @@ In later power supply designs, with upgraded processors offering more resources,
 
 ### PL30 System Signal and Pin Configuration
 
-# Pin Function Description Note
 
 | Pin | Name                            | Description                                   | Note                                       |
 |-----|---------------------------------|-----------------------------------------------|--------------------------------------------|
@@ -199,6 +198,26 @@ In later power supply designs, with upgraded processors offering more resources,
 | 62  | PWM2L                           | Q3                                            |                                            |
 | 63  | PWM2H                           | Q4                                            |                                            |
 | 64  | PWM3L/RE4                       | NC                                            |                                            |
+
+
+At system startup, the secondary-side microcontroller (MCU) transmits the following byte sequence to the primary-side controller:
+
+EA 18 18 18 EA 18
+18 18 50 20 00 45
+9B 18 18 50 20 00
+44 9C 18 18 50 20
+00 45 9B 18 18 05
+00 00 18 18 18 18
+EA 18 18 18 05 02
+FE 18 18 18 18 05
+04 FC 18 18 18 18
+05 06 FA 18 18 18
+18 05 08 F8 18 18
+18 18 05 1E E2 18
+18 18 18 05 22 DE
+18 18 18 18 50 28
+00 00 D8 18 18 50
+2C 00 7E 56 18 18
 
 
 ### Modify PL11 Output & OVP Voltage

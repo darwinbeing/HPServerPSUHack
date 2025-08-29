@@ -191,8 +191,8 @@ In later power supply designs, with upgraded processors offering more resources,
 | 55  | PWM5H/UPDN1/CN16/RD7            | NC                                            |                                            |
 | 56  | VCAP                            |                                               | A low-ESR (< 0.5 Ohms) capacitor           |
 | 57  | VDD                             | VCC                                           | 3.3V                                       |
-| 58  | RF0                             | SDA                                           | AT24C04D IC EEPROM 4KBIT I2C 1MHZ SOT23-5  |
-| 59  | RF1                             | SCL                                           | AT24C04D IC EEPROM 4KBIT I2C 1MHZ SOT23-5  |
+| 58  | RF0                             | SDA                                           | AT24C01D IC EEPROM 1KBIT I2C 1MHZ SOT23-5  |
+| 59  | RF1                             | SCL                                           | AT24C01D IC EEPROM 1KBIT I2C 1MHZ SOT23-5  |
 | 60  | PWM1L                           | Q1                                            |                                            |
 | 61  | PWM1H                           | Q2                                            |                                            |
 | 62  | PWM2L                           | Q3                                            |                                            |

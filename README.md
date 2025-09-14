@@ -117,6 +117,9 @@ C1,C2,C4 Filter capacitors, GAIN=400.
 
 ![alt text][image38]
 
+**PL30 Rev12 AGM Battery Charger 20A Firmware**  
+* [AGM Battery Charger 20A CC](firmware/PL30/12/Patch/DSPIC33FJ64GS606_CC20.hex)
+
 **PL42 Rev01 Firmware With Output 14.4V(Without Hardware Modifications)**  
 * [PL42 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 

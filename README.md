@@ -110,18 +110,18 @@ The modification mentioned above is not meant to increase the OVP threshold, but
 Figure above shows a current sense amplifier circuit for high side current measurements based on a Texas Instruments OPA2277 op amp and discrete gain setting resistors.  
 C1,C2,C4 Filter capacitors, GAIN=400.
 
-### Patch Firmware
+### Patch Firmware Without Hardware Modifications
 
-**PL30 Rev10 Firmware With Output 14.4V(Without Hardware Modifications)**  
-* [PL30 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL30/10/Patch/DSPIC33FJ64GS606_NoHWMod.hex)
+**PL30 Rev10 With Output 14.4V Firmware**  
+* [Download PL30 DSPIC33FJ64GS606](firmware/PL30/10/Patch/DSPIC33FJ64GS606_NoHWMod.hex)
 
 ![alt text][image38]
 
 **PL30 Rev12 AGM Battery Charger 20A Firmware**  
-* [AGM Battery Charger 20A CC](firmware/PL30/12/Patch/DSPIC33FJ64GS606_CC20.hex)
+* [Download AGM Battery Charger 20A CC](firmware/PL30/12/Patch/DSPIC33FJ64GS606_CC20.hex)
 
-**PL42 Rev01 Firmware With Output 14.4V(Without Hardware Modifications)**  
-* [PL42 DSPIC33FJ64GS606 FirmwareOnly](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
+**PL42 Rev01 With Output 14.4V Firmware**  
+* [Download PL42 DSPIC33FJ64GS606](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
 
 
 ### PL30 Analog/Digital Control Scheme ACMC

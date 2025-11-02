@@ -222,6 +222,23 @@ FE 18 18 18 18 05
 00 00 D8 18 18 50
 2C 00 7E 56 18 18
 
+### ⚡ OVP Voltage Scaling Logic
+
+        mov.w   0x0344, W0        ; Read ADC value (10-bit) into W0
+        mov.w   #0x6ac2, W2       ; Load Q15 coefficient (182/(182+39.2+10+4420))/(220/(220+39.2+10+4420)) 0.834 into W2
+
+        ; 16x16 unsigned multiply → 32-bit result in W1:W0 (High:Low)
+        mul.uu  W0, W2, W0        ; Perform unsigned multiply, result: W1 = high word, W0 = low word
+
+        ; Shift right by 15 bits to scale back to Q0 (integer)
+        ; Equivalent to: (W1 << 1) | (W0 >> 15)
+        sl      W1, #0x1, W1      ; W1 = W1 << 1
+        lsr.w   W0, #0xf, W0      ; W0 = W0 >> 15
+        ior.w   W0, W1, W1        ; Combine bits: W1 = (W1 << 1) | (W0 >> 15)
+
+        ; Final result in W1
+        ; W1 = Y = X * 0.8334
+
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]

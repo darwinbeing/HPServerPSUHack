@@ -237,7 +237,7 @@ FE 18 18 18 18 05
         ior.w   W0, W1, W1        ; Combine bits: W1 = (W1 << 1) | (W0 >> 15)
 
         ; Final result in W1
-        ; W1 = Y = X * 0.8334
+        ; W1 = Y = X * 0.834
 
 
 ### Modify PL11 Output & OVP Voltage

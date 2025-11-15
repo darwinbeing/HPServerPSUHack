@@ -1,0 +1,5 @@
+1 - GND
+2 - VSS
+3 - PGEC3
+4 - PGED3
+5 - MCLR

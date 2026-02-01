@@ -2,12 +2,18 @@
 # -*- coding: utf-8 -*-
 #
 
+# pip install intelhex
+# CRC16 Hex File 0x2000 - 0x9ffe, BIN 0x4000 - 0x13ffc
+# CRC16 Store location 0x9ffe: 8d 4f
+
 from intelhex import IntelHex
 
 ih = IntelHex()
-ih.fromfile("DSPIC33FJ64GS608_Orig.hex", format="hex")
+ih.fromfile("11F/DSPIC33FJ64GS608.hex", format="hex")
 
-bin_buf = ih.tobinarray(start=0, end=0x13fff)
+START_ADDR=0x2000 * 2
+END_ADDR=0xa000 * 2
+bin_buf = ih.tobinarray(start=0, end=END_ADDR-1)
 
 def hexdump(buf, start_addr=0, width=16):
     for i in range(0, len(buf), width):
@@ -20,12 +26,9 @@ def hexdump(buf, start_addr=0, width=16):
 
 
 # print(type(bin_buf), len(bin_buf))
-# hexdump(bin_buf, start_addr=0)
+hexdump(bin_buf, start_addr=0)
 
-start = 0x4000
-length = 0x13ffc-0x4000
-
-buf_sub = bin_buf[start:start+length]
+buf_sub = bin_buf[START_ADDR:END_ADDR-4]
 
 # Generate standard 256-entry CRC16 table (polynomial 0xA001)
 def make_crc16_table():
@@ -55,3 +58,20 @@ def crc16(data: bytes, init_crc: int = 0x0) -> int:
 
 crc = crc16(buf_sub)
 print("CRC: " + hex(crc))
+
+CRC_STORE_ADDR = END_ADDR-4
+
+crc_low = crc & 0xFF
+crc_high = (crc >> 8) & 0xFF
+
+ih[CRC_STORE_ADDR] = crc_low
+ih[CRC_STORE_ADDR + 1] = crc_high
+
+print(f"Write CRC16 to HEX:")
+print(f"  HEX 0x{CRC_STORE_ADDR:06X} = {crc_low:02X}")
+print(f"  HEX 0x{CRC_STORE_ADDR+1:06X} = {crc_high:02X}")
+
+out_hex = "11F/DSPIC33FJ64GS608_crc.hex"
+ih.tofile(out_hex, format="hex")
+
+print(f"Saved new HEX file: {out_hex}")

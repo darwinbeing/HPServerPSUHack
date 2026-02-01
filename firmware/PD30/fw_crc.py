@@ -3,17 +3,11 @@
 #
 
 # pip install intelhex
-# CRC16 Hex File 0x2000 - 0x63fe, BIN 0x4000 - 0xc7fc
-# CRC16 Store location 0x63fe: 29 3a
 
 from intelhex import IntelHex
 
 ih = IntelHex()
 ih.fromfile("12F/DSPIC33FJ64GS606.hex", format="hex")
-
-START_ADDR=0x2000 * 2
-END_ADDR=0x6400 * 2
-bin_buf = ih.tobinarray(start=0, end=END_ADDR-1)
 
 def hexdump(buf, start_addr=0, width=16):
     for i in range(0, len(buf), width):
@@ -23,12 +17,6 @@ def hexdump(buf, start_addr=0, width=16):
         ascii_part = "".join(chr(b) if 32 <= b <= 126 else "." for b in chunk)
 
         print(f"{start_addr + i:08X}  {hex_part:<{width*3}}  |{ascii_part}|")
-
-
-# print(type(bin_buf), len(bin_buf))
-hexdump(bin_buf, start_addr=0)
-
-buf_sub = bin_buf[START_ADDR:END_ADDR-4]
 
 # Generate standard 256-entry CRC16 table (polynomial 0xA001)
 def make_crc16_table():
@@ -47,7 +35,7 @@ CRC16_TABLE = make_crc16_table()
 # for i in range(0, 256, 8):
 #     print(", ".join(f"0x{v:04X}" for v in CRC16_TABLE[i:i+8]))
 
-def crc16(data: bytes, init_crc: int = 0x0) -> int:
+def crc16_ibm(data: bytes, init_crc: int = 0x0) -> int:
     crc = init_crc
     for byte in data:
         index = (byte ^ (crc & 0xFF))  # XOR input byte with low byte of CRC
@@ -55,21 +43,55 @@ def crc16(data: bytes, init_crc: int = 0x0) -> int:
         crc = (crc >> 8) ^ table_value
     return crc & 0xFFFF
 
+def patch_crc16(
+    ih: IntelHex,
+    start_addr: int,
+    end_addr: int,
+    init_crc: int = 0x0000,
+    verbose: bool = True
+) -> int:
+    """
+    start_addr / end_addr are BIN addresses
+    CRC is stored at end_addr - 4 (little endian)
+    CRC range: [start_addr, end_addr - 4)
+    """
 
-crc = crc16(buf_sub)
-print("CRC: " + hex(crc))
+    crc_store_addr = end_addr - 4
 
-CRC_STORE_ADDR = END_ADDR-4
+    bin_buf = ih.tobinarray(start=0, end=end_addr - 1)
 
-crc_low = crc & 0xFF
-crc_high = (crc >> 8) & 0xFF
+    data = bin_buf[start_addr:crc_store_addr]
 
-ih[CRC_STORE_ADDR] = crc_low
-ih[CRC_STORE_ADDR + 1] = crc_high
+    crc = crc16_ibm(data, init_crc)
 
-print(f"Write CRC16 to HEX:")
-print(f"  HEX 0x{CRC_STORE_ADDR:06X} = {crc_low:02X}")
-print(f"  HEX 0x{CRC_STORE_ADDR+1:06X} = {crc_high:02X}")
+    ih[crc_store_addr] = crc & 0xFF
+    ih[crc_store_addr + 1] = (crc >> 8) & 0xFF
+
+    if verbose:
+        print(f"CRC16-IBM patched")
+        print(f"  CRC range : 0x{start_addr:06X} - 0x{crc_store_addr-1:06X}")
+        print(f"  CRC value : 0x{crc:04X}")
+        print(f"  Store @  : 0x{crc_store_addr:06X}")
+
+    return crc
+
+crc = patch_crc16(
+    ih,
+    start_addr=0,
+    end_addr=0x2000 * 2
+    )
+
+crc = patch_crc16(
+    ih,
+    start_addr=0x2000 * 2,
+    end_addr=0x6400 * 2
+    )
+
+crc = patch_crc16(
+    ih,
+    start_addr=0x6400 * 2,
+    end_addr=0xa800 * 2
+    )
 
 out_hex = "12F/DSPIC33FJ64GS606_crc.hex"
 ih.tofile(out_hex, format="hex")

@@ -61,10 +61,18 @@ To activate the PSU, add a small resistance resistor between Pin 33 and 36 or si
 
 ![alt text][image7]
 
+LITEON PSU  
 Pin1 - PGEC  
 Pin2 - PGED  
 Pin3 - $\overline{\textrm{MCLR}}$  
 Pin4 - GND  
+Pin5 - Vcc(3.3V)  
+
+Delta PSU  
+Pin1 - GND  
+Pin2 - $\overline{\textrm{MCLR}}$  
+Pin3 - PGED  
+Pin4 - PGEC  
 Pin5 - Vcc(3.3V)  
 
 ![alt text][image30]

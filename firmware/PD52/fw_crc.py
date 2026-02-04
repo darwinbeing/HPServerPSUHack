@@ -7,7 +7,7 @@
 from intelhex import IntelHex
 
 ih = IntelHex()
-ih.fromfile("11F/DSPIC33FJ64GS608.hex", format="hex")
+ih.fromfile("11F/Patch/DSPIC33FJ64GS608.hex", format="hex")
 
 def hexdump(buf, start_addr=0, width=16):
     for i in range(0, len(buf), width):
@@ -87,7 +87,7 @@ crc = patch_crc16(
     end_addr=0xa000 * 2
     )
 
-out_hex = "11F/DSPIC33FJ64GS608_crc.hex"
+out_hex = "11F/Patch/DSPIC33FJ64GS608_crc.hex"
 ih.tofile(out_hex, format="hex")
 
 print(f"Saved new HEX file: {out_hex}")

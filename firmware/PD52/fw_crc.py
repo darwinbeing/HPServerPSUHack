@@ -6,9 +6,6 @@
 
 from intelhex import IntelHex
 
-ih = IntelHex()
-ih.fromfile("13F/DSPIC33FJ64GS608.hex", format="hex")
-
 def hexdump(buf, start_addr=0, width=16):
     for i in range(0, len(buf), width):
         chunk = buf[i:i+width]
@@ -43,51 +40,90 @@ def crc16_ibm(data: bytes, init_crc: int = 0x0) -> int:
         crc = (crc >> 8) ^ table_value
     return crc & 0xFFFF
 
-def patch_crc16(
+def patch_crc16_bin_if_changed(
     ih: IntelHex,
     start_addr: int,
     end_addr: int,
     init_crc: int = 0x0000,
     verbose: bool = True
-) -> int:
-    """
-    start_addr / end_addr are BIN addresses
-    CRC is stored at end_addr - 4 (little endian)
-    CRC range: [start_addr, end_addr - 4)
-    """
-
+):
     crc_store_addr = end_addr - 4
 
     bin_buf = ih.tobinarray(start=0, end=end_addr - 1)
 
+    old_crc = bin_buf[crc_store_addr] | (bin_buf[crc_store_addr + 1] << 8)
+
     data = bin_buf[start_addr:crc_store_addr]
+    new_crc = crc16_ibm(data, init_crc)
 
-    crc = crc16_ibm(data, init_crc)
-
-    ih[crc_store_addr] = crc & 0xFF
-    ih[crc_store_addr + 1] = (crc >> 8) & 0xFF
+    changed = (old_crc != new_crc)
 
     if verbose:
-        print(f"CRC16-IBM patched")
-        print(f"  CRC range : 0x{start_addr:06X} - 0x{crc_store_addr-1:06X}")
-        print(f"  CRC value : 0x{crc:04X}")
-        print(f"  Store @  : 0x{crc_store_addr:06X}")
+        print(f"[CRC]")
+        print(f"  Range   : 0x{start_addr:06X} - 0x{crc_store_addr-1:06X}")
+        print(f"  Old     : 0x{old_crc:04X}")
+        print(f"  New     : 0x{new_crc:04X}")
+        print(f"  Changed : {changed}")
 
-    return crc
+    if changed:
+        ih[crc_store_addr] = new_crc & 0xFF
+        ih[crc_store_addr + 1] = (new_crc >> 8) & 0xFF
 
-crc = patch_crc16(
-    ih,
-    start_addr=0,
-    end_addr=0x2000 * 2
-    )
+    return {
+        "start": start_addr,
+        "end": end_addr,
+        "old_crc": old_crc,
+        "new_crc": new_crc,
+        "changed": changed,
+    }
 
-crc = patch_crc16(
-    ih,
-    start_addr=0x2000 * 2,
-    end_addr=0xa000 * 2
-    )
+def patch_multiple_crc_regions(ih: IntelHex, regions, verbose=True):
+    """
+    regions: list of dicts
+    [
+        { "start": 0x4000, "end": 0x13FFC },
+        { "start": 0x2000, "end": 0x9FFC },
+    ]
+    """
 
-out_hex = "13F/Patch/DSPIC33FJ64GS608_crc.hex"
-ih.tofile(out_hex, format="hex")
+    results = []
+    any_changed = False
 
-print(f"Saved new HEX file: {out_hex}")
+    for i, r in enumerate(regions, 1):
+        if verbose:
+            print(f"\n=== CRC REGION #{i} ===")
+
+        res = patch_crc16_bin_if_changed(
+            ih,
+            start_addr=r["start"],
+            end_addr=r["end"],
+            init_crc=r.get("init", 0x0000),
+            verbose=verbose
+        )
+
+        results.append(res)
+        any_changed |= res["changed"]
+
+    return results, any_changed
+
+ih = IntelHex()
+ih.fromfile("13F/DSPIC33FJ64GS608.hex", format="hex")
+
+regions = [
+    {
+        "start": 0x0,
+        "end":   0x2000 * 2,
+    },
+    {
+        "start": 0x2000 * 2,
+        "end":   0xa000 * 2,
+    },
+]
+
+results, changed = patch_multiple_crc_regions(ih, regions)
+
+if changed:
+    ih.tofile("13F/Patch/DSPIC33FJ64GS608_crc.hex", format="hex")
+    print("\nHEX updated and saved")
+else:
+    print("\nAll CRCs already valid, no update needed")

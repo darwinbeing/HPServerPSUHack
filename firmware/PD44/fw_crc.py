@@ -107,7 +107,7 @@ def patch_multiple_crc_regions(ih: IntelHex, regions, verbose=True):
     return results, any_changed
 
 ih = IntelHex()
-ih.fromfile("05F/DSPIC33FJ64GS606.hex", format="hex")
+ih.fromfile("05F/Patch/DSPIC33FJ64GS606_UART2.hex", format="hex")
 
 regions = [
     {
@@ -127,7 +127,7 @@ regions = [
 results, changed = patch_multiple_crc_regions(ih, regions)
 
 if changed:
-    ih.tofile("05F/DSPIC33FJ64GS606_crc.hex", format="hex")
+    ih.tofile("05F/Patch/DSPIC33FJ64GS606_UART2_CRC.hex", format="hex")
     print("\nHEX updated and saved")
 else:
     print("\nAll CRCs already valid, no update needed")

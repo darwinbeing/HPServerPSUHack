@@ -312,7 +312,50 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 * [RPI PICO FW](firmware/PICO/zephyr.uf2)
 * [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
 
-### Modify HP HSTNS-PD44 800W TITANIUM LLC PSU
+
+###HSTNS-PD44 Digital Control Analysis
+
+####Gain-Scheduled 2P2Z Controller (Firmware Reverse Engineering)
+
+#### 1. System Overview
+
+The firmware implements a Gain-Scheduled 2P2Z digital compensator with frequency-dependent gain scaling.
+The controller consists of:  
+- Second-order feedback (2 poles)  
+- Second-order error compensation (2 zeros)  
+- Dynamic gain scheduling based on previous output value  
+
+#### 2. Core Structure
+
+X = d1·u[n-1] + d2·u[n-2]  
+Y = n1·e[n] + n2·e[n-1] + n3·e[n-2]  
+Z = (Y · M) >> 7  
+u[n] = (X + Z) >> 13  
+
+d1 = 0x20F3  
+d2 = 0xFF0D  
+n1 = 0xFFFF0626  
+n2 = 0x00013663  
+n3 = 0xFFFFA785  
+
+#### 3. Gain Scheduling Mechanism
+
+The scaling factor M is dynamically calculated:  
+M = ((u[n-1] × 0x44D) >> 16) << 1 | (uVar2 >> 15) - 0x4A  
+M = 0.0336⋅u[n−1]−74
+
+#### 4. Standard 2P2Z Form
+
+The controller can be written as:
+
+```math
+\begin{gather*}
+u[n] = a_1{\ast}u[n-1] + a_2{\ast}u[n-2] + b_0(M){\ast}e[n] + b_1(M){\ast}e[n-1] + b_2(M){\ast}e[n-2] \\
+a_1 = \frac{d_1}{8192} \\
+a_2 = \frac{d_2}{8192} \\
+b_i(M) =\frac{M}{128}\cdot\frac{n_i}{8192}
+\end{gather*}
+```
 
 #### Reverse Engineer a Schematic
 ![alt text][image32]
@@ -332,6 +375,9 @@ If \ V_{out}=14.4V,\ R_1{\approx}24.3Kohms,\ R_2{\approx}24.3Kohms
 ```
 #### PD44 14.4V
 ![alt text][image35]
+
+
+
 
 ### Load Test
 When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

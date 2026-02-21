@@ -349,8 +349,8 @@ The controller can be written as:
 ```math
 \begin{gather*}
 u[n] = a_1{\ast}u[n-1] + a_2{\ast}u[n-2] + b_0(M){\ast}e[n] + b_1(M){\ast}e[n-1] + b_2(M){\ast}e[n-2] \\
-a_1 = \frac{d_1}{8192} \\
-a_2 = \frac{d_2}{8192} \\
+M = 0.0336{\cdot}u[n−1]−74 \\
+a_i = \frac{d_i}{8192} \\
 b_i(M) =\frac{M}{128}\cdot\frac{n_i}{8192}
 \end{gather*}
 ```

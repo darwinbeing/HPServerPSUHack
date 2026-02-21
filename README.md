@@ -313,9 +313,7 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 * [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
 
 
-###HSTNS-PD44 Digital Control Analysis
-
-####Gain-Scheduled 2P2Z Controller (Firmware Reverse Engineering)
+### HSTNS-PD44 Digital Control Analysis
 
 #### 1. System Overview
 
@@ -341,7 +339,7 @@ n3 = 0xFFFFA785
 #### 3. Gain Scheduling Mechanism
 
 The scaling factor M is dynamically calculated:  
-M = ((u[n-1] × 0x44D) >> 16) << 1 | (uVar2 >> 15) - 0x4A  
+M = (u[n-1] × 0x44D) >> 15 - 0x4A  
 M = 0.0336⋅u[n−1]−74
 
 #### 4. Standard 2P2Z Form

@@ -330,11 +330,52 @@ Y = n1·e[n] + n2·e[n-1] + n3·e[n-2]
 Z = (Y · M) >> 7  
 u[n] = (X + Z) >> 13  
 
-d1 = 0x20F3  
-d2 = 0xFF0D  
+d1 = 0x000020F3  
+d2 = 0xFFFFFF0D  
 n1 = 0xFFFF0626  
 n2 = 0x00013663  
 n3 = 0xFFFFA785  
+
+```C
+
+#define Q17_15_SHIFT 15
+#define Q17_15_SCALE (1L << Q17_15_SHIFT)
+#define Q17_15_FROM_FLOAT(x) ((int32_t)((x) * Q17_15_SCALE))
+
+#define n1 Q17_15_FROM_FLOAT(-1.95197)  
+#define n2 Q17_15_FROM_FLOAT(2.424896)   
+#define n3 Q17_15_FROM_FLOAT(-0.69126)  
+#define d2 Q17_15_FROM_FLOAT(0.25742)
+#define d3 Q17_15_FROM_FLOAT(-0.00742)
+
+int32_t mymulsi3(int32_t A, int32_t B)
+{
+	__asm__ volatile ("mul.su w1,w2,w4");
+	__asm__ volatile ("mul.su w3,w0,w6");
+	__asm__ volatile ("mul.uu w0,w2,w0");
+	__asm__ volatile ("add w4,w1,w1");
+	__asm__ volatile ("add w6,w1,w1");
+
+	return(A);
+}
+
+	VoltageError = (OUTPUTVOLTAGEREFERENCE -  outputVoltage);
+
+	PIDOutput= mymulsi3((int32_t)n1,VoltageError) + mymulsi3((int32_t)n2,prevVoltageError) + mymulsi3((int32_t)n3,prevVoltageError1); 
+	PIDOutput = ((PIDOutput >> 7) + mymulsi3((int32_t)d2,PIDOutput1)+mymulsi3((int32_t)d3,PIDOutput2)) >> 13; 
+
+	prevVoltageError = VoltageError;		/* Update previous voltage error */
+	prevVoltageError1 = prevVoltageError;
+	prevVoltageError2 = prevVoltageError1;
+	prevVoltageError3 = prevVoltageError2;
+		
+	/* Upadation of previous Compensator outputs */
+	PIDOutput1= PIDOutput;
+	PIDOutput2= PIDOutput1;
+	PIDOutput3= PIDOutput2;
+		
+```
+
 
 #### 3. Gain Scheduling Mechanism
 

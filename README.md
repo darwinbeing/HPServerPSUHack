@@ -256,6 +256,12 @@ The controller consists of:
 - Second-order error compensation (2 zeros)  
 - Dynamic gain scheduling based on previous output value  
 
+```math
+\begin{gather*}
+u[n] = a_1{\ast}u[n-1] + a_2{\ast}u[n-2] + k_{AGC}(b_0{\ast}e[n] + b_1{\ast}e[n-1] + b_2{\ast}e[n-2]) \\
+\end{gather*}
+```
+
 #### 2. Core Structure
 
 X = d1·u[n-1] + d2·u[n-2]  
@@ -310,7 +316,7 @@ int32_t mymulsi3(int32_t A, int32_t B)
 ```
 
 
-#### 3. Gain Scheduling Mechanism
+#### 3. Adaptive Gain Control Mechanism
 
 The scaling factor M is dynamically calculated:  
 M = (u[n-1] × 0x44D) >> 15 - 0x4A  

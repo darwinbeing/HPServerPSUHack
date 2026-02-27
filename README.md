@@ -94,7 +94,6 @@ To increase the output voltage, one can either increase the reference voltage or
 
 ![alt text][image15]
 ![alt text][image10]
-![alt text][image31]
 
 Assuming the default Output is 12.32V.  
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
@@ -218,13 +217,6 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
-### PL11 OCP
-![alt text][image27]
-
-The output voltage of the CT amplified is divided down to 5V and fed into the MCU(PIC16F883). Adding a resistor in parallel across the 8.2k（labeled '8201') resistor can reduce the maximum output current.
-A more effective approach would be to measure the voltage at OC_DET along with the actual output voltage of amplifier, and calculate the appropriate divider ratio.  
-Shorting the 8.2k resistor would cap the maximum output current at around 30A.  
-The current flowing through the CT(Current Transformer) is transformed into a voltage signal and subsequently amplified using an amplifier. The amplified voltage is directly proportional to the output current $`V=\frac{I}{10}`$.
 
 ### PL30 PICO Watt Meter
 ![alt text][image28]
@@ -264,28 +256,30 @@ u[n] = a_1{\ast}u[n-1] + a_2{\ast}u[n-2] + k_{AGC}(b_0{\ast}e[n] + b_1{\ast}e[n-
 
 #### 2. Core Structure
 
-X = d1·u[n-1] + d2·u[n-2]  
-Y = n1·e[n] + n2·e[n-1] + n3·e[n-2]  
-Z = (Y · M) >> 7  
-u[n] = (X + Z) >> 13  
-
-d1 = 0x000020F3  
-d2 = 0xFFFFFF0D  
-n1 = 0xFFFF0626  
-n2 = 0x00013663  
-n3 = 0xFFFFA785  
+```math
+\begin{align*}
+X = d_2{\ast}u[n-1] + d_3{\ast}u[n-2] \\
+Y = k_{AGC}(n_1{\ast}e[n] + n_2{\ast}e[n-1] + n_3{\ast}e[n-2]), k_{AGC} = f(u[n-1]) >> 7 \\
+u[n] = (X + Y) >> 13 \\
+d2 = 0x20F3 \\
+d3 = 0xFF0D \\
+n1 = 0xFFFF0626 \\
+n2 = 0x00013663 \\
+n3 = 0xFFFFA785
+\end{align*}
+```
 
 ```C
 
-#define Q17_15_SHIFT 15
-#define Q17_15_SCALE (1L << Q17_15_SHIFT)
-#define Q17_15_FROM_FLOAT(x) ((int32_t)((x) * Q17_15_SCALE))
+#define Q15_SHIFT 15
+#define Q15_SCALE (1L << Q15_SHIFT)
+#define Q15_FROM_FLOAT(x) ((int32_t)((x) * Q15_SCALE))
 
-#define n1 Q17_15_FROM_FLOAT(-1.95197)  
-#define n2 Q17_15_FROM_FLOAT(2.424896)   
-#define n3 Q17_15_FROM_FLOAT(-0.69126)  
-#define d2 Q17_15_FROM_FLOAT(0.25742)
-#define d3 Q17_15_FROM_FLOAT(-0.00742)
+#define n1 (int32_t)Q15_FROM_FLOAT(-1.95197)  
+#define n2 (int32_t)Q15_FROM_FLOAT(2.424896)   
+#define n3 (int32_t)Q15_FROM_FLOAT(-0.69126)  
+#define d2 (int16_t)Q15_FROM_FLOAT(0.25742)
+#define d3 (int16_t)Q15_FROM_FLOAT(-0.00742)
 
 int32_t mymulsi3(int32_t A, int32_t B)
 {
@@ -351,11 +345,6 @@ If \ V_{out}=14.25V,\ R_1{\approx}24Kohms,\ R_2{\approx}24Kohms \\
 If \ V_{out}=14.4V,\ R_1{\approx}24.3Kohms,\ R_2{\approx}24.3Kohms
 \end{gather*}
 ```
-#### PD44 14.4V
-![alt text][image35]
-
-
-
 
 ### Load Test
 When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

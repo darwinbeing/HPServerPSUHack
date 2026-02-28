@@ -90,8 +90,6 @@ Locate the Type III compensator in the HP PL30 power supply by examining the PCB
 
 To increase the output voltage, one can either increase the reference voltage or decrease the resistance value of R4.
 ![alt text][image8]
-![alt text][image9]
-
 ![alt text][image15]
 ![alt text][image10]
 
@@ -190,7 +188,11 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 * [RPI PICO FW](firmware/PICO)  
 * [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
 
-Note: Modify the voltage divider resistor: 220Ω → 182Ω.  
+Note: 
+- Modify the voltage divider resistor: 220Ω → 182Ω.
+- Update PSU FW
+- Update PICO FW
+
 A - Enable/Disable PSU  
 X - CV/CC Switch  
 B - Increase CC setting  
@@ -354,8 +356,8 @@ Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resis
 **HP HSTNS-PL11 Modification**  
 [![HP HSTNS-PL11 Mod](https://img.youtube.com/vi/_pB6r_7EpHQ/0.jpg)](https://youtu.be/_pB6r_7EpHQ "HP HSTNS-PL11")
 
-**HP HSTNS-PL30/PL42 Modification**  
-[![HP HSTNS-PL30/PL42 Mod](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30/PL42")
+**HP HSTNS-PL30 Modification**  
+[![HP HSTNS-PL30 Mod](https://img.youtube.com/vi/eh7FzcV9E4g/0.jpg)](https://youtu.be/eh7FzcV9E4g "HP HSTNS-PL30")
 
 **HP HSTNS-PL11 OCP Modification**  
 [![HP HSTNS-PL11 OCP Demo](https://img.youtube.com/vi/BLK8ttS5fhQ/0.jpg)](https://youtu.be/BLK8ttS5fhQ "HP HSTNS-PL11 OCP")

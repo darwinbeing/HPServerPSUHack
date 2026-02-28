@@ -3,9 +3,9 @@
 
 ---
 
-## HP HSTNS-PL11/PL30/PL42
+## HP HSTNS-PL11/PL30/PD44/PD52
 
-HP HSTNS-PL11/PL30/PL42 1200Watt Hot Plug Power Supply Hack for Vehicle Flashing and Programming.
+HP HSTNS-PL11/PL30/PD44/PD52 1200Watt Hot Plug Power Supply Hack for Vehicle Flashing and Programming.
 The HPE PSU is a powerful and versatile power supply unit that can be modified or hacked to suit a wide range of needs,With some basic electronics knowledge and proper safety precautions, it's possible to make this PSU even more useful and versatile for your specific applications.
 Modified HPE PSUs are suitable for RC battery charging, radio power supply, and vehicle flashing/powering applications.
 
@@ -81,7 +81,7 @@ Pin5 - Vcc(3.3V)
 * [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)
 
 
-### Modify PL30/PL42 Output & OVP Voltage
+### Modify PL30 Output & OVP Voltage
 * Type III Compensator Using Op-Amp  
 
 Type III compensators are a type of compensation network used in control systems to improve stability and performance.   
@@ -126,10 +126,6 @@ C1,C2,C4 Filter capacitors, GAIN=400.
 
 **PL30 Rev12 AGM Battery Charger 20A Firmware**  
 * [Download AGM Battery Charger 20A CC](firmware/PL30/12/Patch/DSPIC33FJ64GS606_CC20.hex)
-
-**PL42 Rev01 With Output 14.4V Firmware**  
-* [Download PL42 DSPIC33FJ64GS606](firmware/PL42/01/Patch/DSPIC33FJ64GS606.hex)
-
 
 ### PL30 Analog/Digital Control Scheme ACMC
 ![alt text][image37]
@@ -179,6 +175,26 @@ FE 18 18 18 18 05
         ; Final result in W1
         ; W1 = Y = X * 0.834
 
+### PL30 PICO Watt Meter
+![alt text][image28]
+The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 power supply via I2C, measuring electrical parameters such as Amps, Volts, Watts, and Watt-hours, and displaying the results on the PIMORONI Pico Display Pack.
+
+| PICO        | PL30 |
+| ----------- | ----------- |
+| VSYS(39)    | 5V (12V Standby Input DC DC Converter Output 5V)       |
+| GND(38)     | GND       |
+| GP4/SDA(6)  | 31        |
+| GP5/SCL(7)  | 32        |
+
+**PICO Firmware**  
+* [RPI PICO FW](firmware/PICO)  
+* [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
+
+Note: Modify the voltage divider resistor: 220Ω → 182Ω.  
+A - Enable/Disable PSU  
+X - CV/CC Switch  
+B - Increase CC setting  
+Y - Decrease CC setting  
 
 ### Modify PL11 Output & OVP Voltage
 ![alt text][image20]
@@ -218,26 +234,6 @@ Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP vo
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
 
-### PL30 PICO Watt Meter
-![alt text][image28]
-The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 power supply via I2C, measuring electrical parameters such as Amps, Volts, Watts, and Watt-hours, and displaying the results on the PIMORONI Pico Display Pack.
-
-| PICO        | PL30 |
-| ----------- | ----------- |
-| VSYS(39)    | 5V (12V Standby Input DC DC Converter Output 5V)       |
-| GND(38)     | GND       |
-| GP4/SDA(6)  | 31        |
-| GP5/SCL(7)  | 32        |
-
-**PICO Firmware**  
-* [RPI PICO FW](firmware/PICO)  
-* [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
-
-Note: Modify the voltage divider resistor: 220Ω → 182Ω.  
-A - Enable/Disable PSU  
-X - CV/CC Switch  
-B - Increase CC setting  
-Y - Decrease CC setting  
 
 ### HSTNS-PD44 Digital Control Analysis
 
@@ -351,7 +347,7 @@ If \ V_{out}=14.4V,\ R_1{\approx}24.3Kohms,\ R_2{\approx}24.3Kohms
 When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resistance wire for the construction of a dummy load.
 
-***PL11/PL30/PL42 Load With Fan on MAX,Audio,High Beam activated***
+***PL11/PL30/PD44/PD52 Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image22]
 
 ### Video

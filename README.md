@@ -229,14 +229,15 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 | GP4/SDA(6)  | 31        |
 | GP5/SCL(7)  | 32        |
 
-***BOMs***  
-1. Raspberry Pi Pico  
-2. Pico Display Pack  
-
-**PICO Firmware 14.48V**  
-* [RPI PICO FW](firmware/PICO/zephyr.uf2)
+**PICO Firmware**  
+* [RPI PICO FW](firmware/PICO)  
 * [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
 
+Note: Modify the voltage divider resistor: 220Ω → 182Ω.  
+A - Enable/Disable PSU  
+X - CV/CC Switch  
+B - Increase CC setting  
+Y - Decrease CC setting  
 
 ### HSTNS-PD44 Digital Control Analysis
 

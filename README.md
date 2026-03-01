@@ -77,8 +77,8 @@ Pin5 - Vcc(3.3V)
 
 ![alt text][image30]
 
-* [Molex Connector - 21112-0504](https://www.mouser.com/ProductDetail/538-218112-0504)
-* [218112-0504 Datasheet](https://www.mouser.com/datasheet/2/276/3/2181120504_CABLE_ASSEMBLIES-2864576.pdf)
+* [Molex Connector - 218112-0503](https://www.digikey.com/en/products/detail/molex/2181120503/14309216?s=N4IgTCBcDa4IwA45zAWgAwFZ0GYQF0BfIA)
+* [Molex Connector - 218113-0501](https://www.digikey.com/en/products/detail/molex/2181130501/14309204?s=N4IgTCBcDa4IwA45wMwFoAMBWDcQF0BfIA)
 
 
 ### Modify PL30 Output & OVP Voltage

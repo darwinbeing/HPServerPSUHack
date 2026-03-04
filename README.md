@@ -345,6 +345,22 @@ If \ V_{out}=14.4V,\ R_1{\approx}24.3Kohms,\ R_2{\approx}24.3Kohms
 \end{gather*}
 ```
 
+#### I2C protocol
+
+Frequency: 5kHz  
+Address: 0x5F  
+Data Frame: 00 REG CS  
+Read voltage: 0x00 0x20 0x22  
+TX: 00 20 22   RX: 58 0C 9C
+
+REG Range  
+0x01  
+0x10~0x17  
+0x20~0x24  
+0x32~0x49  
+0x60~0x62  
+0xF0~0xF6 
+
 ### Load Test
 When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
 Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resistance wire for the construction of a dummy load.

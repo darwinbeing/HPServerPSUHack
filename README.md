@@ -355,11 +355,11 @@ TX: 00 20 22   RX: 58 0C 9C
 
 REG Range  
 0x01  
-0x10~0x17  
-0x20~0x24  
-0x32~0x49  
-0x60~0x62  
-0xF0~0xF6 
+0x10 ~ 0x17  
+0x20 ~ 0x24  
+0x32 ~ 0x49  
+0x60 ~ 0x62  
+0xF0 ~ 0xF6 
 
 ### Load Test
 When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.

@@ -362,8 +362,7 @@ REG Range
 0xF0 ~ 0xF6 
 
 ### Load Test
-When conducting load testing with ignition ON and AC running, the fan operates at its maximum speed. The output voltage reads 14.28V with no load. However, when under load, there is a voltage drop caused by the impedance in the wires, which is expected.
-Technically speaking, I would recommend employing Nichrome 80 12 gauge AWG resistance wire for the construction of a dummy load.
+When conducting load testing with the ignition ON and AC running, the cooling fan operates at full speed. The open-circuit output voltage measures 14.28 V. Under load conditions, a voltage drop is observed due to wire impedance — this behavior is expected and consistent with normal operation. For constructing the dummy load, 12 AWG Nichrome 80 resistance wire is recommended.
 
 ***PL11/PL30/PD44/PD52 Load With Fan on MAX,Audio,High Beam activated***
 ![alt text][image22]

@@ -361,6 +361,12 @@ REG Range
 0x60 ~ 0x62  
 0xF0 ~ 0xF6 
 
+#### HSTNS-PD44 CC Firmware
+
+Modify output/OVP divider network and update firmware  
+* [Download PD44 DSPIC33FJ64GS606](firmware/PD44/05F/Patch/DSPIC33FJ64GS606_CC14420.hex)
+
+
 ### Load Test
 When conducting load testing with the ignition ON and AC running, the cooling fan operates at full speed. The open-circuit output voltage measures 14.28 V. Under load conditions, a voltage drop is observed due to wire impedance — this behavior is expected and consistent with normal operation. For constructing the dummy load, 12 AWG Nichrome 80 resistance wire is recommended.
 

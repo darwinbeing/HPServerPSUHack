@@ -253,80 +253,34 @@ u[n] = a_1{\ast}u[n-1] + a_2{\ast}u[n-2] + k_{AGC}(b_0{\ast}e[n] + b_1{\ast}e[n-
 \end{gather*}
 ```
 
-#### 2. Core Structure
+#### 2. 2P2Z Transfer Function
 
-```math
-\begin{align*}
-X = d_2{\ast}u[n-1] + d_3{\ast}u[n-2] \\
-Y = k_{AGC}(n_1{\ast}e[n] + n_2{\ast}e[n-1] + n_3{\ast}e[n-2]), k_{AGC} = f(u[n-1]) >> 7 \\
-u[n] = (X + Y) >> 13 \\
-d2 = 0x20F3 \\
-d3 = 0xFF0D \\
-n1 = 0xFFFF0626 \\
-n2 = 0x00013663 \\
-n3 = 0xFFFFA785
-\end{align*}
-```
+$$H(z) = \frac{-1.952 + 2.425 z^{-1} - 0.691 z^{-2}}{1 - 0.257 z^{-1} + 0.007 z^{-2}}$$
 
-```C
+Coefficients (Q15 fixed-point):
 
-#define Q15_SHIFT 15
-#define Q15_SCALE (1L << Q15_SHIFT)
-#define Q15_FROM_FLOAT(x) ((int32_t)((x) * Q15_SCALE))
+| Parameter | Float | Q15 Hex | Role |
+|-----------|-------|---------|------|
+| $b_0$ | -1.95197 | 0xFFFF0626 | e[n] |
+| $b_1$ | 2.424896 | 0x00013663 | e[n-1] |
+| $b_2$ | -0.69126 | 0xFFFFA785 | e[n-2] |
+| $a_1$ | 0.25742 | 0x20F3 | y[n-1] |
+| $a_2$ | -0.00742 | 0xFF0D | y[n-2] |
 
-#define n1 (int32_t)Q15_FROM_FLOAT(-1.95197)  
-#define n2 (int32_t)Q15_FROM_FLOAT(2.424896)   
-#define n3 (int32_t)Q15_FROM_FLOAT(-0.69126)  
-#define d2 (int16_t)Q15_FROM_FLOAT(0.25742)
-#define d3 (int16_t)Q15_FROM_FLOAT(-0.00742)
+Zeros: $z_1 = 0.443$, $z_2 = 0.799$
 
-int32_t mymulsi3(int32_t A, int32_t B)
-{
-	__asm__ volatile ("mul.su w1,w2,w4");
-	__asm__ volatile ("mul.su w3,w0,w6");
-	__asm__ volatile ("mul.uu w0,w2,w0");
-	__asm__ volatile ("add w4,w1,w1");
-	__asm__ volatile ("add w6,w1,w1");
+Poles: $z_1 = 0.226$, $z_2 = 0.031$
 
-	return(A);
-}
+Difference equation:
 
-	VoltageError = (OUTPUTVOLTAGEREFERENCE -  outputVoltage);
+$$y[n] = 0.257 \cdot y[n-1] - 0.007 \cdot y[n-2] - 1.952 \cdot e[n] + 2.425 \cdot e[n-1] - 0.691 \cdot e[n-2]$$
 
-	PIDOutput= mymulsi3((int32_t)n1,VoltageError) + mymulsi3((int32_t)n2,prevVoltageError) + mymulsi3((int32_t)n3,prevVoltageError1); 
-	PIDOutput = ((PIDOutput >> 7) + mymulsi3((int32_t)d2,PIDOutput1)+mymulsi3((int32_t)d3,PIDOutput2)) >> 13; 
+The firmware implements a 2P2Z (2-pole, 2-zero) digital compensator for LLC resonant converter frequency control.
 
-	prevVoltageError = VoltageError;		/* Update previous voltage error */
-	prevVoltageError1 = prevVoltageError;
-	prevVoltageError2 = prevVoltageError1;
-	prevVoltageError3 = prevVoltageError2;
-		
-	/* Upadation of previous Compensator outputs */
-	PIDOutput1= PIDOutput;
-	PIDOutput2= PIDOutput1;
-	PIDOutput3= PIDOutput2;
-		
-```
-
-
-#### 3. Adaptive Gain Control Mechanism
-
-The scaling factor M is dynamically calculated:  
-M = (u[n-1] × 0x44D) >> 15 - 0x4A  
-M = 0.0336⋅u[n−1]−74
-
-#### 4. Standard 2P2Z Form
-
-The controller can be written as:
-
-```math
-\begin{gather*}
-u[n] = a_1{\ast}u[n-1] + a_2{\ast}u[n-2] + b_0(M){\ast}e[n] + b_1(M){\ast}e[n-1] + b_2(M){\ast}e[n-2] \\
-M = 0.0336{\cdot}u[n−1]−74 \\
-a_i = \frac{d_i}{8192} \\
-b_i(M) =\frac{M}{128}\cdot\frac{n_i}{8192}
-\end{gather*}
-```
+The controller consists of:
+- Two poles ($a_1$, $a_2$): determine closed-loop stability and transient response
+- Two zeros ($b_0$, $b_1$, $b_2$): compensate the LLC power stage poles, providing phase margin
+- Gain scheduling: adaptive gain scaling based on operating frequency, increasing loop gain at lower frequencies where LLC transfer function gain drops
 
 #### Reverse Engineer a Schematic
 ![alt text][image32]
@@ -368,11 +322,11 @@ Modify output/OVP divider network and update firmware
 
 ### Decompiling HSTNS-PD44 800W PSU Firmware to C
 
-Implement PSU initialization and open-loop 12.3V output via firmware reverse engineering
+Implement PSU initialization and closed-loop 12.3V output via firmware reverse engineering
 
-Decompiled HSTNS-PD44 800W LLC converter firmware (dsPIC33FJ64GS606)
-with Claude AI assistance. Reconstructed startup sequence, ADC calibration,
-and PWM configuration to achieve open-loop 12.3V output.
+Decompiled HSTNS-PD44 800W LLC converter firmware (dsPIC33FJ64GS606) 
+with Claude AI assistance. Reconstructed startup sequence, PWM configuration, 
+and 2P2Z digital compensator for closed-loop voltage regulation at 12.3V output.
  
 * [HSTNS PD44 Firmware SRC](https://github.com/darwinbeing/hstns-pd44-firmware)
 

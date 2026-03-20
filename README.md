@@ -366,6 +366,15 @@ REG Range
 Modify output/OVP divider network and update firmware  
 * [Download PD44 DSPIC33FJ64GS606](firmware/PD44/05F/Patch/DSPIC33FJ64GS606_CC14420.hex)
 
+### Decompiling HSTNS-PD44 800W PSU Firmware to C
+
+Implement PSU initialization and open-loop 12.3V output via firmware reverse engineering
+
+Decompiled HSTNS-PD44 800W LLC converter firmware (dsPIC33FJ64GS606)
+with Claude AI assistance. Reconstructed startup sequence, ADC calibration,
+and PWM configuration to achieve open-loop 12.3V output.
+ 
+* [HSTNS PD44 Firmware SRC](https://github.com/darwinbeing/hstns-pd44-firmware)
 
 ### Load Test
 When conducting load testing with the ignition ON and AC running, the cooling fan operates at full speed. The open-circuit output voltage measures 14.28 V. Under load conditions, a voltage drop is observed due to wire impedance — this behavior is expected and consistent with normal operation. For constructing the dummy load, 12 AWG Nichrome 80 resistance wire is recommended.

@@ -282,6 +282,32 @@ The controller consists of:
 - Two zeros ($b_0$, $b_1$, $b_2$): compensate the LLC power stage poles, providing phase margin
 - Gain scheduling: adaptive gain scaling based on operating frequency, increasing loop gain at lower frequencies where LLC transfer function gain drops
 
+#### 3. I2C protocol
+
+Frequency: 5kHz  
+Address: 0x5F  
+Data Frame: 00 REG CS  
+Read voltage: 0x00 0x20 0x22  
+TX: 00 20 22   RX: 58 0C 9C
+
+REG Range  
+0x01  
+0x10 ~ 0x17  
+0x20 ~ 0x24  
+0x32 ~ 0x49  
+0x60 ~ 0x62  
+0xF0 ~ 0xF6 
+
+#### 4. Decompiling HSTNS-PD44 800W PSU Firmware to C
+
+Implement PSU initialization and closed-loop 12.3V output via firmware reverse engineering
+
+Decompiled HSTNS-PD44 800W LLC converter firmware (dsPIC33FJ64GS606) 
+with Claude AI assistance. Reconstructed startup sequence, PWM configuration, 
+and 2P2Z digital compensator for closed-loop voltage regulation at 12.3V output.
+ 
+* [HSTNS PD44 Firmware SRC](https://github.com/darwinbeing/hstns-pd44-firmware)
+
 #### Reverse Engineer a Schematic
 ![alt text][image32]
 #### Activate PSU
@@ -299,36 +325,11 @@ If \ V_{out}=14.4V,\ R_1{\approx}24.3Kohms,\ R_2{\approx}24.3Kohms
 \end{gather*}
 ```
 
-#### I2C protocol
-
-Frequency: 5kHz  
-Address: 0x5F  
-Data Frame: 00 REG CS  
-Read voltage: 0x00 0x20 0x22  
-TX: 00 20 22   RX: 58 0C 9C
-
-REG Range  
-0x01  
-0x10 ~ 0x17  
-0x20 ~ 0x24  
-0x32 ~ 0x49  
-0x60 ~ 0x62  
-0xF0 ~ 0xF6 
-
 #### HSTNS-PD44 CC Firmware
 
 Modify output/OVP divider network and update firmware  
 * [Download PD44 DSPIC33FJ64GS606](firmware/PD44/05F/Patch/DSPIC33FJ64GS606_CC14420.hex)
 
-### Decompiling HSTNS-PD44 800W PSU Firmware to C
-
-Implement PSU initialization and closed-loop 12.3V output via firmware reverse engineering
-
-Decompiled HSTNS-PD44 800W LLC converter firmware (dsPIC33FJ64GS606) 
-with Claude AI assistance. Reconstructed startup sequence, PWM configuration, 
-and 2P2Z digital compensator for closed-loop voltage regulation at 12.3V output.
- 
-* [HSTNS PD44 Firmware SRC](https://github.com/darwinbeing/hstns-pd44-firmware)
 
 ### Load Test
 When conducting load testing with the ignition ON and AC running, the cooling fan operates at full speed. The open-circuit output voltage measures 14.28 V. Under load conditions, a voltage drop is observed due to wire impedance — this behavior is expected and consistent with normal operation. For constructing the dummy load, 12 AWG Nichrome 80 resistance wire is recommended.

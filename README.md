@@ -5,8 +5,9 @@
 
 ## HP HSTNS-PL11/PL30/PD44/PD52
 
-HP HSTNS-PL11/PL30/PD44/PD52 1200Watt Hot Plug Power Supply Hack for Vehicle Flashing and Programming.
-The HPE PSU is a powerful and versatile power supply unit that can be modified or hacked to suit a wide range of needs,With some basic electronics knowledge and proper safety precautions, it's possible to make this PSU even more useful and versatile for your specific applications.
+HP HSTNS-PL11/PL30/PD44/PD52 1200 W hot-plug power supply hack for vehicle flashing and programming.
+
+The HPE PSU is a powerful and versatile power supply unit that can be modified to suit a wide range of needs. With some basic electronics knowledge and proper safety precautions, it is possible to make this PSU even more useful for your specific applications.
 Modified HPE PSUs are suitable for RC battery charging, radio power supply, and vehicle flashing/powering applications.
 
 [//]: # (Image References)
@@ -50,7 +51,7 @@ Modified HPE PSUs are suitable for RC battery charging, radio power supply, and 
 [image38]: ./resources/PL30_NoHWMod.png "PL30 Mod Firmware Only"
 
 ### Activate PSU
-To activate the PSU, add a small resistance resistor between Pin 33 and 36 or simply short them together.  
+To activate the PSU, connect a low-value resistor between Pin 33 and Pin 36, or simply short them together.  
 33: ENABLE#  
 36: PRESENT  
 ![alt text][image29]
@@ -66,14 +67,14 @@ Pin1 - PGEC
 Pin2 - PGED  
 Pin3 - $\overline{\textrm{MCLR}}$  
 Pin4 - GND  
-Pin5 - Vcc(3.3V)  
+Pin5 - Vcc (3.3 V)  
 
 Delta PSU  
 Pin1 - GND  
 Pin2 - $\overline{\textrm{MCLR}}$  
 Pin3 - PGED  
 Pin4 - PGEC  
-Pin5 - Vcc(3.3V)  
+Pin5 - Vcc (3.3 V)  
 
 ![alt text][image30]
 
@@ -84,7 +85,7 @@ Pin5 - Vcc(3.3V)
 ### Modify PL30 Output & OVP Voltage
 * Type III Compensator Using Op-Amp  
 
-Type III compensators are a type of compensation network used in control systems to improve stability and performance.   
+A Type III compensator is a compensation network used in control systems to improve stability and performance.   
 Locate the Type III compensator in the HP PL30 power supply by examining the PCB for the Op-Amp [TSV994](https://www.st.com/resource/en/datasheet/tsv994.pdf)
 ![alt text][image13]
 
@@ -93,7 +94,7 @@ To increase the output voltage, one can either increase the reference voltage or
 ![alt text][image15]
 ![alt text][image10]
 
-Assuming the default Output is 12.32V.  
+Assume the default output is 12.32 V.  
 There are two approaches to prevent the OVP (Over Voltage Protection) from being triggered, one is to add a resistor in parallel with the 01B resistor, the other is to modify the firmware of the MCU(dsPIC33FJ64GS606).  
 ```math
 \begin{gather*}
@@ -104,26 +105,26 @@ If \ V_{out}=15.2V,\ R_1{\approx}910(Ohms),\ R_2{\approx}3.4Kohms \\
 If \ V_{out}=16V,\ R_1{\approx}715(Ohms),\ R_2{\approx}2.67Kohms
 \end{gather*}
 ```
-* [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=R_11%2F%28R_11%2B39.2%2B10%2B4420%29*V_1%3D0.58%2CR_11%3D220*R_1%2F%28R_1%2B220%29%2C1%2F%281%2B3.92%29*12.32%3DR_12%2F%28R_12%2B3.92%29*V_1%2CR_12%3DR_2*1%2F%281%2BR_2%29%2CV_1%3D15.2)
+* [WolframAlpha Solver Output 15.2 V](https://www.wolframalpha.com/input?i=R_11%2F%28R_11%2B39.2%2B10%2B4420%29*V_1%3D0.58%2CR_11%3D220*R_1%2F%28R_1%2B220%29%2C1%2F%281%2B3.92%29*12.32%3DR_12%2F%28R_12%2B3.92%29*V_1%2CR_12%3DR_2*1%2F%281%2BR_2%29%2CV_1%3D15.2)
 
 R1 is used to adjust the output voltage of the power supply, while R2 is used to adjust the threshold of the Over Voltage Protection (OVP).  
-The modification mentioned above is not meant to increase the OVP threshold, but rather to trick the dsPIC33FJ64GS606 MCU into thinking that the output voltage has not been adjusted.
+The modification mentioned above is not meant to raise the OVP threshold, but rather to make the dsPIC33FJ64GS606 MCU sense the output voltage as if it had not been adjusted.
 
 ### PL30 Current Sense Amplifier
 
 ![alt text][image36]
-Figure above shows a current sense amplifier circuit for high side current measurements based on a Texas Instruments OPA2277 op amp and discrete gain setting resistors.  
+The figure above shows a current-sense amplifier circuit for high-side current measurement based on a Texas Instruments OPA2277 op amp and discrete gain-setting resistors.  
 C1,C2,C4 Filter capacitors, GAIN=400.
 
 ### Patch Firmware Without Hardware Modifications
 
-**PL30 Rev10 With Output 14.4V Firmware**  
+**PL30 Rev10 With Output 14.4 V Firmware**  
 * [Download PL30 DSPIC33FJ64GS606](firmware/PL30/10/Patch/DSPIC33FJ64GS606_NoHWMod.hex)
 
 ![alt text][image38]
 
-**PL30 Rev12 AGM Battery Charger 20A Firmware**  
-* [Download AGM Battery Charger 20A CC](firmware/PL30/12/Patch/DSPIC33FJ64GS606_CC20.hex)
+**PL30 Rev12 AGM Battery Charger 20 A Firmware**  
+* [Download AGM Battery Charger 20 A CC](firmware/PL30/12/Patch/DSPIC33FJ64GS606_CC20.hex)
 
 ### PL30 Analog/Digital Control Scheme ACMC
 ![alt text][image37]
@@ -179,7 +180,7 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 
 | PICO        | PL30 |
 | ----------- | ----------- |
-| VSYS(39)    | 5V (12V Standby Input DC DC Converter Output 5V)       |
+| VSYS(39)    | 5 V (output of the 12 V standby-input DC-DC converter)       |
 | GND(38)     | GND       |
 | GP4/SDA(6)  | 31        |
 | GP5/SCL(7)  | 32        |
@@ -189,7 +190,7 @@ The image above shows the Raspberry Pi Pico reading data from the HP HSTNS-PL30 
 * [RPI PICO Watt Meter Source](https://github.com/darwinbeing/zpsu_mon)
 
 Note: 
-- Modify the voltage divider resistor: 220Ω → 182Ω.
+- Modify the voltage divider resistor: 220 Ω → 182 Ω.
 - Update PSU FW
 - Update PICO FW
 
@@ -218,10 +219,10 @@ If \ V_{out}=15.2V,\ R_3{\approx}3K57ohms,\ R_4{\approx}5K49ohms \\
 If \ V_{out}=16V,\ R_3{\approx}2K7ohms,\ R_4{\approx}4K3ohms
 \end{gather*}
 ```
-* [WolframAlpha Solver Output 15.2V](https://www.wolframalpha.com/input?i=%28R_11%2BR_5%29%2F%28R_11%2BR_5%2B39.2%2B10%2B4420%29*V_1%3D2.5%2CR_11%3D1100*R_3%2F%28R_3%2B1100%29%2C1.74%2F%281.74%2B5.11%29*12.29%3DR_12%2F%28R_12%2B5.11%29*V_1%2CR_12%3DR_4*1.74%2F%281.74%2BR_4%29%2CR_5%3D40%2CV_1%3D15.2)
+* [WolframAlpha Solver Output 15.2 V](https://www.wolframalpha.com/input?i=%28R_11%2BR_5%29%2F%28R_11%2BR_5%2B39.2%2B10%2B4420%29*V_1%3D2.5%2CR_11%3D1100*R_3%2F%28R_3%2B1100%29%2C1.74%2F%281.74%2B5.11%29*12.29%3DR_12%2F%28R_12%2B5.11%29*V_1%2CR_12%3DR_4*1.74%2F%281.74%2BR_4%29%2CR_5%3D40%2CV_1%3D15.2)
 
 R3 is used to adjust the output voltage of the power supply, while R4 is used to adjust the threshold of the Over Voltage Protection (OVP).  
-The modification above is not to increase the OVP threshold, but to make the MCU believe that the output voltage has not been adjusted.
+The modification above is not meant to raise the OVP threshold, but rather to make the MCU sense the output voltage as if it had not been adjusted.
 
 $$
 \begin{gather*}
@@ -231,7 +232,7 @@ If \ V_{dd}=5V,\ V_{ovp}{\approx}14.12V
 \end{gather*}
 $$
 
-Vdd is the supply voltage of the PIC16F883. By default configuration, The OVP voltage is dependent on the MCU supply voltage, which is approximately 13.86 volts in this case.
+Vdd is the supply voltage of the PIC16F883. In the default configuration, the OVP voltage depends on the MCU supply voltage, which is approximately 13.86 V in this case.
 
 **PL11 Rev12 Firmware With OVP Disabled**  
 * [PL11 PIC16F883 OVP Disabled](firmware/PL11/12/Patch/PIC16F883.hex)
@@ -284,7 +285,7 @@ The controller consists of:
 
 #### 3. I2C protocol
 
-Frequency: 5kHz  
+Frequency: 5 kHz  
 Address: 0x5F  
 Data Frame: 00 REG CS  
 Read voltage: 0x00 0x20 0x22  
@@ -298,13 +299,13 @@ REG Range
 0x60 ~ 0x62  
 0xF0 ~ 0xF6 
 
-#### 4. Decompiling HSTNS-PD44 800W PSU Firmware to C
+#### 4. Decompiling HSTNS-PD44 800 W PSU Firmware to C
 
-Implement PSU initialization and closed-loop 12.3V output via firmware reverse engineering
+Implement PSU initialization and closed-loop 12.3 V output via firmware reverse engineering
 
-Decompiled HSTNS-PD44 800W LLC converter firmware (dsPIC33FJ64GS606) 
+Decompiled HSTNS-PD44 800 W LLC converter firmware (dsPIC33FJ64GS606) 
 with Claude AI assistance. Reconstructed startup sequence, PWM configuration, 
-and 2P2Z digital compensator for closed-loop voltage regulation at 12.3V output.
+and 2P2Z digital compensator for closed-loop voltage regulation at 12.3 V output.
  
 * [HSTNS PD44 Firmware SRC](https://github.com/darwinbeing/hstns-pd44-firmware)
 
